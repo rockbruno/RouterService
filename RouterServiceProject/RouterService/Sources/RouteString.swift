@@ -38,12 +38,16 @@ public struct RouteString {
             return nil
         }
 
-        guard let parameterDict = try? JSONSerialization.jsonObject(with: parameterData, options: []) as? [String: Any] else {
+        do {
+            let json = try JSONSerialization.jsonObject(with: parameterData, options: [])
+            guard let parameterDict = json as? [String: Any] else {
+                return nil
+            }
+            self.parameterDict = parameterDict
+            self.parameterData = parameterData
+        } catch {
             return nil
         }
-
-        self.parameterDict = parameterDict
-        self.parameterData = parameterData
     }
 }
 
