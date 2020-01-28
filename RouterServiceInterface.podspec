@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'RouterServiceInterface'
   s.module_name = 'RouterServiceInterface'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.summary = 'Route based dependency injection SDK for iOS. (Interface)'
   s.homepage = 'https://github.com/rockbruno/RouterService'
