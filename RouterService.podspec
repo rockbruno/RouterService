@@ -3,11 +3,16 @@ Pod::Spec.new do |s|
   s.module_name = 'RouterService'
   s.version = '1.0.0'
   s.license = { type: 'MIT', file: 'LICENSE' }
-  s.summary = 'Extract and analyze the evolution of an iOS app\'s code.'
+  s.summary = 'Route based dependency injection SDK for iOS.'
   s.homepage = 'https://github.com/rockbruno/RouterService'
-  s.authors = { 'Bruno Rocha' => 'brunorochaesilva@gmail.com' }
+  s.author = { 'Bruno Rocha' => 'brunorochaesilva@gmail.com' }
   s.social_media_url = 'https://twitter.com/rockthebruno'
-  s.source = { http: "https://github.com/rockbruno/SwiftInfo/releases/download/#{s.version}/SwiftInfo.zip" }
-  s.preserve_paths = '*'
-  s.exclude_files = '**/file.zip'
+
+  s.source           = { :git => 'https://github.com/rockbruno/RouterService.git', :branch => "master", :tag => s.version.to_s }
+
+  s.ios.deployment_target = '9.0'
+  s.source_files = 'RouterServiceProject/RouterService/Sources/**/*'
+
+  s.dependency 'RouterServiceInterface'
+
 end

@@ -1,0 +1,6 @@
+module Pods_RouterServiceExampleApp {
+  umbrella header "Pods-RouterServiceExampleApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

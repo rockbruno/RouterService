@@ -1,0 +1,22 @@
+PODS:
+  - RouterService (1.0.0):
+    - RouterServiceInterface
+  - RouterServiceInterface (1.0.0)
+
+DEPENDENCIES:
+  - RouterService (from `../`)
+  - RouterServiceInterface (from `../`)
+
+EXTERNAL SOURCES:
+  RouterService:
+    :path: "../"
+  RouterServiceInterface:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RouterService: a2d116e522f51f272fe3c3916d045eda573896f5
+  RouterServiceInterface: 13d6d69055ccc442f3aaf4306e676a0501e7979b
+
+PODFILE CHECKSUM: cc59738e92e8e7e941ebaa9000ee23d70dcbbabe
+
+COCOAPODS: 1.7.5
