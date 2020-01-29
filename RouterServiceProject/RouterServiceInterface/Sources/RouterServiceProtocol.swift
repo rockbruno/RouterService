@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public protocol RouterServiceProtocol: Dependency {
+public protocol RouterServiceProtocol: Dependency, RouterServiceAnyRouteDecodingProtocol {
     func navigate(
         toRoute route: Route,
         fromView viewController: UIViewController,
