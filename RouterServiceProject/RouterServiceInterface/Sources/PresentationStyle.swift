@@ -29,7 +29,7 @@ open class PushPresentationStyle: PresentationStyle {
     }
 }
 
-public typealias Modal = PushPresentationStyle
+public typealias Modal = ModalPresentationStyle 
 
 open class ModalPresentationStyle: PresentationStyle {
 
