@@ -2,6 +2,22 @@ import Foundation
 
 // swiftlint:disable force_unwrapping
 
+@propertyWrapper
+public struct Injected<T> {
+    public let wrappedValue: T
+
+    public init(wrappedValue: T) {
+        self.wrappedValue = wrappedValue
+    }
+
+    public init(store: StoreInterface) {
+        // If you get a crash here, then your instance was not registered
+        // into the RouterService being used.
+        self.wrappedValue = store.get(T.self)!
+    }
+}
+
+
 public protocol StoreInterface {
     func get<T>(_ arg: T.Type) -> T?
     func register<T>(_ arg: Dependency, forMetaType metaType: T.Type)
@@ -20,60 +36,87 @@ public final class AnyDependenciesInitializer {
     /// If your Dependencies struct only have one dependency, you need to use this special method.
     /// This is because the generics in this type are unconstrained, so naming it the same as the others
     /// would cause ambiguity errors.
-    public init<A, B>(singleDependencyStruct function: @escaping (A) -> B) {
+    public init<A, Result>(singleDependencyStruct function: @escaping (A) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            return function(a)
+            let a = Injected<A>(store: store)
+            return function(
+                a.wrappedValue
+            )
         }
     }
 
-    public init<A, B, C>(_ function: @escaping (A, B) -> C) {
+    public init<A, B, Result>(_ function: @escaping (A, B) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            let b: B = store.get(B.self)!
-            return function(a, b)
+            let a = Injected<A>(store: store)
+            let b = Injected<B>(store: store)
+            return function(
+                a.wrappedValue,
+                b.wrappedValue
+            )
         }
     }
 
-    public init<A, B, C, D>(_ function: @escaping (A, B, C) -> D) {
+    public init<A, B, C, Result>(_ function: @escaping (A, B, C) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            let b: B = store.get(B.self)!
-            let c: C = store.get(C.self)!
-            return function(a, b, c)
+            let a = Injected<A>(store: store)
+            let b = Injected<B>(store: store)
+            let c = Injected<C>(store: store)
+            return function(
+                a.wrappedValue,
+                b.wrappedValue,
+                c.wrappedValue
+            )
         }
     }
 
-    public init<A, B, C, D, E>(_ function: @escaping (A, B, C, D) -> E) {
+    public init<A, B, C, D, Result>(_ function: @escaping (A, B, C, D) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            let b: B = store.get(B.self)!
-            let c: C = store.get(C.self)!
-            let d: D = store.get(D.self)!
-            return function(a, b, c, d)
+            let a = Injected<A>(store: store)
+            let b = Injected<B>(store: store)
+            let c = Injected<C>(store: store)
+            let d = Injected<D>(store: store)
+            return function(
+                a.wrappedValue,
+                b.wrappedValue,
+                c.wrappedValue,
+                d.wrappedValue
+            )
         }
     }
 
-    public init<A, B, C, D, E, F>(_ function: @escaping (A, B, C, D, E) -> F) {
+    public init<A, B, C, D, E, Result>(_ function: @escaping (A, B, C, D, E) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            let b: B = store.get(B.self)!
-            let c: C = store.get(C.self)!
-            let d: D = store.get(D.self)!
-            let e: E = store.get(E.self)!
-            return function(a, b, c, d, e)
+            let a = Injected<A>(store: store)
+            let b = Injected<B>(store: store)
+            let c = Injected<C>(store: store)
+            let d = Injected<D>(store: store)
+            let e = Injected<E>(store: store)
+            return function(
+                a.wrappedValue,
+                b.wrappedValue,
+                c.wrappedValue,
+                d.wrappedValue,
+                e.wrappedValue
+            )
         }
     }
 
-    public init<A, B, C, D, E, F, G>(_ function: @escaping (A, B, C, D, E, F) -> G) {
+    public init<A, B, C, D, E, F, Result>(_ function: @escaping (A, B, C, D, E, F) -> Result) {
         build = { store in
-            let a: A = store.get(A.self)!
-            let b: B = store.get(B.self)!
-            let c: C = store.get(C.self)!
-            let d: D = store.get(D.self)!
-            let e: E = store.get(E.self)!
-            let f: F = store.get(F.self)!
-            return function(a, b, c, d, e, f)
+            let a = Injected<A>(store: store)
+            let b = Injected<B>(store: store)
+            let c = Injected<C>(store: store)
+            let d = Injected<D>(store: store)
+            let e = Injected<E>(store: store)
+            let f = Injected<F>(store: store)
+            return function(
+                a.wrappedValue,
+                b.wrappedValue,
+                c.wrappedValue,
+                d.wrappedValue,
+                e.wrappedValue,
+                f.wrappedValue
+            )
         }
     }
 }
