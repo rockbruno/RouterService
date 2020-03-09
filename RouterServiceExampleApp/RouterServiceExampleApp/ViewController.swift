@@ -3,8 +3,8 @@ import RouterServiceInterface
 class MainFeature: Feature {
 
     struct Dependencies {
-        @Injected var httpClient: HTTPClientProtocol
-        @Injected var routerService: RouterServiceProtocol
+        let httpClient: HTTPClientProtocol
+        let routerService: RouterServiceProtocol
     }
 
     static func build(

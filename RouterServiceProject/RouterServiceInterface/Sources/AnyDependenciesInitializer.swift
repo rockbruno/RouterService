@@ -2,15 +2,14 @@ import Foundation
 
 // swiftlint:disable force_unwrapping
 
-@propertyWrapper
-public struct Injected<T> {
-    public let wrappedValue: T
+private struct Injected<T> {
+    let wrappedValue: T
 
-    public init(wrappedValue: T) {
+    init(wrappedValue: T) {
         self.wrappedValue = wrappedValue
     }
 
-    public init(store: StoreInterface) {
+    init(store: StoreInterface) {
         // If you get a crash here, then your instance was not registered
         // into the RouterService being used.
         self.wrappedValue = store.get(T.self)!
