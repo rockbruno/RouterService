@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/rockbruno/RouterService'
   s.author = { 'Bruno Rocha' => 'brunorochaesilva@gmail.com' }
   s.social_media_url = 'https://twitter.com/rockbruno_'
+  s.swift_version = '5.0'
 
   s.source           = { :git => 'https://github.com/rockbruno/RouterService.git', :branch => "master", :tag => s.version.to_s }
 
