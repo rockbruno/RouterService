@@ -1,0 +1,12 @@
+platform :ios, '10.0'
+inhibit_all_warnings!
+
+target 'RouterServiceExampleApp' do
+    pod 'RouterServiceInterface', :path => '../'
+    pod 'RouterService', :path => '../'
+end
+
+target 'RouterServiceTests' do
+    pod 'RouterServiceInterface', :path => '../'
+    pod 'RouterService', :path => '../'
+end

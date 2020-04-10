@@ -1,0 +1,6 @@
+module Pods_RouterServiceTests {
+  umbrella header "Pods-RouterServiceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
