@@ -1,8 +1,8 @@
 # Router Service
 
-RouterService is a typesafe navigation/routing/dependency injection framework where all navigation is done through `Routes`. <a href="https://speakerdeck.com/amiekweon/the-evolution-of-routing-at-airbnb">Based on the system used at Airbnb presented at BA:Swiftable 2019.</a>
+RouterService is a type-safe navigation/dependency injection framework focused on making modular Swift apps have **very fast build times**. <a href="https://speakerdeck.com/amiekweon/the-evolution-of-routing-at-airbnb">Based on the system used at AirBnB presented at BA:Swiftable 2019.</a>
 
-RouterService is meant to be as a dependency injector for <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets.html">modular apps where each targets contains an additional "interface" target.</a> The linked article contains more info about that, but as a summary, this parts from the principle that a feature target should never directly depend on another one. Instead, for build performance reasons, a feature only has access to another feature's **interface**, which contains RouterService's `Route` objects. Finally, RouterService takes care of executing said `Routes` by injecting the necessary dependencies into the route's destination feature.
+RouterService is meant to be used as a dependency injector for <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets.html">modular apps where each targets contains an additional "interface" target.</a> The linked article contains more info about that, but as a summary, this parts from the principle that a feature target should never directly depend on another one. Instead, for build performance reasons, a feature only has access to another feature's **interface**, which contains RouterService's `Route` objects. Finally, RouterService takes care of executing said `Routes` by injecting the necessary dependencies into the route's destination feature.
 
 The final result is:
  - An app with a horizontal dependency graph (very fast build times!)
