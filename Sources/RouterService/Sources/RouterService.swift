@@ -2,7 +2,7 @@ import Foundation
 import RouterServiceInterface
 import UIKit
 
-public final class RouterService: RouterServiceInterface.RouterServiceProtocol, RouterServiceRegistrationProtocol {
+public final class RouterService: RouterServiceProtocol, RouterServiceRegistrationProtocol {
 
     let store: StoreInterface
     let failureHandler: () -> Void
@@ -17,7 +17,7 @@ public final class RouterService: RouterServiceInterface.RouterServiceProtocol, 
         self.failureHandler = failureHandler
         register(dependencyFactory: { [unowned self] in
             self
-        }, forType: RouterServiceInterface.RouterServiceProtocol.self)
+        }, forType: RouterServiceProtocol.self)
     }
 
     public func register<T>(
