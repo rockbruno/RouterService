@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RouterService.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RouterServiceInterface.framework

@@ -12,10 +12,10 @@ private struct Injected<T> {
     init(store: StoreInterface) {
         // If you get a crash here, then your instance was not registered
         // into the RouterService being used.
-        self.wrappedValue = store.get(T.self)!
+        let value = store.get(T.self)
+        self.wrappedValue = value as! T
     }
 }
-
 
 public protocol StoreInterface {
     func get<T>(_ arg: T.Type) -> T?
@@ -26,7 +26,7 @@ public final class AnyDependenciesInitializer {
 
     public let build: (StoreInterface) -> Any
 
-    public init<A>(_ function: @escaping () -> A) {
+    public init<Result>(_ function: @escaping () -> Result) {
         build = { _ in
             function()
         }

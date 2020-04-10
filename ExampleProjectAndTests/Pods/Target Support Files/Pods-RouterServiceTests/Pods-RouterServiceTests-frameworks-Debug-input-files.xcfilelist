@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-RouterServiceTests/Pods-RouterServiceTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RouterService/RouterService.framework
+${BUILT_PRODUCTS_DIR}/RouterServiceInterface/RouterServiceInterface.framework

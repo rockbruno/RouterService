@@ -1,4 +1,4 @@
-module Pods_RouterServiceTests {
+framework module Pods_RouterServiceTests {
   umbrella header "Pods-RouterServiceTests-umbrella.h"
 
   export *

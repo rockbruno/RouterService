@@ -14,9 +14,10 @@ final class Store: StoreInterface {
         let name = String(describing: arg)
         let object = dependencies.object(forKey: name as NSString)
         if object == nil {
-            let factory = dependencyCreators[name]
-            let newInstance = factory?()
-            dependencies.setObject(newInstance as AnyObject?, forKey: name as NSString)
+            let factory: DependencyFactory = dependencyCreators[name]!
+            let newInstance: Dependency = factory()
+            print(newInstance)
+            dependencies.setObject(newInstance, forKey: name as NSString)
             return newInstance as? T
         } else {
             return object as? T

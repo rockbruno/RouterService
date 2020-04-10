@@ -1,22 +1,56 @@
 PODS:
-  - RouterService (0.1.4):
+  - FeatureOne (0.2.0):
+    - FeatureTwoInterface
+    - HTTPClientInterface
     - RouterServiceInterface
-  - RouterServiceInterface (0.1.4)
+  - FeatureTwo (0.2.0):
+    - FeatureTwoInterface
+    - RouterServiceInterface
+  - FeatureTwoInterface (0.2.0):
+    - RouterServiceInterface
+  - HTTPClient (0.2.0):
+    - HTTPClientInterface
+    - RouterServiceInterface
+  - HTTPClientInterface (0.2.0):
+    - RouterServiceInterface
+  - RouterService (0.2.0):
+    - RouterServiceInterface
+  - RouterServiceInterface (0.2.0)
 
 DEPENDENCIES:
+  - FeatureOne (from `./FeatureOne`)
+  - FeatureTwo (from `./FeatureTwo`)
+  - FeatureTwoInterface (from `./FeatureTwoInterface`)
+  - HTTPClient (from `./HTTPClient`)
+  - HTTPClientInterface (from `./HTTPClientInterface`)
   - RouterService (from `../`)
   - RouterServiceInterface (from `../`)
 
 EXTERNAL SOURCES:
+  FeatureOne:
+    :path: "./FeatureOne"
+  FeatureTwo:
+    :path: "./FeatureTwo"
+  FeatureTwoInterface:
+    :path: "./FeatureTwoInterface"
+  HTTPClient:
+    :path: "./HTTPClient"
+  HTTPClientInterface:
+    :path: "./HTTPClientInterface"
   RouterService:
     :path: "../"
   RouterServiceInterface:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RouterService: 12146d6ad7b986f47b44451de7f0b75e6df26893
-  RouterServiceInterface: 0340ca23f58d9d332b83a22bf34c7c6da6076d3a
+  FeatureOne: 402fcd3df1db2f46a6815a2b21cbb946a21dd84d
+  FeatureTwo: 36e51d1036d4076895593a61351212ad18ef3c4c
+  FeatureTwoInterface: bf7a2bdd90bf87b1a4a61da61c097e68d2b91f4d
+  HTTPClient: c05e884a09e2f7726cae4143dbcf6c1306ba9b12
+  HTTPClientInterface: a07a8af2f406fa7f343ced88569da01c7d447f1d
+  RouterService: ffc0f9152515447d82dc1e23aefa7c4df86ca424
+  RouterServiceInterface: bba98d29717fe3780c9346ac4462aa7a9cc50ab2
 
-PODFILE CHECKSUM: 8834f96236c6fda3e8437c278c83eaab10ee3977
+PODFILE CHECKSUM: 7068e01dbb608be3a878f2a55a016d257d5d0e2a
 
 COCOAPODS: 1.9.0

@@ -2,7 +2,7 @@ import Foundation
 import RouterServiceInterface
 import UIKit
 
-public final class RouterService: RouterServiceProtocol, RouterServiceRegistrationProtocol {
+public final class RouterService: RouterServiceInterface.RouterServiceProtocol, RouterServiceRegistrationProtocol {
 
     let store: StoreInterface
     let failureHandler: () -> Void
@@ -15,9 +15,9 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
     ) {
         self.store = store ?? Store()
         self.failureHandler = failureHandler
-        register(dependencyFactory: { [weak self] in
-            self!
-        }, forType: RouterServiceProtocol.self)
+        register(dependencyFactory: { [unowned self] in
+            self
+        }, forType: RouterServiceInterface.RouterServiceProtocol.self)
     }
 
     public func register<T>(
@@ -36,7 +36,8 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
     public func navigationController<T: Feature>(
         withInitialFeature feature: T.Type
     ) -> UINavigationController {
-        let rootViewController = AnyFeature(feature).build(store, nil)
+        let feature = AnyFeature(feature)
+        let rootViewController = feature.build(store, nil)
         return UINavigationController(rootViewController: rootViewController)
     }
 
