@@ -13,7 +13,7 @@ private struct Injected<T> {
         // If you get a crash here, then your instance was not registered
         // into the RouterService being used.
         let value = store.get(T.self)
-        self.wrappedValue = value as! T
+        self.wrappedValue = value!
     }
 }
 
