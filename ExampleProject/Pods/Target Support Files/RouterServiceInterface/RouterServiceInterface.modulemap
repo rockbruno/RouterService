@@ -1,0 +1,6 @@
+framework module RouterServiceInterface {
+  umbrella header "RouterServiceInterface-umbrella.h"
+
+  export *
+  module * { export * }
+}

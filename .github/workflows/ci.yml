@@ -18,4 +18,4 @@ jobs:
     - name: Run tests
       run: make test
     - name: Check the example project
-      run: cd ./ExampleProject && make build
+      run: make check_example
