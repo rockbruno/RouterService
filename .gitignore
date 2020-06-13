@@ -25,3 +25,7 @@ DerivedData/
 
 ## Gcc Patch
 /*.gcno
+.build/
+.swiftpm/
+RouterService.xcodeproj/
+build/

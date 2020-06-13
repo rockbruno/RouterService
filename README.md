@@ -2,7 +2,7 @@
 
 RouterService is a type-safe navigation/dependency injection framework focused on making modular Swift apps have **very fast build times**. <a href="https://speakerdeck.com/amiekweon/the-evolution-of-routing-at-airbnb">Based on the system used at AirBnB presented at BA:Swiftable 2019.</a>
 
-RouterService is meant to be used as a dependency injector for <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets">modular apps where each targets contains an additional "interface" target.</a> The linked article contains more info about that, but as a summary, this parts from the principle that a feature target should never directly depend on another one. Instead, for build performance reasons, a feature only has access to another feature's **interface**, which contains RouterService's `Route` objects. Finally, RouterService takes care of executing said `Routes` by injecting the necessary dependencies into the route's destination feature.
+RouterService is meant to be used as a dependency injector for <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets">modular apps where each targets contains an additional "interface" module.</a> The linked article contains more info about that, but as a summary, this parts from the principle that a feature module should never directly depend on concrete modules. Instead, for build performance reasons, a feature only has access to another feature's **interface**, which contains protocols and other things that are unlikely to change. To link everything together, RouterService takes care of injecting the necessary concrete dependencies whenever one of these protocols is referenced.
 
 The final result is:
  - An app with a horizontal dependency graph (very fast build times!)
@@ -11,6 +11,8 @@ The final result is:
 For more information on why this architecture is beneficial for Swift apps, <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets">check the related SwiftRocks article.</a>
 
 ## How RouterService Works
+
+*(For a complete example, check this repo's example app.)*
 
 Alongside a interfaced modular app, the **RouterService** framework attempts to improve build times by **completely severing the connections between different ViewControllers.**
 A RouterService app operates like this:
@@ -68,6 +70,7 @@ In this case, the `Profile` feature will only be recompiled by external changes 
 Instead of pushing features by directly creating instances of their ViewControllers, in RouterService, the navigation is done completely through `Routes`. By themselves, `Routes` are just `Codable` structs that can hold contextual information about an action (like the previous screen that triggered this route, for analytics purposes). However, the magic comes from how they are used: `Routes` are paired with `RouteHandlers`: classes that define a list of supported `Routes` and the `Features` that should be pushed when they are executed. For example, to expose the `ProfileFeature` shown above to the rest of the app, the hypothetical `Profile` target could expose routes through a separate `ProfileInterface` target, and define a **public** `ProfileRouteHandler` struct like this:
 
 iOS Target 4: `ProfileInterface`, which depends on `RouterServiceInterface`:
+
 ```swift
 import RouterServiceInterface
 
@@ -228,6 +231,12 @@ The string format expected by the framework is a string in the `route_identifier
 
 ## Installation
 
-RouterService and its `RouterServiceInterface` interface are available through CocoaPods.
+When installing RouterService, the interface module `RouterServiceInterface` will also be installed.
+
+### Swift Package Manager
+
+`.package(url: "https://github.com/rockbruno/RouterService", .upToNextMinor(from: "0.2.0"))`
+
+### CocoaPods
 
 `pod 'RouterService'`
