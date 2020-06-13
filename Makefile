@@ -6,7 +6,7 @@ build:
 .PHONY: test
 test:
 	swift package generate-xcodeproj
-	xcodebuild test -scheme RouterService-Package -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4.1'
+	xcodebuild test -scheme RouterService-Package -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.4'
 
 .PHONY: check_example
 check_example:
