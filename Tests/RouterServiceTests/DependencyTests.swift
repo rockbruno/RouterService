@@ -11,11 +11,11 @@ final class DependencyTests: XCTestCase {
         let store = Store()
 
         var thrownMessage: String? = nil
-        let fatalError: FatalErrorClosure = { msg in
+        let failureHandler: FailureHandler = { msg in
             thrownMessage = msg
         }
 
-        let dependency = Dependency<MockConcreteDependency>(resolvedValue: nil, fatalError: fatalError)
+        let dependency = Dependency<MockConcreteDependency>(resolvedValue: nil, failureHandler: failureHandler)
 
         dependency.resolve(withStore: store)
         XCTAssertEqual(thrownMessage, "Attempted to resolve Dependency<MockConcreteDependency>, but there's nothing registered for this type.")
@@ -45,11 +45,11 @@ final class DependencyTests: XCTestCase {
         store.register({ concreteDep }, forMetaType: MockConcreteDependency.self)
 
         var thrownMessage: String? = nil
-        let fatalError: FatalErrorClosure = { msg in
+        let failureHandler: FailureHandler = { msg in
             thrownMessage = msg
         }
 
-        let dependency = Dependency<MockConcreteDependency>(resolvedValue: nil, fatalError: fatalError)
+        let dependency = Dependency<MockConcreteDependency>(resolvedValue: nil, failureHandler: failureHandler)
 
         dependency.resolve(withStore: store)
         XCTAssertNil(thrownMessage)
