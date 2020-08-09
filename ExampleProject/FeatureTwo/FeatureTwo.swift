@@ -1,20 +1,11 @@
 import RouterServiceInterface
 
-final class FeatureTwo: Feature {
+struct FeatureTwo: Feature {
 
-    struct Dependencies {
-        let routerService: RouterServiceProtocol
-    }
+    @Dependency var routerService: RouterServiceProtocol
 
-    static func build(
-        dependencies: FeatureTwo.Dependencies,
-        fromRoute route: Route?
-    ) -> UIViewController {
+    func build(fromRoute route: Route?) -> UIViewController {
         return FeatureTwoViewController(route: route)
-    }
-
-    static var dependenciesInitializer: AnyDependenciesInitializer {
-        return AnyDependenciesInitializer(singleDependencyStruct: Dependencies.init)
     }
 }
 

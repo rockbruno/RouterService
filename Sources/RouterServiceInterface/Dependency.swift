@@ -1,30 +1,42 @@
 import Foundation
 
-public protocol Dependency: AnyObject {}
+protocol Resolvable {
+    func resolve(withStore store: StoreInterface)
+}
+
+public typealias FatalErrorClosure = (String) -> Void
 
 @propertyWrapper
-public final class EXP_Dependency<T> {
-    private var __resolvedValue: T!
+public final class Dependency<T>: Resolvable {
+
+    let fatalError: FatalErrorClosure
+
+    private(set) var resolvedValue: T!
     public var wrappedValue: T {
-        guard let value = __resolvedValue else {
-            preconditionFailure("Attempted to use \(type(of: self)) without resolving it first!")
+        if resolvedValue == nil {
+            fatalError("Attempted to use \(type(of: self)) without resolving it first!")
         }
-        return value
+        return resolvedValue
     }
 
-    public init(wrappedValue: T) {
-        self.__resolvedValue = wrappedValue
+    public init(resolvedValue: T?, fatalError: @escaping FatalErrorClosure = { msg in preconditionFailure(msg) }) {
+        self.resolvedValue = resolvedValue
+        self.fatalError = fatalError
     }
 
-    public init() {}
+    public convenience init() {
+        self.init(resolvedValue: nil)
+    }
 
     public func resolve(withStore store: StoreInterface) {
-        guard __resolvedValue == nil else {
-            preconditionFailure("Attempted to resolve \(type(of: self)) twice!")
+        guard resolvedValue == nil else {
+            fatalError("Attempted to resolve \(type(of: self)) twice!")
+            return
         }
         guard let value = store.get(T.self) else {
-            preconditionFailure("Attempted to resolve \(type(of: self)), but there's nothing registered for this type.")
+            fatalError("Attempted to resolve \(type(of: self)), but there's nothing registered for this type.")
+            return
         }
-        __resolvedValue = value
+        resolvedValue = value
     }
 }

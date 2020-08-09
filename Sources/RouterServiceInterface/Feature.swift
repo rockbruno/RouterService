@@ -1,20 +1,22 @@
 import UIKit
 
 public protocol Feature {
-    associatedtype Dependencies
-
-    static var dependenciesInitializer: AnyDependenciesInitializer { get }
-
-    static func build(
-        dependencies: Dependencies,
-        fromRoute route: Route?
-    ) -> UIViewController
-}
-
-public protocol EXPR_Feature {
     func build(
         fromRoute route: Route?
     ) -> UIViewController
 
-    func setup(withStore store: StoreInterface)
+    func resolve(withStore store: StoreInterface)
+
+    init()
+}
+
+extension Feature {
+    public func resolve(withStore store: StoreInterface) {
+        let mirror = Mirror(reflecting: self)
+        for children in mirror.children {
+            if let resolvable = children.value as? Resolvable {
+                resolvable.resolve(withStore: store)
+            }
+        }
+    }
 }

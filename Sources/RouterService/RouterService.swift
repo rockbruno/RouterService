@@ -33,11 +33,11 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
         }
     }
 
-    public func navigationController<T: Feature>(
-        withInitialFeature feature: T.Type
+    public func navigationController(
+        withInitialFeature feature: Feature.Type
     ) -> UINavigationController {
-        let feature = AnyFeature(feature)
-        let rootViewController = feature.build(store, nil)
+        let instance = feature.initialize(withStore: store)
+        let rootViewController = instance.build(fromRoute: nil)
         return UINavigationController(rootViewController: rootViewController)
     }
 
@@ -51,12 +51,13 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
             failureHandler()
             return
         }
-        let newVC = handler.destination(
+        let destinationFeatureType = handler.destination(
             forRoute: route,
             fromViewController: viewController
-        ).build(store, route)
+        )
+        let destinationFeature = destinationFeatureType.initialize(withStore: store)
         presentationStyle.present(
-            viewController: newVC,
+            viewController: destinationFeature.build(fromRoute: route),
             fromViewController: viewController,
             animated: animated
         )

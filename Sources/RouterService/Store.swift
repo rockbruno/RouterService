@@ -17,7 +17,7 @@ final class Store: StoreInterface {
             guard let factory: DependencyFactory = dependencyCreators[name] else {
                 return nil
             }
-            let newInstance: Dependency = factory()
+            let newInstance: AnyObject = factory()
             dependencies.setObject(newInstance, forKey: name as NSString)
             return newInstance as? T
         } else {

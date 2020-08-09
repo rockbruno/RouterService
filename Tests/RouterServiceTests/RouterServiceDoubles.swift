@@ -1,7 +1,7 @@
 import RouterServiceInterface
 import UIKit
 
-protocol MockDependencyProtocol: Dependency {}
+protocol MockDependencyProtocol {}
 
 enum RouterServiceDoubles {
     final class MockConcreteDependency: MockDependencyProtocol {
@@ -13,21 +13,19 @@ enum RouterServiceDoubles {
 }
 
 extension RouterServiceDoubles {
-    enum FeatureSpy: Feature {
-        struct Dependencies {
+    struct FeatureSpy: Feature {
+
+        @Dependency var concreteDep: MockConcreteDependency
+        @Dependency var protocolDep: MockDependencyProtocol
+
+        struct _Dependencies {
             let concreteDep: MockConcreteDependency
             let protocolDep: MockDependencyProtocol
         }
 
-        static func build(
-            dependencies: FeatureSpy.Dependencies,
-            fromRoute route: Route?
-        ) -> UIViewController {
-            return FeatureViewControllerSpy(dependencies: dependencies, route: route)
-        }
-
-        static var dependenciesInitializer: AnyDependenciesInitializer {
-            return AnyDependenciesInitializer(Dependencies.init)
+        func build(fromRoute route: Route?) -> UIViewController {
+            let dep = _Dependencies(concreteDep: concreteDep, protocolDep: protocolDep)
+            return FeatureViewControllerSpy(dependencies: dep, route: route)
         }
     }
 
@@ -84,8 +82,8 @@ extension RouterServiceDoubles {
         func destination(
             forRoute route: Route,
             fromViewController viewController: UIViewController
-        ) -> AnyFeature {
-            return AnyFeature(FeatureSpy.self)
+        ) -> Feature.Type {
+            return FeatureSpy.self
         }
     }
 
@@ -101,25 +99,19 @@ extension RouterServiceDoubles {
         func destination(
             forRoute route: Route,
             fromViewController viewController: UIViewController
-        ) -> AnyFeature {
-            return AnyFeature(FeatureSpy.self)
+        ) -> Feature.Type {
+            return FeatureSpy.self
         }
     }
 }
 
 extension RouterServiceDoubles {
-    enum FeatureSpyWithNoDependencies: Feature {
-        struct Dependencies {}
+    struct FeatureSpyWithNoDependencies: Feature {
 
-        static func build(
-            dependencies: FeatureSpyWithNoDependencies.Dependencies,
-            fromRoute route: Route?
-        ) -> UIViewController {
-            return FeatureViewControllerSpy(dependencies: dependencies, route: route)
-        }
+        struct _Dependencies {}
 
-        static var dependenciesInitializer: AnyDependenciesInitializer {
-            return AnyDependenciesInitializer(Dependencies.init)
+        func build(fromRoute route: Route?) -> UIViewController {
+            return FeatureViewControllerSpy(dependencies: _Dependencies(), route: route)
         }
     }
 }

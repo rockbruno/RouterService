@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-public protocol RouterServiceProtocol: Dependency, RouterServiceAnyRouteDecodingProtocol {
+public protocol RouterServiceProtocol: RouterServiceAnyRouteDecodingProtocol {
     func navigate(
         toRoute route: Route,
         fromView viewController: UIViewController,
@@ -10,7 +10,7 @@ public protocol RouterServiceProtocol: Dependency, RouterServiceAnyRouteDecoding
     )
 }
 
-public typealias DependencyFactory = () -> Dependency
+public typealias DependencyFactory = () -> AnyObject
 
 public protocol RouterServiceRegistrationProtocol {
     func register<T>(dependencyFactory: @escaping DependencyFactory, forType metaType: T.Type)

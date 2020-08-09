@@ -6,5 +6,5 @@ public protocol RouteHandler {
     func destination(
         forRoute route: Route,
         fromViewController viewController: UIViewController
-    ) -> AnyFeature
+    ) -> Feature.Type
 }
