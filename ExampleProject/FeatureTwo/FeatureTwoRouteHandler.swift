@@ -10,11 +10,11 @@ public class FeatureTwoRouteHandler: RouteHandler {
     public func destination(
         forRoute route: Route,
         fromViewController viewController: UIViewController
-    ) -> AnyFeature {
+    ) -> Feature.Type {
         guard route is FeatureTwoRoute else {
             preconditionFailure("unexpected route")
         }
-        return AnyFeature(FeatureTwo.self)
+        return FeatureTwo.self
     }
 
     public init() {}
