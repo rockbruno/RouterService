@@ -10,3 +10,11 @@ public protocol Feature {
         fromRoute route: Route?
     ) -> UIViewController
 }
+
+public protocol EXPR_Feature {
+    func build(
+        fromRoute route: Route?
+    ) -> UIViewController
+
+    func setup(withStore store: StoreInterface)
+}
