@@ -6,11 +6,6 @@ struct SwiftRocksFeature: Feature {
     @Dependency var client: HTTPClientProtocol
     @Dependency var persistence: PersistenceProtocol
     @Dependency var routerService: RouterServiceProtocol
-    @Dependency var featureFlag: FeatureFlagProtocol
-
-    func isEnabled() -> Bool { 
-        featureFlag.isEnabled()
-    }
 
     func build(fromRoute route: Route?) -> UIViewController {
         return SwiftRocksViewController(
@@ -247,6 +242,36 @@ The string format expected by the framework is a string in the `route_identifier
     "anyRoute": "profile_mainroute|{\"analyticsContext\": \"Home\"}"
 }
 ```
+
+## FlaggableFeature
+
+In cases you need to have a toggle control of your feature you can use `FlaggableFeature` protocol.
+`FlaggableFeature` should be conformed instead of `Feature` when toggle control is necessary.
+`isEnabled() -> Bool` provides information for **RouterService** when the feature is enabled or not. We really recommend you have the toggle controls (Feature Flag Provider, Remote Config Provider, User Defaults, etc) as your feature `@Dependency` for you can use very easily into the method.
+And `Feature's` `buildFallback(_:)` method it's also mandatory when conformed with `FlaggableFeature` and not nil, because RouterService must receive and present a valid context. For example:
+```swift
+struct ProfileFeature: FlaggableFeature {
+
+    @Dependency var featureFlag: FeatureFlagProtocol
+
+    public func isEnabled() -> Bool {
+        return featureFlag.isEnabled()
+    }
+
+    public func buildFallback(fromRoute route: Route?) -> UIViewController {
+        return FallbackController()
+    }
+
+    public func build(fromRoute route: Route?) -> UIViewController {
+        return MainViewController(
+            httpClient: httpClient,
+            routerService: routerService
+        )
+    }
+}
+```
+
+**RouterService** validates if the feature should be presented is a **FlaggableFeature** type conformed, if it true we check if feature **isEnabled()**, if not we present fallback UIViewController, if it's true we just build the feature and present it.
 
 ## Installation
 
