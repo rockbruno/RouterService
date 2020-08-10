@@ -10,6 +10,9 @@ target 'RouterServiceExampleApp' do
     pod 'HTTPClientInterface', :path => "./HTTPClientInterface"
     pod 'HTTPClient', :path => "./HTTPClient"
 
+    pod 'FeatureFlagInterface', :path => "./FeatureFlagInterface"
+    pod 'FeatureFlag', :path => "./FeatureFlag"
+
     pod 'FeatureTwoInterface', :path => "./FeatureTwoInterface"
     pod 'FeatureTwo', :path => "./FeatureTwo"
 

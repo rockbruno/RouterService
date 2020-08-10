@@ -6,6 +6,11 @@ struct SwiftRocksFeature: Feature {
     @Dependency var client: HTTPClientProtocol
     @Dependency var persistence: PersistenceProtocol
     @Dependency var routerService: RouterServiceProtocol
+    @Dependency var featureFlag: FeatureFlagProtocol
+
+    func isEnabled() -> Bool { 
+        featureFlag.isEnabled()
+    }
 
     func build(fromRoute route: Route?) -> UIViewController {
         return SwiftRocksViewController(

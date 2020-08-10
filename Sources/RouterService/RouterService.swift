@@ -56,8 +56,16 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
             fromViewController: viewController
         )
         let destinationFeature = destinationFeatureType.initialize(withStore: store)
+        let viewController: UIViewController
+        
+        if let destinationFlaggableFeature = destinationFeature as? FlaggableFeature, !destinationFlaggableFeature.isEnabled() {
+            viewController = destinationFlaggableFeature.buildFallback(fromRoute: route)
+        } else {
+            viewController = destinationFeature.build(fromRoute: route)
+        }
+
         presentationStyle.present(
-            viewController: destinationFeature.build(fromRoute: route),
+            viewController: viewController,
             fromViewController: viewController,
             animated: animated
         )
