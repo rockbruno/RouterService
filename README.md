@@ -1,4 +1,21 @@
-# Router Service
+# RouterService
+
+```swift
+struct SwiftRocksFeature: Feature {
+
+    @Dependency var client: HTTPClientProtocol
+    @Dependency var persistence: PersistenceProtocol
+    @Dependency var routerService: RouterServiceProtocol
+
+    func build(fromRoute route: Route?) -> UIViewController {
+        return SwiftRocksViewController(
+            client: client,
+            persistence: persistence,
+            routerService: routerService,
+        )
+    }
+}
+```
 
 RouterService is a type-safe navigation/dependency injection framework focused on making modular Swift apps have **very fast build times**. <a href="https://speakerdeck.com/amiekweon/the-evolution-of-routing-at-airbnb">Based on the system used at AirBnB presented at BA:Swiftable 2019.</a>
 
@@ -8,70 +25,66 @@ The final result is:
  - An app with a horizontal dependency graph (very fast build times!)
  - Dynamic navigation (any screen can be pushed from anywhere!)
 
-For more information on why this architecture is beneficial for Swift apps, <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets">check the related SwiftRocks article.</a>
+For more information on this architecture, <a href="https://swiftrocks.com/reducing-ios-build-times-by-using-interface-targets">check the related SwiftRocks article.</a>
 
 ## How RouterService Works
 
 *(For a complete example, check this repo's example app.)*
 
-Alongside a interfaced modular app, the **RouterService** framework attempts to improve build times by **completely severing the connections between different ViewControllers.**
-A RouterService app operates like this:
+RouterService works through the concept of `Features` -- which are `structs` that can create ViewControllers after being given access to whatever dependencies it needs to do that. Here's an example of how we can create an "user profile feature" using this format.
 
-- A "dependency" is described through the `Dependency` protocol, which describes any class type that can be needed by a feature at some point in time, such as a HTTP client. ("additional parameters" like a screen's "context string" **are not** dependencies, only shared `class` objects.)
-- A `Feature` is a caseless `enum` that, given a list of dependencies, creates a ViewController. Here's an example of how we can create a "profile feature" using this format in a modular Xcode project: (don't worry about how this is wrapped up -- we'll see that soon)
-
-iOS Target 1: `HTTPClientInterface`, which imports `RouterServiceInterface`:
+This feature requires access to a HTTP client, so we'll first define that. Since a modular app with interface targets should separate the protocol from the implementation, our first module will be a `HTTPClientInterface` that exposes the client protocol:
 
 ```swift
-import RouterServiceInterface
+// Module 1: HTTPClientInterface
 
-public protocol HTTPClientProtocol: Dependency { /* Client stuff */ }
+public protocol HTTPClientProtocol: AnyObject { /* Client stuff */ }
 ```
 
-iOS Target 2: A **private** concrete `HTTPClient`, which imports `HTTPClientInterface`:
+From the interface, let's now create a **concrete** `HTTPClient` module that implements it:
 
 ```swift
+// Module 2: HTTPClient
+
 import HTTPClientInterface
 
 private class HTTPClient: HTTPClientProtocol { /* Implementation of the client stuff */ }
 ```
 
-iOS Target 3: A **private** `Profile`, which imports `HTTPClientInterface` and `RouterServiceInterface`, **but not their concrete versions**:
+We're now ready to define our Profile RouterService feature. At a new `Profile` module, we can create a `Feature` struct that has the client's protocol as a dependency.
+To have access to the protocol, the `Profile` module will import the dependency's interface.
 
 ```swift
+// Module 3: Profile
+
 import HTTPClientInterface
 import RouterServiceInterface
 
-private enum ProfileFeature: Feature {
-    struct Dependencies {
-        let client: HTTPClientProtocol
-        let routerService: RouterServiceProtocol
-    }
+struct ProfileFeature: Feature {
 
-    static var dependenciesInitializer: AnyDependenciesInitializer {
-        return AnyDependenciesInitializer(Dependencies.init)
-    }
+    @Dependency var client: HTTPClientProtocol
 
-    static func build(
-        dependencies: ProfileFeature.Dependencies,
-        fromRoute route: Route?
-    ) -> UIViewController {
-        return ProfileViewController(dependencies: dependencies)
+    func build(fromRoute route: Route?) -> UIViewController {
+        return ProfileViewController(client: client)
     }
 }
 ```
 
-Because the `Profile` feature enum is isolated from the concrete `HTTPClient` target, changes made to the client **will not recompile** the `Profile` target, as the real instances are injected in runtime by the RouterService. If you multiply this by hundreds of protocols and dozens of features, you will get a massive build time improvement in your app!
+Because the `Profile` feature doesn't import the concrete `HTTPClient` module, changes made to them **will not recompile** the `Profile` module. Instead, RouterService will inject the concrete objects in runtime. If you multiply this by hundreds of protocols and dozens of features, you will get a massive build time improvement in your app!
 
 In this case, the `Profile` feature will only be recompiled by external changes if the interface protocols themselves are changed -- which should be considerably rarer than changes to their concrete counterparts.
 
+Let's now see how we can tell RouterService to push `ProfileFeature`'s ViewController.
+
 ## Routes
 
-Instead of pushing features by directly creating instances of their ViewControllers, in RouterService, the navigation is done completely through `Routes`. By themselves, `Routes` are just `Codable` structs that can hold contextual information about an action (like the previous screen that triggered this route, for analytics purposes). However, the magic comes from how they are used: `Routes` are paired with `RouteHandlers`: classes that define a list of supported `Routes` and the `Features` that should be pushed when they are executed. For example, to expose the `ProfileFeature` shown above to the rest of the app, the hypothetical `Profile` target could expose routes through a separate `ProfileInterface` target, and define a **public** `ProfileRouteHandler` struct like this:
+Instead of pushing features by directly creating instances of their ViewControllers, in RouterService, the navigation is done completely through `Routes`. By themselves, `Routes` are just `Codable` structs that can hold contextual information about an action (like the previous screen that triggered this route, for analytics purposes). However, the magic comes from how they are used: `Routes` are paired with `RouteHandlers`: classes that define a list of supported `Routes` and the `Features` that should be pushed when they are executed. 
 
-iOS Target 4: `ProfileInterface`, which depends on `RouterServiceInterface`:
+For example, to expose the `ProfileFeature` shown above to the rest of the app, the hypothetical `Profile` target should first expose a route in a separate `ProfileInterface` target:
 
 ```swift
+// Module 4: ProfileInterface
+
 import RouterServiceInterface
 
 struct ProfileRoute: Route {
@@ -80,7 +93,7 @@ struct ProfileRoute: Route {
 }
 ```
 
-iOS Target 3: The concrete `Profile` that we have created before, but now also depending on `ProfileInterface`:
+Now, at the concrete `Profile` target, we can define a `ProfileRouteHandler` that connects it to the `ProfileFeature`.
 
 ```swift
 import ProfileInterface
@@ -94,31 +107,34 @@ public final class ProfileRouteHandler: RouteHandler {
     public func destination(
         forRoute route: Route,
         fromViewController viewController: UIViewController
-    ) -> AnyFeature {
+    ) -> Feature.Type {
         guard route is ProfileRoute else {
             preconditionFailure() // unexpected route sent to this handler
         }
-        return AnyFeature(ProfileFeature.self)
+        return ProfileFeature.self
     }
 }
 ```
 
-`RouteHandlers` are designed to handle multiple `Routes`. If a specific feature target contains multiple ViewControllers, the intended usage is for you to have a single `RouteHandler` in that target that handles all of the possibles `Routes`.
+`RouteHandlers` are designed to handle multiple `Routes`. If a specific feature target contains multiple ViewControllers, you can have a single `RouteHandler` in that target that handles all of the possibles `Routes`.
 
-To push a new `Feature`, all a `Feature` has to do is import the desired `Feature`'s interface and call the `RouterServiceProtocol` `navigate(_:)` method. `RouterServiceProtocol`, the interface protocol of the RouterService framework, is acessible in all features as a dependency.
+To push a new `Feature`, all a `Feature` has to do is import the module that contains the desired `Route` and call the `RouterServiceProtocol` `navigate(_:)` method. `RouterServiceProtocol`, the interface protocol of the RouterService framework, can be added as a dependency of features for this purpose.
 
-Assuming we also created some hypothetical `LoginFeature` alongside our `ProfileFeature`, here's how we could push `LoginFeature`'s ViewController from `ProfileFeature`'s target:
+Assuming we also created some hypothetical `LoginFeature` alongside our `ProfileFeature`, here's how we could push `LoginFeature`'s ViewController from the `ProfileFeature`:
 
 ```swift
 import LoginInterface
 import RouterServiceInterface
+import HTTPClientInterface
 import UIKit
 
 final class ProfileViewController: UIViewController {
-    let dependencies: ProfileFeature.Dependencies
+    let client: HTTPClientProtocol
+    let routerService: RouterServiceProtocol
 
-    init(dependencies: ProfileFeature.Dependencies) {
-        self.dependencies = dependencies
+    init(client: HTTPClientProtocol, routerService, RouterServiceProtocol) {
+        self.client = client
+        self.routerService = routerService
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -134,15 +150,13 @@ final class ProfileViewController: UIViewController {
 }
 ```
 
-Again, as `Profile` does not directly imports the concrete `SomeLogin` target, changes made to it will not recompile `Profile` unless the interface itself is changed. The ViewController that is going to be pushed will be defined by the `Feature` that is returned by `LoginFeature`'s registered `RouteHandler` for that specific route.
-
 ## Wrapping everything up
 
 If all features are isolated, how do you start the app?
 
-While the features are isolated from the other targets, you should have a "main" target that imports everything and everyone, ideally the same target that contains your `AppDelegate` to minimize possible build time impacts. This should be the only target capable of importing concrete targets. 
+While the features are isolated from other concrete targets, you should have a "main" target that imports everything and everyone (for example, your AppDelegate). This should be the only target capable of importing concrete targets. 
 
-From there, you can create a concrete instance of your `RouterService`, register everyone's `RouteHandlers` and `Dependencies` and start the navigation process loop by calling `RouterService's`: `navigationController(_:)` method (if you need a navigation), or by manually calling a `Feature's` `build(_:)` method.
+From there, you can create a concrete instance of `RouterService`, register everyone's `RouteHandlers` and dependencies and start the navigation process loop by calling `RouterService's`: `navigationController(_:)` method (if you need a navigation), or by manually calling a `Feature's` `build(_:)` method.
 
 ```swift
 import HTTPClient
@@ -235,7 +249,7 @@ When installing RouterService, the interface module `RouterServiceInterface` wil
 
 ### Swift Package Manager
 
-`.package(url: "https://github.com/rockbruno/RouterService", .upToNextMinor(from: "0.2.0"))`
+`.package(url: "https://github.com/rockbruno/RouterService", .upToNextMinor(from: "1.0.0"))`
 
 ### CocoaPods
 

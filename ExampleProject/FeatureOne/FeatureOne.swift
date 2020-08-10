@@ -7,8 +7,6 @@ public struct FeatureOne: Feature {
     @Dependency var httpClient: HTTPClientProtocol
     @Dependency var routerService: RouterServiceProtocol
 
-    // This is just public because this specific example initializes the feature directly instead of using a route.
-    // Otherwise, this would look exactly like FeatureTwo.
     public init() {}
 
     public func build(fromRoute route: Route?) -> UIViewController {
