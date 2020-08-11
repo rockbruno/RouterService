@@ -78,12 +78,14 @@ extension RouterServiceDoubles {
         var routes: [Route.Type] {
             return [MockRouteFromFooHandler.self, AnotherMockRouteFromFooHandler.self, MockRouteFromFooHandlerWithParams.self]
         }
+        
+        var featureTypeToBeReturned: Feature.Type?
 
         func destination(
             forRoute route: Route,
             fromViewController viewController: UIViewController
         ) -> Feature.Type {
-            return FeatureSpy.self
+            return featureTypeToBeReturned ?? FeatureSpy.self
         }
     }
 
@@ -112,6 +114,58 @@ extension RouterServiceDoubles {
 
         func build(fromRoute route: Route?) -> UIViewController {
             return FeatureViewControllerSpy(dependencies: _Dependencies(), route: route)
+        }
+    }
+}
+
+extension RouterServiceDoubles {
+    final class FeatureSpyDisabled: Feature {
+        struct _Dependencies {}
+        
+        init() {}
+        
+        func build(fromRoute route: Route?) -> UIViewController {
+            let dep = _Dependencies()
+            return FeatureDisabledViewControllerSpy(dependencies: dep, route: route)
+        }
+        
+        func isEnabled() -> Bool {
+            return false
+        }
+        
+        func fallback(forRoute route: Route?) -> Feature.Type? {
+            return FeatureSpy.self
+        }
+    }
+    
+    final class FeatureSpyDisabledWithouFallback: Feature {
+        struct _Dependencies {}
+        
+        init() {}
+        
+        func build(fromRoute route: Route?) -> UIViewController {
+            let dep = _Dependencies()
+            return FeatureDisabledViewControllerSpy(dependencies: dep, route: route)
+        }
+        
+        func isEnabled() -> Bool {
+            return false
+        }
+    }
+    
+    final class FeatureDisabledViewControllerSpy: UIViewController {
+
+        private(set) var dependenciesPassed: Any?
+        private(set) var routePassed: Route?
+
+        init(dependencies: Any?, route: Route?) {
+            self.dependenciesPassed = dependencies
+            self.routePassed = route
+            super.init(nibName: nil, bundle: nil)
+        }
+
+        required init?(coder: NSCoder) {
+            fatalError()
         }
     }
 }
