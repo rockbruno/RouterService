@@ -2,31 +2,32 @@ import RouterServiceInterface
 import HTTPClientInterface
 import FeatureTwoInterface
 
-public final class FeatureOne: Feature {
+public struct FeatureOne: Feature {
 
-    public struct Dependencies {
-        let httpClient: HTTPClientProtocol
-        let routerService: RouterServiceInterface.RouterServiceProtocol
-    }
+    @Dependency var httpClient: HTTPClientProtocol
+    @Dependency var routerService: RouterServiceProtocol
 
-    public static func build(
-        dependencies: FeatureOne.Dependencies,
-        fromRoute route: Route?
-    ) -> UIViewController {
-        return MainViewController(dependencies: dependencies)
-    }
+    public init() {}
 
-    public static var dependenciesInitializer: AnyDependenciesInitializer {
-        return AnyDependenciesInitializer(Dependencies.init)
+    public func build(fromRoute route: Route?) -> UIViewController {
+        return MainViewController(
+            httpClient: httpClient,
+            routerService: routerService
+        )
     }
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
-    let dependencies: FeatureOne.Dependencies
+    let httpClient: HTTPClientProtocol
+    let routerService: RouterServiceProtocol
 
-    init(dependencies: FeatureOne.Dependencies) {
-        self.dependencies = dependencies
+    init(
+        httpClient: HTTPClientProtocol,
+        routerService: RouterServiceProtocol
+    ) {
+        self.httpClient = httpClient
+        self.routerService = routerService
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -36,15 +37,16 @@ class MainViewController: UIViewController {
 
     override func loadView() {
         let view = UIView()
+
         view.backgroundColor = .white
         let httpLabel = UILabel()
-        httpLabel.text = "\(dependencies.httpClient)"
+        httpLabel.text = "\(httpClient)"
         view.addSubview(httpLabel)
         httpLabel.translatesAutoresizingMaskIntoConstraints = false
         httpLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         httpLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         let routerLabel = UILabel()
-        routerLabel.text = "\(dependencies.routerService)"
+        routerLabel.text = "\(routerService)"
         view.addSubview(routerLabel)
         routerLabel.translatesAutoresizingMaskIntoConstraints = false
         routerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -60,7 +62,7 @@ class MainViewController: UIViewController {
     }
 
     @objc private func goToFeatureTwo() {
-        dependencies.routerService.navigate(
+        routerService.navigate(
             toRoute: FeatureTwoRoute(),
             fromView: self,
             presentationStyle: Push(),

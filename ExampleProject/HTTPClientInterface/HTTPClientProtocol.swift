@@ -1,3 +1,3 @@
 import RouterServiceInterface
 
-public protocol HTTPClientProtocol: Dependency {}
+public protocol HTTPClientProtocol {}
