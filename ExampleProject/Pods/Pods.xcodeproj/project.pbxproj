@@ -7,231 +7,230 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002A2865494E1E1D14B23F5214297514 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A8747E827F7B3B25B37886CB14BAB0 /* PresentationStyle.swift */; };
 		07E5FADDC270D914027378F1D7577EFF /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
-		090EDE541734EF60B51FE555D4FD6E9E /* FeatureFlagInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74D4E36FEA9BC77FDD717D395F329A /* FeatureFlagInterface-dummy.m */; };
-		093602738E558B2A3F1915B018C090E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38B5B2DED4D69C56F3A4D7268460B16 /* HTTPClient.swift */; };
-		102701B625AF3BDAAFA125E946514623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
+		093602738E558B2A3F1915B018C090E8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6186416A1CF4091EEB8C300FC99D1E5E /* HTTPClient.swift */; };
+		0D8E67EFD91E863D20291BE19591209E /* FeatureTwoRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD41E0F6CB3C8CAFA8840C8C1A1962 /* FeatureTwoRoute.swift */; };
 		106107B056C616CFC58013106467B679 /* FeatureTwoInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D391DD72C07CC28ACCDF09F5C421F2 /* FeatureTwoInterface.framework */; };
-		12D162996EB50EEF76F7CD8014F29D9F /* FeatureTwoInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 298335E2F649946C54C97FB374214CE5 /* FeatureTwoInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		153E439AA3C9566D8F626B78A5B10F04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		16C2BB3C833D82404E25F90539D6D08B /* FeatureFlag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63AF05FE3209E0A6B47416EFA5B177 /* FeatureFlag-dummy.m */; };
+		11A9EB5D6044BB0F6FC6D5B2061D5FFC /* RouterServiceInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A814E92D02D9DFCD5F879D5C6EEBBFB4 /* RouterServiceInterface-dummy.m */; };
+		14D596AE8C9367B3A1FE24E275660F5D /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
+		16C2BB3C833D82404E25F90539D6D08B /* FeatureFlag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6E8315E7A999FED187D31D96EFB8DC /* FeatureFlag-dummy.m */; };
 		1FA4D7CF0F764D83932F6C212801249B /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
 		23A004C842635EF62E2516CBC05AF6EE /* Pods-RouterServiceExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A98D125D96FF76297B3FF60636018A6B /* Pods-RouterServiceExampleApp-dummy.m */; };
-		2493D00CDFDE4887EDF3D10ADAE82350 /* FeatureTwo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B0F107659A91600C391C40E4481DAB /* FeatureTwo-dummy.m */; };
-		2D2827F0C0CC2EBEB58E8FE650BC7920 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9995C3C3A395A1E073C037C23F3A8BE8 /* Dependency.swift */; };
-		2DD889545FE2873F8DBCA5A5C10ABA58 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328BB7AAB8CD5B563BB254C7FA1B20E0 /* AnyRoute.swift */; };
-		2FA73E2CA2F54192D0C1A186E0BA5819 /* RouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A37688B872D3E434787F9535B38846 /* RouterService.swift */; };
-		34809646785C96053682068F4E10BF16 /* RouterService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D232609E5A3BF3D4C40B739E0C69649A /* RouterService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BF1A527E2F7863A72880A5DC5657BFF /* FeatureTwoRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D5E212B12AD29E0586DB7F0058264 /* FeatureTwoRoute.swift */; };
-		3DB58CE4ADD9C52F2F63B9C376ED9676 /* FeatureFlagProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C2904599C5025E7B9BB0513D1A7C0F /* FeatureFlagProtocol.swift */; };
-		40C0AF2797E078BCAB484496E2CE91A6 /* AnyRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581BD828246F001CE60D13285D9B9D2C /* AnyRouteType.swift */; };
-		412EA8BF122A79D7CA2C67D645BF2A72 /* RouterServiceInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8D06ED4B2E531A1063671CDB5F6291 /* RouterServiceInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43BCE3322DC87D94E3E57AFBBA2C3F57 /* FeatureTwoInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F306B91529FC6B9B1DC6DE00323E5B5 /* FeatureTwoInterface-dummy.m */; };
-		4492AE265284BBEF4A23F4B0653D6211 /* FeatureOne-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8B4B76211F0114AA27874B7E722F2C /* FeatureOne-dummy.m */; };
-		46124BA40E39E2EB8DEE1739562CE0BD /* FeatureTwoRouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE344AA9B66FF56B238BE073E9E5DB /* FeatureTwoRouteHandler.swift */; };
-		5853F2FCCC419A5391BD2BFD3F5DA16E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A88D6BD69FA18AA7B3FDD9C4BB0FC /* Route.swift */; };
-		5960E1186AA4307A402D19A912C7CE6E /* RouterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B493B3CF14A327DE699E76D5012751 /* RouterServiceProtocol.swift */; };
-		5DCAAF5E1328855D4AE0CEC1072705A3 /* FeatureBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E43C2C8E974BF853D96C9F750A2D2 /* FeatureBuilding.swift */; };
+		23A3549969DF48767BBB4210F7D173E2 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45D88F8A7E202EDB0D5F0C4D7506E5 /* AnyRoute.swift */; };
+		2493D00CDFDE4887EDF3D10ADAE82350 /* FeatureTwo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D15073C26DAD3DE363F097FD96E8EDD2 /* FeatureTwo-dummy.m */; };
+		2DB0195F826474C0B5F8165687FB6FD3 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
+		2E2C87BBE29BFAA54D29CF725ED1B21B /* StoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4C8ED49D107FCCE01BB2FF65DB7B53 /* StoreInterface.swift */; };
+		2FA73E2CA2F54192D0C1A186E0BA5819 /* RouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE00BA2D58A25CE254CE4F8679755B5 /* RouterService.swift */; };
+		34809646785C96053682068F4E10BF16 /* RouterService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D196F678B18FEB55D3E85308B596C78 /* RouterService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C0AF2797E078BCAB484496E2CE91A6 /* AnyRouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF6F52EA81295EA1AF756D759CF60D /* AnyRouteType.swift */; };
+		42F521A0143DABFC16A8C4993EA55AFB /* HTTPClientInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 086F91FBDE4F4D945E882E83A18D2134 /* HTTPClientInterface-dummy.m */; };
+		4492AE265284BBEF4A23F4B0653D6211 /* FeatureOne-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7259CA8A892487A00B15121262008C6 /* FeatureOne-dummy.m */; };
+		46124BA40E39E2EB8DEE1739562CE0BD /* FeatureTwoRouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6967F884CF9696A5A1C251E41DE238F /* FeatureTwoRouteHandler.swift */; };
+		46B56C4D4CF825D5E641BEC010BA809D /* HTTPClientInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7F848709BB3136F302FAABCD41796D /* HTTPClientInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4753BA0D7B2BEAE270BB4F44757A6DBF /* RouterServiceInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2C62F8B58F375FF4888288B26CE967 /* RouterServiceInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC32A39B114ADAA0522B8492D9BB2D1 /* FeatureFlagInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 515EE2B907CD898301B6F41E29396352 /* FeatureFlagInterface-dummy.m */; };
+		53756F8DFD351869C6CCF57CCB504934 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
+		5DCAAF5E1328855D4AE0CEC1072705A3 /* FeatureBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE24530A101A566B05191F0CFFB404F /* FeatureBuilding.swift */; };
+		5FDF4F4C3DFF409692C354E1CC667C03 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607917CCAA4CC54AAA33DB93D861FF9 /* PresentationStyle.swift */; };
 		65103FD95D0A012C7B5B0006062C3891 /* Pods-RouterServiceExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31CBB58A10096D1E05EBFD9144CB3308 /* Pods-RouterServiceExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65844658867891404D60D2D0D354BD47 /* HTTPClientInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 054E7DDF476C75C3AC163416D85EA9F0 /* HTTPClientInterface-dummy.m */; };
-		67B9CAF2F19AEA5753F568E46B42657E /* HTTPClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96907F7C8421B3D158BA456834207E4F /* HTTPClient-dummy.m */; };
+		67B9CAF2F19AEA5753F568E46B42657E /* HTTPClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B80982A79F8254B24C9AC60F30D01E6E /* HTTPClient-dummy.m */; };
 		6B86001FA9E082481F1E903340CE376C /* HTTPClientInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48A7BCC6425DD15BF5CD87AA38B78D /* HTTPClientInterface.framework */; };
-		6DB481A5535E4C4B9507C39472965D26 /* FeatureOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE8006DEF3CF8CC65F796093C216D00 /* FeatureOne.swift */; };
+		6DB481A5535E4C4B9507C39472965D26 /* FeatureOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CF2FA7F0EA37E05E41AC8F715135E /* FeatureOne.swift */; };
 		72A168A36DC6FB9E87275AB6FA458360 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		7553D82699671896ACC28EDEA133B9BA /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C3CA788CE74B63BAB3A5B94C3E95B /* Feature.swift */; };
 		76BE938409083D5D115F6D31492F9D33 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
 		7D1E63337BA365B09F28CB3EB0E2FB45 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
-		80AB08F031F8A764E7ECDA306834882E /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C4783CFAEA6B9013505246039621A /* HTTPClientProtocol.swift */; };
-		87C8359956DA2B57FC5E58E286AD073A /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
+		7D6A25139EDB491AB5C593BBD01CA4C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
+		85FE6288E235A6AB7D23C9FA21BA689F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
 		881B2C0E0FF6C50793F8EBDAA714B1C2 /* FeatureTwoInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D391DD72C07CC28ACCDF09F5C421F2 /* FeatureTwoInterface.framework */; };
-		8B73F67827FDD92F4E511575A36A5625 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
-		8E8F0280AF1B23EC5C258433539EC321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		8F690D8CB1D5C1FF81A551886050BE22 /* RouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFC82799D3B55A7504CA8EA19D198CA /* RouteHandler.swift */; };
-		8FCF91BFCD077704BFD895070F3470AE /* FeatureOne-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C9B95FAC559206813D912318D70007 /* FeatureOne-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90256D323FB1C736B63875A31699E350 /* FeatureTwo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7138798F3264998898FF4B4B28F825B8 /* FeatureTwo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		909CC5168411CE50D7CF9DB9BD67CFAE /* StoreInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C3E0DE2DC11C2743399F7815000B27 /* StoreInterface.swift */; };
-		91127826D0BBAEC21DE891CA991F6A24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
+		8FCF91BFCD077704BFD895070F3470AE /* FeatureOne-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 908C198EEE4EF553F96B7786F70C6B53 /* FeatureOne-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90256D323FB1C736B63875A31699E350 /* FeatureTwo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E1E7BA5C70C1F70DDAD931253C1718 /* FeatureTwo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94F70D460F61AEBA4A8673BB69FE1375 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E44B2E96E8C59F8FBBD95D6EC508E2 /* Dependency.swift */; };
 		97862C87C0379A193C1695811E328785 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
-		9C0F9B095CAB9466825DC581037D6379 /* HTTPClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C4EBBAE8E31A805631D0D70358FF41 /* HTTPClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E60C8D84159034DB0D17BE89198CC1A /* HTTPClientInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE04886ACBE8544DB9625F417FC75D1 /* HTTPClientInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A72EE8CA8AA5775EDFFDA10D9DF243A8 /* RouteString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AD73A08F770874F7F1A7BB98A3CF2E /* RouteString.swift */; };
-		A79B35A5DE244A590E646996B615198C /* RouterService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A718698C9BBA69BC00765AECBF57E558 /* RouterService-dummy.m */; };
-		A80C796FA775DA2972036773264051E7 /* FeatureFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A29FEB3E861D5923FE0AE4745C9F3E /* FeatureFlag.swift */; };
+		9C0F9B095CAB9466825DC581037D6379 /* HTTPClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A06DFC56F14BA544C574D17D5AAF2F /* HTTPClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A46E283D6E7A25E3B48AE54664B0FD1A /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
+		A72EE8CA8AA5775EDFFDA10D9DF243A8 /* RouteString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF02750BBC08D49839A3442CC3F7C5 /* RouteString.swift */; };
+		A79B35A5DE244A590E646996B615198C /* RouterService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B50FFB68A1B4AACE1544BD457C90D60 /* RouterService-dummy.m */; };
+		A80C796FA775DA2972036773264051E7 /* FeatureFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6284AF85B127168B2F980668C6277EE /* FeatureFlag.swift */; };
 		A8589099687EF94CE1008B908747A627 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		A948225C30B0F04C10BAA38980D49508 /* FeatureFlag-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBB4BC85B0F8ED7D971AAB809076EC7 /* FeatureFlag-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B14C2C2564BBEBFA91EE04662C5BD782 /* RouteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE8E7098F5A3D67FF9691038FB36FA2 /* RouteExtensions.swift */; };
+		A948225C30B0F04C10BAA38980D49508 /* FeatureFlag-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FC8AA9EFB2F04BB06C6632FA5AB39C1 /* FeatureFlag-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B14C2C2564BBEBFA91EE04662C5BD782 /* RouteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC36C30067CC12D0055579507465A80 /* RouteExtensions.swift */; };
 		B4A7FE6860E9665898C0C7F97A1C3E52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		BE350058167A9775F4FC19809CA10417 /* FeatureFlagInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4A186DAC2DCD06275D2223A6CCE742 /* FeatureFlagInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B61BE6ADB5EE9C609650E4E90CF330FF /* FeatureFlagProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2E0A4757EE7A5C0BB7A5DF6971539 /* FeatureFlagProtocol.swift */; };
+		B9F9E27ED7F270D4201792B75C1D9788 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
+		BE3C07A36AEB68856120985550C0544C /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BE8D4C2AA9557678B0BE744EA5264A /* Route.swift */; };
 		C020ED0673545339031A554BB40CC50C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
 		C22C56A62031F6D8AC715EA308CB2DCB /* FeatureFlagInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DDDBDD8DC1ED6E5C0779DB745EA9E /* FeatureFlagInterface.framework */; };
+		C50E7F50E367FB38639B1DEBA7ED7BB0 /* FeatureFlagInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 657F73A8B017FD2D4387AE1858CAA2B1 /* FeatureFlagInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7417D69D266D16D8A27C40B4DC3D2E9 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12505E878E8340D006EBD341F07EF2E /* Feature.swift */; };
+		CA67631F45C801D3E9FA85ABF838B511 /* FeatureTwoInterface-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D50F015532E234C811F0A4678BBE11 /* FeatureTwoInterface-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD21D2E57F05FB68B26E457DFDC32904 /* RouterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FEF0356D72E3624A0B179D68E8A6D /* RouterServiceProtocol.swift */; };
+		CEF4ACF564F8037D72237F92EB5669A0 /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9689B3DA03AF91124991F95BEFD3D /* HTTPClientProtocol.swift */; };
 		D961FE65BC75E9DA2AA02CEAA198AC37 /* FeatureFlagInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DDDBDD8DC1ED6E5C0779DB745EA9E /* FeatureFlagInterface.framework */; };
+		D96297AC092940A4749D1CC2E5302FEF /* FeatureTwoInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA58748934ECC897A75BB77DFE3B86F /* FeatureTwoInterface-dummy.m */; };
 		DB51102DC7B03D2C279046E5D11F1E6E /* HTTPClientInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C48A7BCC6425DD15BF5CD87AA38B78D /* HTTPClientInterface.framework */; };
-		E91817147B23960CFDE9576B1C2040ED /* FlaggableFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90458B5E06BE4F4AB81E875B0FC14051 /* FlaggableFeature.swift */; };
-		F0FC662B88C2F22B9344CA0D5487E429 /* FeatureTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29F4754724F20263941735DF927A5F8 /* FeatureTwo.swift */; };
+		F0FC662B88C2F22B9344CA0D5487E429 /* FeatureTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532B95EC4B6ED3A833ECF2454F8030F /* FeatureTwo.swift */; };
 		F110EF9E1F37DA7D0E8833196BCE2027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		F67623BAED8D6A99613BBCC7D3317AA6 /* RouterServiceInterface-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A20C8939F35953C553E875089D5700D1 /* RouterServiceInterface-dummy.m */; };
-		FA4C3D2C592C07424D150A4C849AC8C3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30368C3E3B6011C2347EC15687304848 /* Store.swift */; };
+		F3BE43C5E32279537BBF967E40B9ACB5 /* RouteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC448E92C1E93EFFB8FDEE2CA210F590 /* RouteHandler.swift */; };
+		FA4C3D2C592C07424D150A4C849AC8C3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C58DAD50E1B48E6A87AC801F9383C74 /* Store.swift */; };
 		FC0849AC5F21D23BF0EB365BA3702D7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */; };
-		FECA9C67B4354215BB4EB3DBE20D7CC1 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		05FF614351ABF46D9E97586189D4E3E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA94B039BCCC8D95260CB57918FACAB3;
-			remoteInfo = FeatureOne;
-		};
-		2113601FED4B14F1F27DBB2743B3ECAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A22B0C69B4BB605A1546818873EF91F;
-			remoteInfo = FeatureFlagInterface;
-		};
-		30E0CFBA786E432C7F815701CD809A72 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
-			remoteInfo = FeatureTwoInterface;
-		};
-		333B59A86C9546757258DA8CA8B5631B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6A22B0C69B4BB605A1546818873EF91F;
-			remoteInfo = FeatureFlagInterface;
-		};
-		456D853E1C2863DDD6738F92F1660BE5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		680EBB85DD851F4C29C9389AE3C089AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		72F123C3E29682388EE403AE330EA7A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		7714776BE1319E2ED076B4F73C6E66AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
-			remoteInfo = FeatureTwoInterface;
-		};
-		7EBC81F722380AFAD2EE534D16FEF038 /* PBXContainerItemProxy */ = {
+		18AA613A0C765C4D367666964E346605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FC7983028A5D2335B5A4DE020986C62D;
 			remoteInfo = FeatureFlag;
 		};
-		81F7CFCFD64EBBF147A6377E9DE64865 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		8D7DC79B1509E6C276F037A8F1A24632 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC484931EBADAAC84BEEB391E5013B89;
-			remoteInfo = RouterService;
-		};
-		8EBA51343F8AC7038376B5772128CCCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0EFE29E423A52076A90BF82E2DB1F39C;
-			remoteInfo = HTTPClient;
-		};
-		95155CB3D87D9E77F6BD74D2656551FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
-			remoteInfo = FeatureTwoInterface;
-		};
-		98433EA5F4D6C3A62DB5B30B8F9FECB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		9B0FBB7872C42ADF1E970ACF9D97FDDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
-			remoteInfo = HTTPClientInterface;
-		};
-		B248E7C2C9536394509D5D65302EA6C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		BD0460489053DBE97F4AB0A00E9D8095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		BDF086E66B92D8CE942A9ABC23C989B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
-			remoteInfo = HTTPClientInterface;
-		};
-		C677E65FE2047B012559A3F7EABF5788 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 70C9518BD652EBD4B1D70C329EF3680E;
-			remoteInfo = FeatureTwo;
-		};
-		CA1C4CAD6421F10E78DC4A1936209490 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
-			remoteInfo = HTTPClientInterface;
-		};
-		DF21BB5E872A30268C13DFAD01F12420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
-			remoteInfo = RouterServiceInterface;
-		};
-		E90F559D417C14E99B6EDBF2690CA9EB /* PBXContainerItemProxy */ = {
+		1EC60B285918830ECE79D8ABE1820D5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6A22B0C69B4BB605A1546818873EF91F;
 			remoteInfo = FeatureFlagInterface;
 		};
-		F5640D10C5CE5E712EA6DDEAD0C3A4F0 /* PBXContainerItemProxy */ = {
+		2F54B57653B23A31742224715CA214B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EFE29E423A52076A90BF82E2DB1F39C;
+			remoteInfo = HTTPClient;
+		};
+		31F2B57EC133CAA5491B4A9FF1CE13BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A22B0C69B4BB605A1546818873EF91F;
+			remoteInfo = FeatureFlagInterface;
+		};
+		388D930A617A84D0D2CE1C47BDA54D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		3CFBD3EE91AE8B34CA504FA534C95B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
+			remoteInfo = HTTPClientInterface;
+		};
+		3FD8F556A7E2BB623E8D156F0A305117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
+			remoteInfo = HTTPClientInterface;
+		};
+		5A465F5E7B15933E999EFCC2C63691E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		6A5847F3A0C26D6996F101B3015B2140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		7D6E1BA200D33444F179FFB440C8F19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA94B039BCCC8D95260CB57918FACAB3;
+			remoteInfo = FeatureOne;
+		};
+		88766F0C9EA0DDB394423DA6F04D8995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A22B0C69B4BB605A1546818873EF91F;
+			remoteInfo = FeatureFlagInterface;
+		};
+		9B5ACF2C4B697E035E1A5B08B98A1310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC484931EBADAAC84BEEB391E5013B89;
+			remoteInfo = RouterService;
+		};
+		9E4CFB2D6FB0FE756DCB79FF4FE2B602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		BEA4D2B748FF2383ECB6EA9548610A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C9518BD652EBD4B1D70C329EF3680E;
+			remoteInfo = FeatureTwo;
+		};
+		C0F411EDDCBF296AEAD537ACD2C949BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		C543E40F7458FD784F40F72D9589CAFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		C6C5A24E49C17F670CDCCDA7180D50B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		CBDFFE7244790DAF896282E8B3355CDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F03B6B567D29167ABAEFE1FD7B10617F;
+			remoteInfo = RouterServiceInterface;
+		};
+		DC9935653616385B5CB1249161083FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
+			remoteInfo = FeatureTwoInterface;
+		};
+		E2D999DFBB2CB8030464BD9AD7AB3058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E14CAA99BFA725941AC80BEDD9DBB8E;
+			remoteInfo = HTTPClientInterface;
+		};
+		E410CA828DFAAB01AEFAFAF49EF07461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
+			remoteInfo = FeatureTwoInterface;
+		};
+		EAD399BD3132895A2ECCCBD9D1756CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 871230FEEB113BAE3B5A7D94E071D80D;
+			remoteInfo = FeatureTwoInterface;
+		};
+		F3BDC96F0A93C4A53B8EC477F8CC1F1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -241,121 +240,138 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0260E57870A24DCCC0F6E6120E30BEA2 /* HTTPClientInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClientInterface-prefix.pch"; sourceTree = "<group>"; };
+		04A5DC8BAA66CDE6F1B27C8229928117 /* HTTPClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTTPClient-Info.plist"; sourceTree = "<group>"; };
 		052CC234B446A631C2B8EB38C91F6B4C /* FeatureTwo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeatureTwo.framework; path = FeatureTwo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		054E7DDF476C75C3AC163416D85EA9F0 /* HTTPClientInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTTPClientInterface-dummy.m"; sourceTree = "<group>"; };
-		085000E1E984D1170A4F7F5972493E1F /* HTTPClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTTPClient.xcconfig; sourceTree = "<group>"; };
+		086F91FBDE4F4D945E882E83A18D2134 /* HTTPClientInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTTPClientInterface-dummy.m"; sourceTree = "<group>"; };
+		096CF2FA7F0EA37E05E41AC8F715135E /* FeatureOne.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureOne.swift; sourceTree = "<group>"; };
 		0B8BD507AAED2667BEF1C413FA1DFA88 /* HTTPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTTPClient.framework; path = HTTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B8D06ED4B2E531A1063671CDB5F6291 /* RouterServiceInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterServiceInterface-umbrella.h"; sourceTree = "<group>"; };
-		10C33C6FF3A1CE0D1DD917B45C05EDCD /* FeatureTwo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureTwo-Info.plist"; sourceTree = "<group>"; };
-		115F3AE78E4F5BB944410DFA52FE31D5 /* FeatureOne.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureOne.modulemap; sourceTree = "<group>"; };
-		1330105C30CF66CD81D93E2E93528278 /* FeatureFlag.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureFlag.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		14B108F0FF42C385665A0078F2897FE5 /* FeatureTwoInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureTwoInterface.modulemap; sourceTree = "<group>"; };
-		172D3F36AF2629AD497C3C073B44268B /* FeatureOne-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureOne-prefix.pch"; sourceTree = "<group>"; };
+		0E0B0FA0A4D5C83E2BE0BD372B120933 /* RouterService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RouterService.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1413A9605344FC78B068E5C76F261845 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1607917CCAA4CC54AAA33DB93D861FF9 /* PresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationStyle.swift; path = Sources/RouterServiceInterface/PresentationStyle.swift; sourceTree = "<group>"; };
 		1AFC62D3AF12B76314B5A379B6D8F8AA /* FeatureTwoInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeatureTwoInterface.framework; path = FeatureTwoInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CCE344AA9B66FF56B238BE073E9E5DB /* FeatureTwoRouteHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwoRouteHandler.swift; sourceTree = "<group>"; };
+		1C5B0EF7C289B47A5F002561411DA2E4 /* FeatureOne.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureOne.modulemap; sourceTree = "<group>"; };
 		1D0ADAE92F9C9FD3A8274432A917E124 /* Pods-RouterServiceExampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RouterServiceExampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1EE8E7098F5A3D67FF9691038FB36FA2 /* RouteExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteExtensions.swift; path = Sources/RouterService/RouteExtensions.swift; sourceTree = "<group>"; };
-		238DB099D55F91202BE05BB29161F1BA /* FeatureFlag-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureFlag-Info.plist"; sourceTree = "<group>"; };
-		247D17FBB8CD398389825A421938B75E /* FeatureTwo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwo-prefix.pch"; sourceTree = "<group>"; };
-		28E5663A183C124F61437FB4BB89B20B /* RouterServiceInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouterServiceInterface.xcconfig; sourceTree = "<group>"; };
-		298335E2F649946C54C97FB374214CE5 /* FeatureTwoInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwoInterface-umbrella.h"; sourceTree = "<group>"; };
+		20CD41E0F6CB3C8CAFA8840C8C1A1962 /* FeatureTwoRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwoRoute.swift; sourceTree = "<group>"; };
+		23A9689B3DA03AF91124991F95BEFD3D /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		242363B2E49FB0DB657559F781847BA2 /* FeatureFlagInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlagInterface-prefix.pch"; sourceTree = "<group>"; };
+		2917CDF4391A7929957745AEF18D26EC /* FeatureTwo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwo-prefix.pch"; sourceTree = "<group>"; };
+		2BE24530A101A566B05191F0CFFB404F /* FeatureBuilding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureBuilding.swift; path = Sources/RouterService/FeatureBuilding.swift; sourceTree = "<group>"; };
 		2C48A7BCC6425DD15BF5CD87AA38B78D /* HTTPClientInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTTPClientInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F2C3CA788CE74B63BAB3A5B94C3E95B /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Feature.swift; path = Sources/RouterServiceInterface/Feature.swift; sourceTree = "<group>"; };
-		2F306B91529FC6B9B1DC6DE00323E5B5 /* FeatureTwoInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureTwoInterface-dummy.m"; sourceTree = "<group>"; };
-		30368C3E3B6011C2347EC15687304848 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Sources/RouterService/Store.swift; sourceTree = "<group>"; };
+		2CE7540EC9DB485C2D56502DBE49FA52 /* FeatureFlag.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureFlag.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30A20D75BDEF9C09B024A352B4B321D1 /* FeatureTwoInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureTwoInterface.xcconfig; sourceTree = "<group>"; };
 		31CBB58A10096D1E05EBFD9144CB3308 /* Pods-RouterServiceExampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RouterServiceExampleApp-umbrella.h"; sourceTree = "<group>"; };
-		328BB7AAB8CD5B563BB254C7FA1B20E0 /* AnyRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRoute.swift; path = Sources/RouterServiceInterface/AnyRoute.swift; sourceTree = "<group>"; };
-		337206966161A71D302350C418C3C674 /* HTTPClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTTPClient-Info.plist"; sourceTree = "<group>"; };
-		3A48EA4AF64EC285E4CDF7E8004A29E2 /* RouterService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RouterService-Info.plist"; sourceTree = "<group>"; };
-		4028A00C3B18FC68CA4446A35C50E2FE /* RouterService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RouterService.modulemap; sourceTree = "<group>"; };
-		41AD73A08F770874F7F1A7BB98A3CF2E /* RouteString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteString.swift; path = Sources/RouterService/RouteString.swift; sourceTree = "<group>"; };
-		42850A6D53F816A58E0AACB955D70128 /* RouterServiceInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RouterServiceInterface.modulemap; sourceTree = "<group>"; };
-		46C9B95FAC559206813D912318D70007 /* FeatureOne-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureOne-umbrella.h"; sourceTree = "<group>"; };
-		4B43B084A35926E3229FA3661412A3C6 /* FeatureTwo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureTwo.modulemap; sourceTree = "<group>"; };
-		4D60BD02AAFFA4FDF7C8D52FB2830E86 /* FeatureTwoInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwoInterface-prefix.pch"; sourceTree = "<group>"; };
-		4F89A3917396754C6764C56218C0709C /* FeatureOne.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureOne.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5427F667374029ACA334B8B2BE02F69F /* FeatureTwo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureTwo.xcconfig; sourceTree = "<group>"; };
-		57E507AAC686F9DE729792436DA64853 /* FeatureFlagInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureFlagInterface-Info.plist"; sourceTree = "<group>"; };
-		581BD828246F001CE60D13285D9B9D2C /* AnyRouteType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRouteType.swift; path = Sources/RouterService/AnyRouteType.swift; sourceTree = "<group>"; };
-		58B493B3CF14A327DE699E76D5012751 /* RouterServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterServiceProtocol.swift; path = Sources/RouterServiceInterface/RouterServiceProtocol.swift; sourceTree = "<group>"; };
+		31E44B2E96E8C59F8FBBD95D6EC508E2 /* Dependency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dependency.swift; path = Sources/RouterServiceInterface/Dependency.swift; sourceTree = "<group>"; };
+		36CF44CEC2F1791D6BDB9D85529503A9 /* FeatureTwo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureTwo.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		36EA0F9FB6E930D3896C4C7585A6DBF1 /* FeatureTwoInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureTwoInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3796F73208295ED66D3A5A53D5A0E5A4 /* FeatureTwo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureTwo.xcconfig; sourceTree = "<group>"; };
+		3F2C870026D556388E3C358ECB26CFF8 /* FeatureFlag.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureFlag.modulemap; sourceTree = "<group>"; };
+		40C5002921A65555B1CAF0239AB41D7E /* RouterServiceInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterServiceInterface-prefix.pch"; sourceTree = "<group>"; };
+		414A14C76E751F44BA56351C397777C0 /* HTTPClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTTPClient.modulemap; sourceTree = "<group>"; };
+		42A06DFC56F14BA544C574D17D5AAF2F /* HTTPClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClient-umbrella.h"; sourceTree = "<group>"; };
+		45CB1612EF1E52D920BAE35F44263AE7 /* FeatureTwo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureTwo.modulemap; sourceTree = "<group>"; };
+		4EE2E0A4757EE7A5C0BB7A5DF6971539 /* FeatureFlagProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureFlagProtocol.swift; sourceTree = "<group>"; };
+		4FC8AA9EFB2F04BB06C6632FA5AB39C1 /* FeatureFlag-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlag-umbrella.h"; sourceTree = "<group>"; };
+		515EE2B907CD898301B6F41E29396352 /* FeatureFlagInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureFlagInterface-dummy.m"; sourceTree = "<group>"; };
+		536E1EB2C7E1E9EF0B9C8E0B55A91601 /* RouterService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RouterService.modulemap; sourceTree = "<group>"; };
+		53E83CFDE23D3D679B1E7ABF8BB33BC5 /* RouterServiceInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RouterServiceInterface.modulemap; sourceTree = "<group>"; };
 		596E351C9552800A402600760CA5FCF0 /* HTTPClientInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTTPClientInterface.framework; path = HTTPClientInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C277B8378760D477F03E8B9DE363169 /* FeatureOne.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureOne.xcconfig; sourceTree = "<group>"; };
-		64A1DB9F39BDF010DEF76CF20BE3DF51 /* FeatureOne-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureOne-Info.plist"; sourceTree = "<group>"; };
-		64BB08B7FC020EFD94FFE5AF991BCB93 /* FeatureTwoInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureTwoInterface-Info.plist"; sourceTree = "<group>"; };
-		6D2C4783CFAEA6B9013505246039621A /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		5C1077BEC14F70103F06EE2B2EF4A724 /* FeatureOne.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureOne.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C58DAD50E1B48E6A87AC801F9383C74 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = Sources/RouterService/Store.swift; sourceTree = "<group>"; };
+		6186416A1CF4091EEB8C300FC99D1E5E /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		63D50F015532E234C811F0A4678BBE11 /* FeatureTwoInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwoInterface-umbrella.h"; sourceTree = "<group>"; };
+		657F73A8B017FD2D4387AE1858CAA2B1 /* FeatureFlagInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlagInterface-umbrella.h"; sourceTree = "<group>"; };
+		65BE8D4C2AA9557678B0BE744EA5264A /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Sources/RouterServiceInterface/Route.swift; sourceTree = "<group>"; };
+		6B50FFB68A1B4AACE1544BD457C90D60 /* RouterService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouterService-dummy.m"; sourceTree = "<group>"; };
+		6D196F678B18FEB55D3E85308B596C78 /* RouterService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterService-umbrella.h"; sourceTree = "<group>"; };
 		6D42E220456B0025B05211C4C8E91FFA /* Pods-RouterServiceExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterServiceExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		6E63AF05FE3209E0A6B47416EFA5B177 /* FeatureFlag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureFlag-dummy.m"; sourceTree = "<group>"; };
-		6EF7ED49C8C20A338D0D5C4BE36C8CD0 /* FeatureTwo.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureTwo.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6FBB4BC85B0F8ED7D971AAB809076EC7 /* FeatureFlag-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlag-umbrella.h"; sourceTree = "<group>"; };
-		7138798F3264998898FF4B4B28F825B8 /* FeatureTwo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwo-umbrella.h"; sourceTree = "<group>"; };
+		6FCA99382A8A6E853C3C1D9D5130F7F7 /* HTTPClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTTPClient.xcconfig; sourceTree = "<group>"; };
 		7245F80B76B75CB18A08AFF3F1C55E39 /* RouterServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RouterServiceInterface.framework; path = RouterServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73E9DEBB3C448AA3E1B3E018FE897293 /* FeatureFlag.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureFlag.xcconfig; sourceTree = "<group>"; };
-		78C2904599C5025E7B9BB0513D1A7C0F /* FeatureFlagProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureFlagProtocol.swift; sourceTree = "<group>"; };
-		7AE04886ACBE8544DB9625F417FC75D1 /* HTTPClientInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClientInterface-umbrella.h"; sourceTree = "<group>"; };
-		7C162C48FFA5AC7A2F81F5DE3A69D24F /* HTTPClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HTTPClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75BF20EBB44BF50F399094FCC469A944 /* FeatureTwoInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwoInterface-prefix.pch"; sourceTree = "<group>"; };
+		77EB7733D6CF6B406EF6516CC2D13309 /* HTTPClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClient-prefix.pch"; sourceTree = "<group>"; };
+		7AFF68E8C689DC290BBF73EF17C0AE1C /* FeatureTwoInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureTwoInterface.modulemap; sourceTree = "<group>"; };
+		7D7F848709BB3136F302FAABCD41796D /* HTTPClientInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClientInterface-umbrella.h"; sourceTree = "<group>"; };
 		7F21FDE7CD77770F919B3DE5C9BA562E /* Pods-RouterServiceExampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RouterServiceExampleApp.modulemap"; sourceTree = "<group>"; };
-		81A37688B872D3E434787F9535B38846 /* RouterService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterService.swift; path = Sources/RouterService/RouterService.swift; sourceTree = "<group>"; };
-		86C1907D9C3635913DDBECBE60B9005D /* RouterService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterService-prefix.pch"; sourceTree = "<group>"; };
-		87BFB7E55418B6491202027177602FA5 /* RouterServiceInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterServiceInterface-prefix.pch"; sourceTree = "<group>"; };
-		8B9AB8B5E43EC7702FBB7D1856E50114 /* HTTPClientInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTTPClientInterface-Info.plist"; sourceTree = "<group>"; };
-		8F531895C1D3A16EE107C29CB2C7BF4E /* RouterServiceInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RouterServiceInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		90458B5E06BE4F4AB81E875B0FC14051 /* FlaggableFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlaggableFeature.swift; path = Sources/RouterServiceInterface/FlaggableFeature.swift; sourceTree = "<group>"; };
-		90C4EBBAE8E31A805631D0D70358FF41 /* HTTPClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClient-umbrella.h"; sourceTree = "<group>"; };
-		9611F4AAB67C875582680F2452F39355 /* HTTPClientInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HTTPClientInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96907F7C8421B3D158BA456834207E4F /* HTTPClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTTPClient-dummy.m"; sourceTree = "<group>"; };
-		9995C3C3A395A1E073C037C23F3A8BE8 /* Dependency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dependency.swift; path = Sources/RouterServiceInterface/Dependency.swift; sourceTree = "<group>"; };
-		9A3D5E212B12AD29E0586DB7F0058264 /* FeatureTwoRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwoRoute.swift; sourceTree = "<group>"; };
-		9C8A88D6BD69FA18AA7B3FDD9C4BB0FC /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Sources/RouterServiceInterface/Route.swift; sourceTree = "<group>"; };
+		8222B0B580C9579374245081589E8D7D /* FeatureFlagInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureFlagInterface-Info.plist"; sourceTree = "<group>"; };
+		8923FFD845995B1CE0DCF21329609D22 /* FeatureFlag-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlag-prefix.pch"; sourceTree = "<group>"; };
+		8A05014AE25E5BCDFF5EED7595CE35C0 /* RouterServiceInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouterServiceInterface.xcconfig; sourceTree = "<group>"; };
+		908C198EEE4EF553F96B7786F70C6B53 /* FeatureOne-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureOne-umbrella.h"; sourceTree = "<group>"; };
+		999B90E3A32F3D4C0799D9945669D87F /* FeatureFlag.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureFlag.xcconfig; sourceTree = "<group>"; };
 		9CA9BFB8C36CE872CEB1BBD6CE1B977D /* Pods_RouterServiceExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RouterServiceExampleApp.framework; path = "Pods-RouterServiceExampleApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEC57A38018241E4D9E6381CC3E65ED /* FeatureFlag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeatureFlag.framework; path = FeatureFlag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F4A186DAC2DCD06275D2223A6CCE742 /* FeatureFlagInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlagInterface-umbrella.h"; sourceTree = "<group>"; };
+		9E6E8315E7A999FED187D31D96EFB8DC /* FeatureFlag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureFlag-dummy.m"; sourceTree = "<group>"; };
+		9F9AAB74A6BFF0A2904DE559D4B4E64B /* FeatureFlag-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureFlag-Info.plist"; sourceTree = "<group>"; };
 		A0D391DD72C07CC28ACCDF09F5C421F2 /* FeatureTwoInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureTwoInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20C8939F35953C553E875089D5700D1 /* RouterServiceInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouterServiceInterface-dummy.m"; sourceTree = "<group>"; };
-		A2264E8397119879CEC2301A7F1B8895 /* FeatureFlagInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureFlagInterface.xcconfig; sourceTree = "<group>"; };
-		A38B5B2DED4D69C56F3A4D7268460B16 /* HTTPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		A718698C9BBA69BC00765AECBF57E558 /* RouterService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouterService-dummy.m"; sourceTree = "<group>"; };
+		A814E92D02D9DFCD5F879D5C6EEBBFB4 /* RouterServiceInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RouterServiceInterface-dummy.m"; sourceTree = "<group>"; };
 		A98D125D96FF76297B3FF60636018A6B /* Pods-RouterServiceExampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RouterServiceExampleApp-dummy.m"; sourceTree = "<group>"; };
 		AB1A9536079DE0F05B4F4BC845D2E01A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AB573EEF2FA3D58DBB25551B4A89CF20 /* RouterServiceInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RouterServiceInterface-Info.plist"; sourceTree = "<group>"; };
+		AC448E92C1E93EFFB8FDEE2CA210F590 /* RouteHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteHandler.swift; path = Sources/RouterServiceInterface/RouteHandler.swift; sourceTree = "<group>"; };
 		ADACB91138707CB1BE9285816D179329 /* FeatureFlagInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeatureFlagInterface.framework; path = FeatureFlagInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBA6D34CA7F7BEA1943A179C53D31C7 /* FeatureFlagInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureFlagInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B12505E878E8340D006EBD341F07EF2E /* Feature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Feature.swift; path = Sources/RouterServiceInterface/Feature.swift; sourceTree = "<group>"; };
+		B32ACFEF2683A6A359D8770AF928C2C3 /* FeatureFlagInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureFlagInterface.modulemap; sourceTree = "<group>"; };
 		B595B43A58D37A3BD1BD6A7863263EB9 /* Pods-RouterServiceExampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouterServiceExampleApp-Info.plist"; sourceTree = "<group>"; };
+		B6E1E7BA5C70C1F70DDAD931253C1718 /* FeatureTwo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureTwo-umbrella.h"; sourceTree = "<group>"; };
+		B72F1F2698916662963EBF24632BE08E /* FeatureFlagInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureFlagInterface.xcconfig; sourceTree = "<group>"; };
+		B80982A79F8254B24C9AC60F30D01E6E /* HTTPClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTTPClient-dummy.m"; sourceTree = "<group>"; };
 		B8B33EB800FF7A07DA083292CD0129D1 /* Pods-RouterServiceExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RouterServiceExampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		BEDCCEDDDF52136F089C65F90009B185 /* HTTPClientInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTTPClientInterface.xcconfig; sourceTree = "<group>"; };
-		BF16E7AA1213107E720EBDAD9E56E21B /* FeatureTwoInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureTwoInterface.xcconfig; sourceTree = "<group>"; };
-		C251AAD6EDE2C3E469A5C091D8308028 /* FeatureFlag-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlag-prefix.pch"; sourceTree = "<group>"; };
-		C29F4754724F20263941735DF927A5F8 /* FeatureTwo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwo.swift; sourceTree = "<group>"; };
-		C3285025CB7E4ACA8C2A54E398D2EC59 /* FeatureTwoInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureTwoInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3A8747E827F7B3B25B37886CB14BAB0 /* PresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationStyle.swift; path = Sources/RouterServiceInterface/PresentationStyle.swift; sourceTree = "<group>"; };
-		C5DDB603C14ED9AD4E25E94FDF5E9CB5 /* HTTPClientInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClientInterface-prefix.pch"; sourceTree = "<group>"; };
+		BCC36C30067CC12D0055579507465A80 /* RouteExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteExtensions.swift; path = Sources/RouterService/RouteExtensions.swift; sourceTree = "<group>"; };
+		BF45D88F8A7E202EDB0D5F0C4D7506E5 /* AnyRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRoute.swift; path = Sources/RouterServiceInterface/AnyRoute.swift; sourceTree = "<group>"; };
+		C03E8BE38E68A58AF67A5B3BE076ECBD /* FeatureOne.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FeatureOne.xcconfig; sourceTree = "<group>"; };
+		C0AF02750BBC08D49839A3442CC3F7C5 /* RouteString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteString.swift; path = Sources/RouterService/RouteString.swift; sourceTree = "<group>"; };
+		C16CDAC3D2B28EE5C9A3CDF3E8A07F84 /* FeatureOne-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureOne-Info.plist"; sourceTree = "<group>"; };
+		C45B15D500F78D8E677526ACC7628D32 /* HTTPClientInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTTPClientInterface.modulemap; sourceTree = "<group>"; };
+		C49A6F1B11789C1334136A18155097A3 /* HTTPClientInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HTTPClientInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C625B2BFB7606BC0570A733EDDB4D4D5 /* RouterServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouterServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7C3E0DE2DC11C2743399F7815000B27 /* StoreInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInterface.swift; path = Sources/RouterServiceInterface/StoreInterface.swift; sourceTree = "<group>"; };
-		CACFF1F1242AD7F743DD8D5654528D9F /* HTTPClientInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTTPClientInterface.modulemap; sourceTree = "<group>"; };
-		CD938BCCD5045F78395424C04D30AD2A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D232609E5A3BF3D4C40B739E0C69649A /* RouterService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterService-umbrella.h"; sourceTree = "<group>"; };
+		C70ABDF85025C1D75C42ADA136850031 /* HTTPClientInterface.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTTPClientInterface.xcconfig; sourceTree = "<group>"; };
+		CB2C62F8B58F375FF4888288B26CE967 /* RouterServiceInterface-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterServiceInterface-umbrella.h"; sourceTree = "<group>"; };
+		D15073C26DAD3DE363F097FD96E8EDD2 /* FeatureTwo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureTwo-dummy.m"; sourceTree = "<group>"; };
 		D45DDDBDD8DC1ED6E5C0779DB745EA9E /* FeatureFlagInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureFlagInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5A1803C6A9A1CFF87B13FFCABD6723C /* FeatureFlag.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureFlag.modulemap; sourceTree = "<group>"; };
+		D462B6A8A368DDE2797E708C20DA1EE8 /* HTTPClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HTTPClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4ABEF325A26ADDB7173D8F1E77FD1B3 /* RouterServiceInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RouterServiceInterface-Info.plist"; sourceTree = "<group>"; };
+		D6341C30BB861FB0FF5289B6A9D6C293 /* FeatureOne-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureOne-prefix.pch"; sourceTree = "<group>"; };
+		D6967F884CF9696A5A1C251E41DE238F /* FeatureTwoRouteHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwoRouteHandler.swift; sourceTree = "<group>"; };
+		D7259CA8A892487A00B15121262008C6 /* FeatureOne-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureOne-dummy.m"; sourceTree = "<group>"; };
+		D7F72F84147ADC27164EF06E92588403 /* RouterServiceInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RouterServiceInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DB8B070D13C4F09D548B315AA336B5ED /* Pods-RouterServiceExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RouterServiceExampleApp-frameworks.sh"; sourceTree = "<group>"; };
-		DCFC82799D3B55A7504CA8EA19D198CA /* RouteHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteHandler.swift; path = Sources/RouterServiceInterface/RouteHandler.swift; sourceTree = "<group>"; };
-		E1B0F107659A91600C391C40E4481DAB /* FeatureTwo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureTwo-dummy.m"; sourceTree = "<group>"; };
+		DBA58748934ECC897A75BB77DFE3B86F /* FeatureTwoInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureTwoInterface-dummy.m"; sourceTree = "<group>"; };
+		DE45AC84ED9DAF002FF121CDA850CADA /* HTTPClientInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTTPClientInterface-Info.plist"; sourceTree = "<group>"; };
+		E0DF6F52EA81295EA1AF756D759CF60D /* AnyRouteType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyRouteType.swift; path = Sources/RouterService/AnyRouteType.swift; sourceTree = "<group>"; };
 		E4248D98E62CFF4BD54D688EC0566205 /* Pods-RouterServiceExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RouterServiceExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		E4EE9FE3BA6DFEB2CA10280322CB549F /* FeatureFlagInterface-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FeatureFlagInterface-prefix.pch"; sourceTree = "<group>"; };
+		E532B95EC4B6ED3A833ECF2454F8030F /* FeatureTwo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureTwo.swift; sourceTree = "<group>"; };
+		E6284AF85B127168B2F980668C6277EE /* FeatureFlag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureFlag.swift; sourceTree = "<group>"; };
+		E78AE7DC9B37B05ED6D1A4803F7DCDE8 /* FeatureTwoInterface-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureTwoInterface-Info.plist"; sourceTree = "<group>"; };
 		EA02C2325DA265780C3E62998A9C015C /* FeatureOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FeatureOne.framework; path = FeatureOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB5483A1F01BB10A49DCAC94664E05D8 /* FeatureFlagInterface.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FeatureFlagInterface.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		EF74D4E36FEA9BC77FDD717D395F329A /* FeatureFlagInterface-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureFlagInterface-dummy.m"; sourceTree = "<group>"; };
-		EF8B4B76211F0114AA27874B7E722F2C /* FeatureOne-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FeatureOne-dummy.m"; sourceTree = "<group>"; };
-		EF956E2A04CCD3E984961147C35AB8C2 /* RouterService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouterService.xcconfig; sourceTree = "<group>"; };
-		EFE8006DEF3CF8CC65F796093C216D00 /* FeatureOne.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureOne.swift; sourceTree = "<group>"; };
-		F1A54A7D6F0BE10C6E727CA25C71D135 /* FeatureFlagInterface.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FeatureFlagInterface.modulemap; sourceTree = "<group>"; };
-		F1B9A56EB4DD013BDB3F0C6A2DB4E062 /* RouterService.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RouterService.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EA4C8ED49D107FCCE01BB2FF65DB7B53 /* StoreInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInterface.swift; path = Sources/RouterServiceInterface/StoreInterface.swift; sourceTree = "<group>"; };
+		EBFDC7045F8B773A8FA04248EA4F0587 /* RouterService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RouterService.xcconfig; sourceTree = "<group>"; };
+		EEAC440F72EA102B4D5997326BBB3AFE /* RouterService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RouterService-Info.plist"; sourceTree = "<group>"; };
+		EEE00BA2D58A25CE254CE4F8679755B5 /* RouterService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterService.swift; path = Sources/RouterService/RouterService.swift; sourceTree = "<group>"; };
 		F202984ECC8056B14353CB93B4788C31 /* RouterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RouterService.framework; path = RouterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F238667A0A81A85838A94A82AF58B1E8 /* HTTPClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTTPClient-prefix.pch"; sourceTree = "<group>"; };
-		F9A29FEB3E861D5923FE0AE4745C9F3E /* FeatureFlag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeatureFlag.swift; sourceTree = "<group>"; };
-		FA9E43C2C8E974BF853D96C9F750A2D2 /* FeatureBuilding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureBuilding.swift; path = Sources/RouterService/FeatureBuilding.swift; sourceTree = "<group>"; };
-		FE7E1143A09DE5A12587483A958CB307 /* HTTPClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTTPClient.modulemap; sourceTree = "<group>"; };
+		F2C52A1D9A73E6CA109CBC6413B92130 /* RouterService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RouterService-prefix.pch"; sourceTree = "<group>"; };
+		F491DF344BCB2A0E781E3F2FA5952062 /* FeatureTwo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FeatureTwo-Info.plist"; sourceTree = "<group>"; };
+		F60FEF0356D72E3624A0B179D68E8A6D /* RouterServiceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouterServiceProtocol.swift; path = Sources/RouterServiceInterface/RouterServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		12AEF92D763F4CD584D89B9E442C6230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F9E27ED7F270D4201792B75C1D9788 /* Foundation.framework in Frameworks */,
+				A46E283D6E7A25E3B48AE54664B0FD1A /* RouterServiceInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4CBBA218B5D4B5A1AC6CF707656448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FE6288E235A6AB7D23C9FA21BA689F /* Foundation.framework in Frameworks */,
+				2DB0195F826474C0B5F8165687FB6FD3 /* RouterServiceInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FFE80EE61CB1FFC849EED1B71A1A0E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,38 +399,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		452928B5CAA92FD26052FEFB925C2045 /* Frameworks */ = {
+		5EFCF260553E4C4AAA0B41D320F7100E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				102701B625AF3BDAAFA125E946514623 /* Foundation.framework in Frameworks */,
-				8B73F67827FDD92F4E511575A36A5625 /* RouterServiceInterface.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F6D10F1C130906C9BE6B580C2DA8B96 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				91127826D0BBAEC21DE891CA991F6A24 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7A73A82A2EB583C3A2E2D7D9048D8B8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				153E439AA3C9566D8F626B78A5B10F04 /* Foundation.framework in Frameworks */,
-				87C8359956DA2B57FC5E58E286AD073A /* RouterServiceInterface.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A90AB6A1CCBBA091E87ECCDCE8367FD6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E8F0280AF1B23EC5C258433539EC321 /* Foundation.framework in Frameworks */,
-				FECA9C67B4354215BB4EB3DBE20D7CC1 /* RouterServiceInterface.framework in Frameworks */,
+				7D6A25139EDB491AB5C593BBD01CA4C9 /* Foundation.framework in Frameworks */,
+				14D596AE8C9367B3A1FE24E275660F5D /* RouterServiceInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,18 +440,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAECDB52545FA81BD211722B3B4D10A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53756F8DFD351869C6CCF57CCB504934 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02CA073F9AA03D60C630C233CE26C3D4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CD938BCCD5045F78395424C04D30AD2A /* LICENSE */,
-				F1B9A56EB4DD013BDB3F0C6A2DB4E062 /* RouterService.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		04DDB52BF920A13AF0462BD7B0F0FF05 /* Pods-RouterServiceExampleApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,127 +468,80 @@
 			path = "Target Support Files/Pods-RouterServiceExampleApp";
 			sourceTree = "<group>";
 		};
-		05861D77080455A4795BEC97CB8E33D1 /* Pod */ = {
+		08EEA52DA0467C48461BBC03650EFCF5 /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
-				EB5483A1F01BB10A49DCAC94664E05D8 /* FeatureFlagInterface.podspec */,
+				6186416A1CF4091EEB8C300FC99D1E5E /* HTTPClient.swift */,
+				1E56DE652F3BA8F4D138D284C14B9D5A /* Pod */,
+				25323178A267EDAC0BEAEF6E11B66589 /* Support Files */,
+			);
+			name = HTTPClient;
+			path = ../HTTPClient;
+			sourceTree = "<group>";
+		};
+		18201CC541537B5BE8B66C5B868615DE /* RouterService */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF6F52EA81295EA1AF756D759CF60D /* AnyRouteType.swift */,
+				2BE24530A101A566B05191F0CFFB404F /* FeatureBuilding.swift */,
+				BCC36C30067CC12D0055579507465A80 /* RouteExtensions.swift */,
+				EEE00BA2D58A25CE254CE4F8679755B5 /* RouterService.swift */,
+				C0AF02750BBC08D49839A3442CC3F7C5 /* RouteString.swift */,
+				5C58DAD50E1B48E6A87AC801F9383C74 /* Store.swift */,
+				EDC353F2355C3F2176589741A063ACD7 /* Pod */,
+				918277491C0B263CBE8FEF8E875AA4C4 /* Support Files */,
+			);
+			name = RouterService;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1E56DE652F3BA8F4D138D284C14B9D5A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D462B6A8A368DDE2797E708C20DA1EE8 /* HTTPClient.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		0A28F5456C210B99A3582FC44FFD211E /* Support Files */ = {
+		20991E95977E1562152310F593105D11 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FE7E1143A09DE5A12587483A958CB307 /* HTTPClient.modulemap */,
-				085000E1E984D1170A4F7F5972493E1F /* HTTPClient.xcconfig */,
-				96907F7C8421B3D158BA456834207E4F /* HTTPClient-dummy.m */,
-				337206966161A71D302350C418C3C674 /* HTTPClient-Info.plist */,
-				F238667A0A81A85838A94A82AF58B1E8 /* HTTPClient-prefix.pch */,
-				90C4EBBAE8E31A805631D0D70358FF41 /* HTTPClient-umbrella.h */,
+				36EA0F9FB6E930D3896C4C7585A6DBF1 /* FeatureTwoInterface.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2409ECD216EE13D20CA4BC8EFB280B46 /* FeatureFlagInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4EE2E0A4757EE7A5C0BB7A5DF6971539 /* FeatureFlagProtocol.swift */,
+				F8938A459C9C600D35B930B71860B4B7 /* Pod */,
+				8522A4436A33D5D3330D21176C5ABB53 /* Support Files */,
+			);
+			name = FeatureFlagInterface;
+			path = ../FeatureFlagInterface;
+			sourceTree = "<group>";
+		};
+		25323178A267EDAC0BEAEF6E11B66589 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				414A14C76E751F44BA56351C397777C0 /* HTTPClient.modulemap */,
+				6FCA99382A8A6E853C3C1D9D5130F7F7 /* HTTPClient.xcconfig */,
+				B80982A79F8254B24C9AC60F30D01E6E /* HTTPClient-dummy.m */,
+				04A5DC8BAA66CDE6F1B27C8229928117 /* HTTPClient-Info.plist */,
+				77EB7733D6CF6B406EF6516CC2D13309 /* HTTPClient-prefix.pch */,
+				42A06DFC56F14BA544C574D17D5AAF2F /* HTTPClient-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Pods/Target Support Files/HTTPClient";
 			sourceTree = "<group>";
 		};
-		0CBA15E144BE5930F177D35EF93D83DA /* Pod */ = {
+		2BF99F646D5F746AD700F333FA7E3119 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C3285025CB7E4ACA8C2A54E398D2EC59 /* FeatureTwoInterface.podspec */,
+				D7F72F84147ADC27164EF06E92588403 /* RouterServiceInterface.podspec */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		1587B9B88EAA081799F3D41E8941149F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				42850A6D53F816A58E0AACB955D70128 /* RouterServiceInterface.modulemap */,
-				28E5663A183C124F61437FB4BB89B20B /* RouterServiceInterface.xcconfig */,
-				A20C8939F35953C553E875089D5700D1 /* RouterServiceInterface-dummy.m */,
-				AB573EEF2FA3D58DBB25551B4A89CF20 /* RouterServiceInterface-Info.plist */,
-				87BFB7E55418B6491202027177602FA5 /* RouterServiceInterface-prefix.pch */,
-				0B8D06ED4B2E531A1063671CDB5F6291 /* RouterServiceInterface-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "ExampleProject/Pods/Target Support Files/RouterServiceInterface";
-			sourceTree = "<group>";
-		};
-		159A02C4C184FDFB2CE69F005DF3A641 /* RouterServiceInterface */ = {
-			isa = PBXGroup;
-			children = (
-				328BB7AAB8CD5B563BB254C7FA1B20E0 /* AnyRoute.swift */,
-				9995C3C3A395A1E073C037C23F3A8BE8 /* Dependency.swift */,
-				2F2C3CA788CE74B63BAB3A5B94C3E95B /* Feature.swift */,
-				90458B5E06BE4F4AB81E875B0FC14051 /* FlaggableFeature.swift */,
-				C3A8747E827F7B3B25B37886CB14BAB0 /* PresentationStyle.swift */,
-				9C8A88D6BD69FA18AA7B3FDD9C4BB0FC /* Route.swift */,
-				DCFC82799D3B55A7504CA8EA19D198CA /* RouteHandler.swift */,
-				58B493B3CF14A327DE699E76D5012751 /* RouterServiceProtocol.swift */,
-				C7C3E0DE2DC11C2743399F7815000B27 /* StoreInterface.swift */,
-				D3815DAFF92EE42C4783E5C0B6FFB31E /* Pod */,
-				1587B9B88EAA081799F3D41E8941149F /* Support Files */,
-			);
-			name = RouterServiceInterface;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		23F5A84637E59B212A993BE3F3DF7E56 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7C162C48FFA5AC7A2F81F5DE3A69D24F /* HTTPClient.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2CACF7429E54DF36BB97DA2197374748 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4028A00C3B18FC68CA4446A35C50E2FE /* RouterService.modulemap */,
-				EF956E2A04CCD3E984961147C35AB8C2 /* RouterService.xcconfig */,
-				A718698C9BBA69BC00765AECBF57E558 /* RouterService-dummy.m */,
-				3A48EA4AF64EC285E4CDF7E8004A29E2 /* RouterService-Info.plist */,
-				86C1907D9C3635913DDBECBE60B9005D /* RouterService-prefix.pch */,
-				D232609E5A3BF3D4C40B739E0C69649A /* RouterService-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "ExampleProject/Pods/Target Support Files/RouterService";
-			sourceTree = "<group>";
-		};
-		2F70B3CE0E69660A40F1CE20F1D2BB5C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1A54A7D6F0BE10C6E727CA25C71D135 /* FeatureFlagInterface.modulemap */,
-				A2264E8397119879CEC2301A7F1B8895 /* FeatureFlagInterface.xcconfig */,
-				EF74D4E36FEA9BC77FDD717D395F329A /* FeatureFlagInterface-dummy.m */,
-				57E507AAC686F9DE729792436DA64853 /* FeatureFlagInterface-Info.plist */,
-				E4EE9FE3BA6DFEB2CA10280322CB549F /* FeatureFlagInterface-prefix.pch */,
-				9F4A186DAC2DCD06275D2223A6CCE742 /* FeatureFlagInterface-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/FeatureFlagInterface";
-			sourceTree = "<group>";
-		};
-		360F121903C90EBBE9343AD10C3B9307 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6EF7ED49C8C20A338D0D5C4BE36C8CD0 /* FeatureTwo.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		3EE2459695D41966AC9CD3E2BBC8E6D3 /* RouterService */ = {
-			isa = PBXGroup;
-			children = (
-				581BD828246F001CE60D13285D9B9D2C /* AnyRouteType.swift */,
-				FA9E43C2C8E974BF853D96C9F750A2D2 /* FeatureBuilding.swift */,
-				1EE8E7098F5A3D67FF9691038FB36FA2 /* RouteExtensions.swift */,
-				81A37688B872D3E434787F9535B38846 /* RouterService.swift */,
-				41AD73A08F770874F7F1A7BB98A3CF2E /* RouteString.swift */,
-				30368C3E3B6011C2347EC15687304848 /* Store.swift */,
-				02CA073F9AA03D60C630C233CE26C3D4 /* Pod */,
-				2CACF7429E54DF36BB97DA2197374748 /* Support Files */,
-			);
-			name = RouterService;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		3F505490CB79BE9B3A9CDD64A5BA4196 /* Products */ = {
@@ -619,54 +561,165 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43FA40C93C2C2AD1A2F26DBCE6ADF931 /* Support Files */ = {
+		40C75F73059F3B996C41D1F05B9B0907 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				115F3AE78E4F5BB944410DFA52FE31D5 /* FeatureOne.modulemap */,
-				5C277B8378760D477F03E8B9DE363169 /* FeatureOne.xcconfig */,
-				EF8B4B76211F0114AA27874B7E722F2C /* FeatureOne-dummy.m */,
-				64A1DB9F39BDF010DEF76CF20BE3DF51 /* FeatureOne-Info.plist */,
-				172D3F36AF2629AD497C3C073B44268B /* FeatureOne-prefix.pch */,
-				46C9B95FAC559206813D912318D70007 /* FeatureOne-umbrella.h */,
+				C45B15D500F78D8E677526ACC7628D32 /* HTTPClientInterface.modulemap */,
+				C70ABDF85025C1D75C42ADA136850031 /* HTTPClientInterface.xcconfig */,
+				086F91FBDE4F4D945E882E83A18D2134 /* HTTPClientInterface-dummy.m */,
+				DE45AC84ED9DAF002FF121CDA850CADA /* HTTPClientInterface-Info.plist */,
+				0260E57870A24DCCC0F6E6120E30BEA2 /* HTTPClientInterface-prefix.pch */,
+				7D7F848709BB3136F302FAABCD41796D /* HTTPClientInterface-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/HTTPClientInterface";
+			sourceTree = "<group>";
+		};
+		53A5143C3A294CBA59442F497277EA93 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C348F55B5DE7646A16962B29EF3BFE68 /* FeatureFlag */,
+				2409ECD216EE13D20CA4BC8EFB280B46 /* FeatureFlagInterface */,
+				D63349C75E0707DB63390C317A3DFA3A /* FeatureOne */,
+				61F026D14A9A989DD55CFD3C2E64D668 /* FeatureTwo */,
+				5CCD61F69991350259497317BDA4105A /* FeatureTwoInterface */,
+				08EEA52DA0467C48461BBC03650EFCF5 /* HTTPClient */,
+				CFFF75EAC1177400EB79325EC08F1E33 /* HTTPClientInterface */,
+				18201CC541537B5BE8B66C5B868615DE /* RouterService */,
+				FD2FAF092A669BA8AF5682CD3FFBE19D /* RouterServiceInterface */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53A7E7A9B2D6A901F34AF201B436D809 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				36CF44CEC2F1791D6BDB9D85529503A9 /* FeatureTwo.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5CCD61F69991350259497317BDA4105A /* FeatureTwoInterface */ = {
+			isa = PBXGroup;
+			children = (
+				20CD41E0F6CB3C8CAFA8840C8C1A1962 /* FeatureTwoRoute.swift */,
+				20991E95977E1562152310F593105D11 /* Pod */,
+				72857E305DB5EB63FB995DD27AC8A62B /* Support Files */,
+			);
+			name = FeatureTwoInterface;
+			path = ../FeatureTwoInterface;
+			sourceTree = "<group>";
+		};
+		61F026D14A9A989DD55CFD3C2E64D668 /* FeatureTwo */ = {
+			isa = PBXGroup;
+			children = (
+				E532B95EC4B6ED3A833ECF2454F8030F /* FeatureTwo.swift */,
+				D6967F884CF9696A5A1C251E41DE238F /* FeatureTwoRouteHandler.swift */,
+				53A7E7A9B2D6A901F34AF201B436D809 /* Pod */,
+				C3251D355901FF3F7A5834ABBAC2AD7A /* Support Files */,
+			);
+			name = FeatureTwo;
+			path = ../FeatureTwo;
+			sourceTree = "<group>";
+		};
+		62A6099DDB1BBED34850FD7A8307F0C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C49A6F1B11789C1334136A18155097A3 /* HTTPClientInterface.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		72857E305DB5EB63FB995DD27AC8A62B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AFF68E8C689DC290BBF73EF17C0AE1C /* FeatureTwoInterface.modulemap */,
+				30A20D75BDEF9C09B024A352B4B321D1 /* FeatureTwoInterface.xcconfig */,
+				DBA58748934ECC897A75BB77DFE3B86F /* FeatureTwoInterface-dummy.m */,
+				E78AE7DC9B37B05ED6D1A4803F7DCDE8 /* FeatureTwoInterface-Info.plist */,
+				75BF20EBB44BF50F399094FCC469A944 /* FeatureTwoInterface-prefix.pch */,
+				63D50F015532E234C811F0A4678BBE11 /* FeatureTwoInterface-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/FeatureTwoInterface";
+			sourceTree = "<group>";
+		};
+		7286380A5E569C57F2DC6BB69ED61CE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C5B0EF7C289B47A5F002561411DA2E4 /* FeatureOne.modulemap */,
+				C03E8BE38E68A58AF67A5B3BE076ECBD /* FeatureOne.xcconfig */,
+				D7259CA8A892487A00B15121262008C6 /* FeatureOne-dummy.m */,
+				C16CDAC3D2B28EE5C9A3CDF3E8A07F84 /* FeatureOne-Info.plist */,
+				D6341C30BB861FB0FF5289B6A9D6C293 /* FeatureOne-prefix.pch */,
+				908C198EEE4EF553F96B7786F70C6B53 /* FeatureOne-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Pods/Target Support Files/FeatureOne";
 			sourceTree = "<group>";
 		};
-		4DD4042A9B05B25B2867DB346FC2D710 /* FeatureFlag */ = {
+		8522A4436A33D5D3330D21176C5ABB53 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F9A29FEB3E861D5923FE0AE4745C9F3E /* FeatureFlag.swift */,
-				C7D6CCD8A82C2B19B55C4B3235ED7D19 /* Pod */,
-				A9107BDDDB849AC60E7316B5E3C2ACFF /* Support Files */,
-			);
-			name = FeatureFlag;
-			path = ../FeatureFlag;
-			sourceTree = "<group>";
-		};
-		99547DB93BE13D25FDC6D00ACA693E9A /* FeatureOne */ = {
-			isa = PBXGroup;
-			children = (
-				EFE8006DEF3CF8CC65F796093C216D00 /* FeatureOne.swift */,
-				CF1EED0D957A48303AAE4490B249B21B /* Pod */,
-				43FA40C93C2C2AD1A2F26DBCE6ADF931 /* Support Files */,
-			);
-			name = FeatureOne;
-			path = ../FeatureOne;
-			sourceTree = "<group>";
-		};
-		9B16102ADD3E2C87EAE1753F458B781D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				14B108F0FF42C385665A0078F2897FE5 /* FeatureTwoInterface.modulemap */,
-				BF16E7AA1213107E720EBDAD9E56E21B /* FeatureTwoInterface.xcconfig */,
-				2F306B91529FC6B9B1DC6DE00323E5B5 /* FeatureTwoInterface-dummy.m */,
-				64BB08B7FC020EFD94FFE5AF991BCB93 /* FeatureTwoInterface-Info.plist */,
-				4D60BD02AAFFA4FDF7C8D52FB2830E86 /* FeatureTwoInterface-prefix.pch */,
-				298335E2F649946C54C97FB374214CE5 /* FeatureTwoInterface-umbrella.h */,
+				B32ACFEF2683A6A359D8770AF928C2C3 /* FeatureFlagInterface.modulemap */,
+				B72F1F2698916662963EBF24632BE08E /* FeatureFlagInterface.xcconfig */,
+				515EE2B907CD898301B6F41E29396352 /* FeatureFlagInterface-dummy.m */,
+				8222B0B580C9579374245081589E8D7D /* FeatureFlagInterface-Info.plist */,
+				242363B2E49FB0DB657559F781847BA2 /* FeatureFlagInterface-prefix.pch */,
+				657F73A8B017FD2D4387AE1858CAA2B1 /* FeatureFlagInterface-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Pods/Target Support Files/FeatureTwoInterface";
+			path = "../Pods/Target Support Files/FeatureFlagInterface";
+			sourceTree = "<group>";
+		};
+		918277491C0B263CBE8FEF8E875AA4C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				536E1EB2C7E1E9EF0B9C8E0B55A91601 /* RouterService.modulemap */,
+				EBFDC7045F8B773A8FA04248EA4F0587 /* RouterService.xcconfig */,
+				6B50FFB68A1B4AACE1544BD457C90D60 /* RouterService-dummy.m */,
+				EEAC440F72EA102B4D5997326BBB3AFE /* RouterService-Info.plist */,
+				F2C52A1D9A73E6CA109CBC6413B92130 /* RouterService-prefix.pch */,
+				6D196F678B18FEB55D3E85308B596C78 /* RouterService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "ExampleProject/Pods/Target Support Files/RouterService";
+			sourceTree = "<group>";
+		};
+		9AA4E69C688A761B8C7B48F007694BEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53E83CFDE23D3D679B1E7ABF8BB33BC5 /* RouterServiceInterface.modulemap */,
+				8A05014AE25E5BCDFF5EED7595CE35C0 /* RouterServiceInterface.xcconfig */,
+				A814E92D02D9DFCD5F879D5C6EEBBFB4 /* RouterServiceInterface-dummy.m */,
+				D4ABEF325A26ADDB7173D8F1E77FD1B3 /* RouterServiceInterface-Info.plist */,
+				40C5002921A65555B1CAF0239AB41D7E /* RouterServiceInterface-prefix.pch */,
+				CB2C62F8B58F375FF4888288B26CE967 /* RouterServiceInterface-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "ExampleProject/Pods/Target Support Files/RouterServiceInterface";
+			sourceTree = "<group>";
+		};
+		9B8238E1EC4586F548AAAEFA3618635E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2CE7540EC9DB485C2D56502DBE49FA52 /* FeatureFlag.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9B929209A3CAA31DED42B9507FCFCF76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F2C870026D556388E3C358ECB26CFF8 /* FeatureFlag.modulemap */,
+				999B90E3A32F3D4C0799D9945669D87F /* FeatureFlag.xcconfig */,
+				9E6E8315E7A999FED187D31D96EFB8DC /* FeatureFlag-dummy.m */,
+				9F9AAB74A6BFF0A2904DE559D4B4E64B /* FeatureFlag-Info.plist */,
+				8923FFD845995B1CE0DCF21329609D22 /* FeatureFlag-prefix.pch */,
+				4FC8AA9EFB2F04BB06C6632FA5AB39C1 /* FeatureFlag-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/FeatureFlag";
 			sourceTree = "<group>";
 		};
 		A4862105CD30467BAA28816C852C9E1A /* iOS */ = {
@@ -677,73 +730,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		A7DB81384F4B77D8B1483944288A81E2 /* FeatureFlagInterface */ = {
+		BD535F8698CCE60583B7C3BA7E4FBFDB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				78C2904599C5025E7B9BB0513D1A7C0F /* FeatureFlagProtocol.swift */,
-				05861D77080455A4795BEC97CB8E33D1 /* Pod */,
-				2F70B3CE0E69660A40F1CE20F1D2BB5C /* Support Files */,
+				5C1077BEC14F70103F06EE2B2EF4A724 /* FeatureOne.podspec */,
 			);
-			name = FeatureFlagInterface;
-			path = ../FeatureFlagInterface;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		A9107BDDDB849AC60E7316B5E3C2ACFF /* Support Files */ = {
+		C3251D355901FF3F7A5834ABBAC2AD7A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5A1803C6A9A1CFF87B13FFCABD6723C /* FeatureFlag.modulemap */,
-				73E9DEBB3C448AA3E1B3E018FE897293 /* FeatureFlag.xcconfig */,
-				6E63AF05FE3209E0A6B47416EFA5B177 /* FeatureFlag-dummy.m */,
-				238DB099D55F91202BE05BB29161F1BA /* FeatureFlag-Info.plist */,
-				C251AAD6EDE2C3E469A5C091D8308028 /* FeatureFlag-prefix.pch */,
-				6FBB4BC85B0F8ED7D971AAB809076EC7 /* FeatureFlag-umbrella.h */,
+				45CB1612EF1E52D920BAE35F44263AE7 /* FeatureTwo.modulemap */,
+				3796F73208295ED66D3A5A53D5A0E5A4 /* FeatureTwo.xcconfig */,
+				D15073C26DAD3DE363F097FD96E8EDD2 /* FeatureTwo-dummy.m */,
+				F491DF344BCB2A0E781E3F2FA5952062 /* FeatureTwo-Info.plist */,
+				2917CDF4391A7929957745AEF18D26EC /* FeatureTwo-prefix.pch */,
+				B6E1E7BA5C70C1F70DDAD931253C1718 /* FeatureTwo-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Pods/Target Support Files/FeatureFlag";
+			path = "../Pods/Target Support Files/FeatureTwo";
 			sourceTree = "<group>";
 		};
-		AFC9B37A06C802FF5659F57CC0E5508C /* Pod */ = {
+		C348F55B5DE7646A16962B29EF3BFE68 /* FeatureFlag */ = {
 			isa = PBXGroup;
 			children = (
-				9611F4AAB67C875582680F2452F39355 /* HTTPClientInterface.podspec */,
+				E6284AF85B127168B2F980668C6277EE /* FeatureFlag.swift */,
+				9B8238E1EC4586F548AAAEFA3618635E /* Pod */,
+				9B929209A3CAA31DED42B9507FCFCF76 /* Support Files */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		B22D006090E423F264A6917F1CB67EEE /* FeatureTwo */ = {
-			isa = PBXGroup;
-			children = (
-				C29F4754724F20263941735DF927A5F8 /* FeatureTwo.swift */,
-				1CCE344AA9B66FF56B238BE073E9E5DB /* FeatureTwoRouteHandler.swift */,
-				360F121903C90EBBE9343AD10C3B9307 /* Pod */,
-				CFA5F1DDE2072504D00BD01556B9A371 /* Support Files */,
-			);
-			name = FeatureTwo;
-			path = ../FeatureTwo;
-			sourceTree = "<group>";
-		};
-		B36F103FAEC024AA3F72A43B06179439 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4DD4042A9B05B25B2867DB346FC2D710 /* FeatureFlag */,
-				A7DB81384F4B77D8B1483944288A81E2 /* FeatureFlagInterface */,
-				99547DB93BE13D25FDC6D00ACA693E9A /* FeatureOne */,
-				B22D006090E423F264A6917F1CB67EEE /* FeatureTwo */,
-				F6BD4F7D587560E2050A40B0E8AA7B6E /* FeatureTwoInterface */,
-				F0D11610AE41190DE999308079D0714D /* HTTPClient */,
-				CF03DAE11379BAA56C6B331EFF393CDA /* HTTPClientInterface */,
-				3EE2459695D41966AC9CD3E2BBC8E6D3 /* RouterService */,
-				159A02C4C184FDFB2CE69F005DF3A641 /* RouterServiceInterface */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C7D6CCD8A82C2B19B55C4B3235ED7D19 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1330105C30CF66CD81D93E2E93528278 /* FeatureFlag.podspec */,
-			);
-			name = Pod;
+			name = FeatureFlag;
+			path = ../FeatureFlag;
 			sourceTree = "<group>";
 		};
 		CEEB50F0EF3AD46C143A87B16A4E874F /* Targets Support Files */ = {
@@ -754,70 +771,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CF03DAE11379BAA56C6B331EFF393CDA /* HTTPClientInterface */ = {
-			isa = PBXGroup;
-			children = (
-				6D2C4783CFAEA6B9013505246039621A /* HTTPClientProtocol.swift */,
-				AFC9B37A06C802FF5659F57CC0E5508C /* Pod */,
-				D90767E3492751ACA4D14BB364F96243 /* Support Files */,
-			);
-			name = HTTPClientInterface;
-			path = ../HTTPClientInterface;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B36F103FAEC024AA3F72A43B06179439 /* Development Pods */,
+				53A5143C3A294CBA59442F497277EA93 /* Development Pods */,
 				E3D9646B6D977199961DAD6D1D855089 /* Frameworks */,
 				3F505490CB79BE9B3A9CDD64A5BA4196 /* Products */,
 				CEEB50F0EF3AD46C143A87B16A4E874F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CF1EED0D957A48303AAE4490B249B21B /* Pod */ = {
+		CFFF75EAC1177400EB79325EC08F1E33 /* HTTPClientInterface */ = {
 			isa = PBXGroup;
 			children = (
-				4F89A3917396754C6764C56218C0709C /* FeatureOne.podspec */,
+				23A9689B3DA03AF91124991F95BEFD3D /* HTTPClientProtocol.swift */,
+				62A6099DDB1BBED34850FD7A8307F0C9 /* Pod */,
+				40C75F73059F3B996C41D1F05B9B0907 /* Support Files */,
 			);
-			name = Pod;
+			name = HTTPClientInterface;
+			path = ../HTTPClientInterface;
 			sourceTree = "<group>";
 		};
-		CFA5F1DDE2072504D00BD01556B9A371 /* Support Files */ = {
+		D63349C75E0707DB63390C317A3DFA3A /* FeatureOne */ = {
 			isa = PBXGroup;
 			children = (
-				4B43B084A35926E3229FA3661412A3C6 /* FeatureTwo.modulemap */,
-				5427F667374029ACA334B8B2BE02F69F /* FeatureTwo.xcconfig */,
-				E1B0F107659A91600C391C40E4481DAB /* FeatureTwo-dummy.m */,
-				10C33C6FF3A1CE0D1DD917B45C05EDCD /* FeatureTwo-Info.plist */,
-				247D17FBB8CD398389825A421938B75E /* FeatureTwo-prefix.pch */,
-				7138798F3264998898FF4B4B28F825B8 /* FeatureTwo-umbrella.h */,
+				096CF2FA7F0EA37E05E41AC8F715135E /* FeatureOne.swift */,
+				BD535F8698CCE60583B7C3BA7E4FBFDB /* Pod */,
+				7286380A5E569C57F2DC6BB69ED61CE0 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/FeatureTwo";
-			sourceTree = "<group>";
-		};
-		D3815DAFF92EE42C4783E5C0B6FFB31E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8F531895C1D3A16EE107C29CB2C7BF4E /* RouterServiceInterface.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		D90767E3492751ACA4D14BB364F96243 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CACFF1F1242AD7F743DD8D5654528D9F /* HTTPClientInterface.modulemap */,
-				BEDCCEDDDF52136F089C65F90009B185 /* HTTPClientInterface.xcconfig */,
-				054E7DDF476C75C3AC163416D85EA9F0 /* HTTPClientInterface-dummy.m */,
-				8B9AB8B5E43EC7702FBB7D1856E50114 /* HTTPClientInterface-Info.plist */,
-				C5DDB603C14ED9AD4E25E94FDF5E9CB5 /* HTTPClientInterface-prefix.pch */,
-				7AE04886ACBE8544DB9625F417FC75D1 /* HTTPClientInterface-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/HTTPClientInterface";
+			name = FeatureOne;
+			path = ../FeatureOne;
 			sourceTree = "<group>";
 		};
 		E3D9646B6D977199961DAD6D1D855089 /* Frameworks */ = {
@@ -832,26 +816,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F0D11610AE41190DE999308079D0714D /* HTTPClient */ = {
+		EDC353F2355C3F2176589741A063ACD7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A38B5B2DED4D69C56F3A4D7268460B16 /* HTTPClient.swift */,
-				23F5A84637E59B212A993BE3F3DF7E56 /* Pod */,
-				0A28F5456C210B99A3582FC44FFD211E /* Support Files */,
+				1413A9605344FC78B068E5C76F261845 /* LICENSE */,
+				0E0B0FA0A4D5C83E2BE0BD372B120933 /* RouterService.podspec */,
 			);
-			name = HTTPClient;
-			path = ../HTTPClient;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		F6BD4F7D587560E2050A40B0E8AA7B6E /* FeatureTwoInterface */ = {
+		F8938A459C9C600D35B930B71860B4B7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9A3D5E212B12AD29E0586DB7F0058264 /* FeatureTwoRoute.swift */,
-				0CBA15E144BE5930F177D35EF93D83DA /* Pod */,
-				9B16102ADD3E2C87EAE1753F458B781D /* Support Files */,
+				AEBA6D34CA7F7BEA1943A179C53D31C7 /* FeatureFlagInterface.podspec */,
 			);
-			name = FeatureTwoInterface;
-			path = ../FeatureTwoInterface;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FD2FAF092A669BA8AF5682CD3FFBE19D /* RouterServiceInterface */ = {
+			isa = PBXGroup;
+			children = (
+				BF45D88F8A7E202EDB0D5F0C4D7506E5 /* AnyRoute.swift */,
+				31E44B2E96E8C59F8FBBD95D6EC508E2 /* Dependency.swift */,
+				B12505E878E8340D006EBD341F07EF2E /* Feature.swift */,
+				1607917CCAA4CC54AAA33DB93D861FF9 /* PresentationStyle.swift */,
+				65BE8D4C2AA9557678B0BE744EA5264A /* Route.swift */,
+				AC448E92C1E93EFFB8FDEE2CA210F590 /* RouteHandler.swift */,
+				F60FEF0356D72E3624A0B179D68E8A6D /* RouterServiceProtocol.swift */,
+				EA4C8ED49D107FCCE01BB2FF65DB7B53 /* StoreInterface.swift */,
+				2BF99F646D5F746AD700F333FA7E3119 /* Pod */,
+				9AA4E69C688A761B8C7B48F007694BEE /* Support Files */,
+			);
+			name = RouterServiceInterface;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -865,6 +862,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44BC5D744C8B657937E9C3924898E2D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50E7F50E367FB38639B1DEBA7ED7BB0 /* FeatureFlagInterface-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		44C1945140B0497BAB1EB6D7AD21B8ED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -873,11 +878,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45621CF0C481D17549844299FE2990A0 /* Headers */ = {
+		4B1B650F74960D94DC7110039844C0AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE350058167A9775F4FC19809CA10417 /* FeatureFlagInterface-umbrella.h in Headers */,
+				4753BA0D7B2BEAE270BB4F44757A6DBF /* RouterServiceInterface-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,14 +891,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCF91BFCD077704BFD895070F3470AE /* FeatureOne-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D56FF2FDC3F378B58AF703824C94B8A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12D162996EB50EEF76F7CD8014F29D9F /* FeatureTwoInterface-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,11 +910,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFC9043BAEC371A1F4991520B7947593 /* Headers */ = {
+		DF88A7111C4FE286FDC938F7EF64816E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412EA8BF122A79D7CA2C67D645BF2A72 /* RouterServiceInterface-umbrella.h in Headers */,
+				CA67631F45C801D3E9FA85ABF838B511 /* FeatureTwoInterface-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,11 +926,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0DEF0DA76415F5709A0E931E5B6E1D1 /* Headers */ = {
+		F38C57D0351D04840A8FE380EDB23CF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E60C8D84159034DB0D17BE89198CC1A /* HTTPClientInterface-umbrella.h in Headers */,
+				46B56C4D4CF825D5E641BEC010BA809D /* HTTPClientInterface-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -952,8 +949,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A9F36D858C7730F9D5372CF12CDC586A /* PBXTargetDependency */,
-				83A9D7DE3ED53C766060E72BDE09495F /* PBXTargetDependency */,
+				1A9A57D1A686DEDA2B3D217259B0CA06 /* PBXTargetDependency */,
+				5E53D9499D4FC87DB76817E65CF2ACDF /* PBXTargetDependency */,
 			);
 			name = HTTPClient;
 			productName = HTTPClient;
@@ -962,17 +959,17 @@
 		};
 		6A22B0C69B4BB605A1546818873EF91F /* FeatureFlagInterface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B51F2C0DB260576C182E77CAC25727A /* Build configuration list for PBXNativeTarget "FeatureFlagInterface" */;
+			buildConfigurationList = ADCD7575CB083CD26C0658C828873EA0 /* Build configuration list for PBXNativeTarget "FeatureFlagInterface" */;
 			buildPhases = (
-				45621CF0C481D17549844299FE2990A0 /* Headers */,
-				57421E66A12A99E328349C84528274BD /* Sources */,
-				452928B5CAA92FD26052FEFB925C2045 /* Frameworks */,
-				62AFE4D760414A3BA2759405DF221BE3 /* Resources */,
+				44BC5D744C8B657937E9C3924898E2D4 /* Headers */,
+				C8E37FC77B249DFF4EE571B7A3FA2541 /* Sources */,
+				12AEF92D763F4CD584D89B9E442C6230 /* Frameworks */,
+				9459F60CE1EA66CB3FAC9BC3D7AF1677 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9453F3174D7A1C62026223A2836EDD42 /* PBXTargetDependency */,
+				40D7A5012CCCA7E2D17CA04D24B916B7 /* PBXTargetDependency */,
 			);
 			name = FeatureFlagInterface;
 			productName = FeatureFlagInterface;
@@ -981,17 +978,17 @@
 		};
 		6E14CAA99BFA725941AC80BEDD9DBB8E /* HTTPClientInterface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4C9AA02881C5FA616DF3AADB3028390 /* Build configuration list for PBXNativeTarget "HTTPClientInterface" */;
+			buildConfigurationList = DD7F259530543F342A37FA7F3A34BED1 /* Build configuration list for PBXNativeTarget "HTTPClientInterface" */;
 			buildPhases = (
-				F0DEF0DA76415F5709A0E931E5B6E1D1 /* Headers */,
-				48DF39607BEA0B2F76E1861DAF469738 /* Sources */,
-				A90AB6A1CCBBA091E87ECCDCE8367FD6 /* Frameworks */,
-				BD36B24FDCBE041BE24B5C2427BEAC62 /* Resources */,
+				F38C57D0351D04840A8FE380EDB23CF7 /* Headers */,
+				CFC415B6F115051EAFCCC3B95BD9B4BD /* Sources */,
+				5EFCF260553E4C4AAA0B41D320F7100E /* Frameworks */,
+				3821733CA8A142B77C62B05D61D32AF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				06BCCD661AF1E8577C6A55A622A58613 /* PBXTargetDependency */,
+				500C8F21E3969009D731AACF92F55B77 /* PBXTargetDependency */,
 			);
 			name = HTTPClientInterface;
 			productName = HTTPClientInterface;
@@ -1010,8 +1007,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				DDEE0B1838F3E014D64AA9219CC5F1CA /* PBXTargetDependency */,
-				8BF1C55396548EB5D53A90B5A62F3D3A /* PBXTargetDependency */,
+				E68E2843D182B0B0E4AFC02DE39A859A /* PBXTargetDependency */,
+				D39605A3619A32E0D7A601698773054A /* PBXTargetDependency */,
 			);
 			name = FeatureTwo;
 			productName = FeatureTwo;
@@ -1020,17 +1017,17 @@
 		};
 		871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E43050C383403E316B42828F1B0DCF59 /* Build configuration list for PBXNativeTarget "FeatureTwoInterface" */;
+			buildConfigurationList = D6F4D78BE3AF0185CC722518FD429060 /* Build configuration list for PBXNativeTarget "FeatureTwoInterface" */;
 			buildPhases = (
-				6D56FF2FDC3F378B58AF703824C94B8A /* Headers */,
-				8A257258ED9F6F514778307A7BB98B9C /* Sources */,
-				7A73A82A2EB583C3A2E2D7D9048D8B8D /* Frameworks */,
-				D16140DF89A524EF6597EBCB0ACDBECD /* Resources */,
+				DF88A7111C4FE286FDC938F7EF64816E /* Headers */,
+				63ABDA645388668ED1282DBFFF48CAD1 /* Sources */,
+				1C4CBBA218B5D4B5A1AC6CF707656448 /* Frameworks */,
+				561BBE757884F564009E77514A71FE4E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				79340A93436CFA59C271C06D57756C78 /* PBXTargetDependency */,
+				2767F65C0D2340BB2D8F6B800F819076 /* PBXTargetDependency */,
 			);
 			name = FeatureTwoInterface;
 			productName = FeatureTwoInterface;
@@ -1049,10 +1046,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				E862CE5E68805A62F1FFF998572D579C /* PBXTargetDependency */,
-				07A246436C8286F8C8D69009CE4D5EEA /* PBXTargetDependency */,
-				468A44F821912CFAF3C58C3B28B2D44E /* PBXTargetDependency */,
-				2F2B977B3A7356127CCD788223070867 /* PBXTargetDependency */,
+				D6E8C08D7C52BC877DD4FDC69789DC75 /* PBXTargetDependency */,
+				96649B348570C4B90A71CF1D259FA525 /* PBXTargetDependency */,
+				4F4490EADD6DC63C1A4C65BF81A3F544 /* PBXTargetDependency */,
+				B9AE61A6008DA5A608A0AC87074311D8 /* PBXTargetDependency */,
 			);
 			name = FeatureOne;
 			productName = FeatureOne;
@@ -1071,7 +1068,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C8521B280C68E390E0E6092D50717BD1 /* PBXTargetDependency */,
+				AA2F189B237B60F2C20A35E8BC07BBC4 /* PBXTargetDependency */,
 			);
 			name = RouterService;
 			productName = RouterService;
@@ -1090,15 +1087,15 @@
 			buildRules = (
 			);
 			dependencies = (
-				0EF8C775AB5BDF2D4E8FCE23245A10FE /* PBXTargetDependency */,
-				70B85461F3BAC42CA7154FC166619E28 /* PBXTargetDependency */,
-				564AD039CFB865AB0F69EE6B2B64E2A4 /* PBXTargetDependency */,
-				36588A64CBAB72274B4D8422ACE937B9 /* PBXTargetDependency */,
-				6C593CB594283CD0E5A48FDCAD5AAE7B /* PBXTargetDependency */,
-				DBFA3B9290642F44F16EA2539A274BD5 /* PBXTargetDependency */,
-				DE76A7B786A5FBB9F0DE46A2E467F52A /* PBXTargetDependency */,
-				A95A53A112BED8502A0E5D0BD2203927 /* PBXTargetDependency */,
-				2CB8E335C11EDD7FE490455F356E9AEE /* PBXTargetDependency */,
+				D39EC7986D41B11CB509227D3ED2556E /* PBXTargetDependency */,
+				156EC686EBAA71994D1FB9B660847BCF /* PBXTargetDependency */,
+				5D9BA8D2A168BB1A3247EFDA4DAA7902 /* PBXTargetDependency */,
+				881A4C7BD1217934460E77F90056B7A4 /* PBXTargetDependency */,
+				9DBA8D11CF8B799AAF3190312B76F730 /* PBXTargetDependency */,
+				503CF0D18098207CB298A9807C4BE43B /* PBXTargetDependency */,
+				0B911115D52B12AAB4CE093D0D30D75D /* PBXTargetDependency */,
+				3DB14CFCF49D59CC0338BA6B191F39CA /* PBXTargetDependency */,
+				EEB58416952E695EB8C9F3586DC08E13 /* PBXTargetDependency */,
 			);
 			name = "Pods-RouterServiceExampleApp";
 			productName = "Pods-RouterServiceExampleApp";
@@ -1107,12 +1104,12 @@
 		};
 		F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEA6165982838B820C867AA30B9807B8 /* Build configuration list for PBXNativeTarget "RouterServiceInterface" */;
+			buildConfigurationList = 5DF7649E171540B1E13A9038C7DDCFF1 /* Build configuration list for PBXNativeTarget "RouterServiceInterface" */;
 			buildPhases = (
-				DFC9043BAEC371A1F4991520B7947593 /* Headers */,
-				9A920D8437EF158D9E31FDB798C90637 /* Sources */,
-				5F6D10F1C130906C9BE6B580C2DA8B96 /* Frameworks */,
-				D4644755CF3B1E14FE458F92A0ADA101 /* Resources */,
+				4B1B650F74960D94DC7110039844C0AE /* Headers */,
+				660CE65C1F3A4EAC41D17968D060B45E /* Sources */,
+				FAECDB52545FA81BD211722B3B4D10A9 /* Frameworks */,
+				40C2E480BE5990AA8443CC2E449476D3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1135,8 +1132,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C53075FE801E822A3C98AFF987EAB9D2 /* PBXTargetDependency */,
-				B272BF74BDE60BF5BBA61E459B06D759 /* PBXTargetDependency */,
+				26CB665CD5881C8E481802DD2A6DF265 /* PBXTargetDependency */,
+				44F83BD4E70A84F5CEE0EFABFE5D5EA5 /* PBXTargetDependency */,
 			);
 			name = FeatureFlag;
 			productName = FeatureFlag;
@@ -1201,14 +1198,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5722BDA53B7B05858C5D0C003CF1572E /* Resources */ = {
+		3821733CA8A142B77C62B05D61D32AF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62AFE4D760414A3BA2759405DF221BE3 /* Resources */ = {
+		40C2E480BE5990AA8443CC2E449476D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561BBE757884F564009E77514A71FE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5722BDA53B7B05858C5D0C003CF1572E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1229,21 +1240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD36B24FDCBE041BE24B5C2427BEAC62 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D16140DF89A524EF6597EBCB0ACDBECD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4644755CF3B1E14FE458F92A0ADA101 /* Resources */ = {
+		9459F60CE1EA66CB3FAC9BC3D7AF1677 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1262,15 +1259,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48DF39607BEA0B2F76E1861DAF469738 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				65844658867891404D60D2D0D354BD47 /* HTTPClientInterface-dummy.m in Sources */,
-				80AB08F031F8A764E7ECDA306834882E /* HTTPClientProtocol.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4F7465DE9292A8287D2F1FE19E403911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1278,15 +1266,6 @@
 				2493D00CDFDE4887EDF3D10ADAE82350 /* FeatureTwo-dummy.m in Sources */,
 				F0FC662B88C2F22B9344CA0D5487E429 /* FeatureTwo.swift in Sources */,
 				46124BA40E39E2EB8DEE1739562CE0BD /* FeatureTwoRouteHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		57421E66A12A99E328349C84528274BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				090EDE541734EF60B51FE555D4FD6E9E /* FeatureFlagInterface-dummy.m in Sources */,
-				3DB58CE4ADD9C52F2F63B9C376ED9676 /* FeatureFlagProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,12 +1283,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A257258ED9F6F514778307A7BB98B9C /* Sources */ = {
+		63ABDA645388668ED1282DBFFF48CAD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43BCE3322DC87D94E3E57AFBBA2C3F57 /* FeatureTwoInterface-dummy.m in Sources */,
-				3BF1A527E2F7863A72880A5DC5657BFF /* FeatureTwoRoute.swift in Sources */,
+				D96297AC092940A4749D1CC2E5302FEF /* FeatureTwoInterface-dummy.m in Sources */,
+				0D8E67EFD91E863D20291BE19591209E /* FeatureTwoRoute.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660CE65C1F3A4EAC41D17968D060B45E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A3549969DF48767BBB4210F7D173E2 /* AnyRoute.swift in Sources */,
+				94F70D460F61AEBA4A8673BB69FE1375 /* Dependency.swift in Sources */,
+				C7417D69D266D16D8A27C40B4DC3D2E9 /* Feature.swift in Sources */,
+				5FDF4F4C3DFF409692C354E1CC667C03 /* PresentationStyle.swift in Sources */,
+				BE3C07A36AEB68856120985550C0544C /* Route.swift in Sources */,
+				F3BE43C5E32279537BBF967E40B9ACB5 /* RouteHandler.swift in Sources */,
+				11A9EB5D6044BB0F6FC6D5B2061D5FFC /* RouterServiceInterface-dummy.m in Sources */,
+				CD21D2E57F05FB68B26E457DFDC32904 /* RouterServiceProtocol.swift in Sources */,
+				2E2C87BBE29BFAA54D29CF725ED1B21B /* StoreInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1319,23 +1314,6 @@
 			files = (
 				4492AE265284BBEF4A23F4B0653D6211 /* FeatureOne-dummy.m in Sources */,
 				6DB481A5535E4C4B9507C39472965D26 /* FeatureOne.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A920D8437EF158D9E31FDB798C90637 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DD889545FE2873F8DBCA5A5C10ABA58 /* AnyRoute.swift in Sources */,
-				2D2827F0C0CC2EBEB58E8FE650BC7920 /* Dependency.swift in Sources */,
-				7553D82699671896ACC28EDEA133B9BA /* Feature.swift in Sources */,
-				E91817147B23960CFDE9576B1C2040ED /* FlaggableFeature.swift in Sources */,
-				002A2865494E1E1D14B23F5214297514 /* PresentationStyle.swift in Sources */,
-				5853F2FCCC419A5391BD2BFD3F5DA16E /* Route.swift in Sources */,
-				8F690D8CB1D5C1FF81A551886050BE22 /* RouteHandler.swift in Sources */,
-				F67623BAED8D6A99613BBCC7D3317AA6 /* RouterServiceInterface-dummy.m in Sources */,
-				5960E1186AA4307A402D19A912C7CE6E /* RouterServiceProtocol.swift in Sources */,
-				909CC5168411CE50D7CF9DB9BD67CFAE /* StoreInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1356,150 +1334,203 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8E37FC77B249DFF4EE571B7A3FA2541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC32A39B114ADAA0522B8492D9BB2D1 /* FeatureFlagInterface-dummy.m in Sources */,
+				B61BE6ADB5EE9C609650E4E90CF330FF /* FeatureFlagProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC415B6F115051EAFCCC3B95BD9B4BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F521A0143DABFC16A8C4993EA55AFB /* HTTPClientInterface-dummy.m in Sources */,
+				CEF4ACF564F8037D72237F92EB5669A0 /* HTTPClientProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06BCCD661AF1E8577C6A55A622A58613 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = 98433EA5F4D6C3A62DB5B30B8F9FECB2 /* PBXContainerItemProxy */;
-		};
-		07A246436C8286F8C8D69009CE4D5EEA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureTwoInterface;
-			target = 871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */;
-			targetProxy = 95155CB3D87D9E77F6BD74D2656551FC /* PBXContainerItemProxy */;
-		};
-		0EF8C775AB5BDF2D4E8FCE23245A10FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureFlag;
-			target = FC7983028A5D2335B5A4DE020986C62D /* FeatureFlag */;
-			targetProxy = 7EBC81F722380AFAD2EE534D16FEF038 /* PBXContainerItemProxy */;
-		};
-		2CB8E335C11EDD7FE490455F356E9AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = F5640D10C5CE5E712EA6DDEAD0C3A4F0 /* PBXContainerItemProxy */;
-		};
-		2F2B977B3A7356127CCD788223070867 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = BD0460489053DBE97F4AB0A00E9D8095 /* PBXContainerItemProxy */;
-		};
-		36588A64CBAB72274B4D8422ACE937B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureTwo;
-			target = 70C9518BD652EBD4B1D70C329EF3680E /* FeatureTwo */;
-			targetProxy = C677E65FE2047B012559A3F7EABF5788 /* PBXContainerItemProxy */;
-		};
-		468A44F821912CFAF3C58C3B28B2D44E /* PBXTargetDependency */ = {
+		0B911115D52B12AAB4CE093D0D30D75D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HTTPClientInterface;
 			target = 6E14CAA99BFA725941AC80BEDD9DBB8E /* HTTPClientInterface */;
-			targetProxy = BDF086E66B92D8CE942A9ABC23C989B8 /* PBXContainerItemProxy */;
+			targetProxy = 3FD8F556A7E2BB623E8D156F0A305117 /* PBXContainerItemProxy */;
 		};
-		564AD039CFB865AB0F69EE6B2B64E2A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureOne;
-			target = BA94B039BCCC8D95260CB57918FACAB3 /* FeatureOne */;
-			targetProxy = 05FF614351ABF46D9E97586189D4E3E4 /* PBXContainerItemProxy */;
-		};
-		6C593CB594283CD0E5A48FDCAD5AAE7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureTwoInterface;
-			target = 871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */;
-			targetProxy = 30E0CFBA786E432C7F815701CD809A72 /* PBXContainerItemProxy */;
-		};
-		70B85461F3BAC42CA7154FC166619E28 /* PBXTargetDependency */ = {
+		156EC686EBAA71994D1FB9B660847BCF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FeatureFlagInterface;
 			target = 6A22B0C69B4BB605A1546818873EF91F /* FeatureFlagInterface */;
-			targetProxy = 2113601FED4B14F1F27DBB2743B3ECAC /* PBXContainerItemProxy */;
+			targetProxy = 1EC60B285918830ECE79D8ABE1820D5D /* PBXContainerItemProxy */;
 		};
-		79340A93436CFA59C271C06D57756C78 /* PBXTargetDependency */ = {
+		1A9A57D1A686DEDA2B3D217259B0CA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HTTPClientInterface;
+			target = 6E14CAA99BFA725941AC80BEDD9DBB8E /* HTTPClientInterface */;
+			targetProxy = E2D999DFBB2CB8030464BD9AD7AB3058 /* PBXContainerItemProxy */;
+		};
+		26CB665CD5881C8E481802DD2A6DF265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureFlagInterface;
+			target = 6A22B0C69B4BB605A1546818873EF91F /* FeatureFlagInterface */;
+			targetProxy = 31F2B57EC133CAA5491B4A9FF1CE13BD /* PBXContainerItemProxy */;
+		};
+		2767F65C0D2340BB2D8F6B800F819076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RouterServiceInterface;
 			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = 456D853E1C2863DDD6738F92F1660BE5 /* PBXContainerItemProxy */;
+			targetProxy = C543E40F7458FD784F40F72D9589CAFF /* PBXContainerItemProxy */;
 		};
-		83A9D7DE3ED53C766060E72BDE09495F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = DF21BB5E872A30268C13DFAD01F12420 /* PBXContainerItemProxy */;
-		};
-		8BF1C55396548EB5D53A90B5A62F3D3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = 72F123C3E29682388EE403AE330EA7A6 /* PBXContainerItemProxy */;
-		};
-		9453F3174D7A1C62026223A2836EDD42 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = B248E7C2C9536394509D5D65302EA6C5 /* PBXContainerItemProxy */;
-		};
-		A95A53A112BED8502A0E5D0BD2203927 /* PBXTargetDependency */ = {
+		3DB14CFCF49D59CC0338BA6B191F39CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RouterService;
 			target = CC484931EBADAAC84BEEB391E5013B89 /* RouterService */;
-			targetProxy = 8D7DC79B1509E6C276F037A8F1A24632 /* PBXContainerItemProxy */;
+			targetProxy = 9B5ACF2C4B697E035E1A5B08B98A1310 /* PBXContainerItemProxy */;
 		};
-		A9F36D858C7730F9D5372CF12CDC586A /* PBXTargetDependency */ = {
+		40D7A5012CCCA7E2D17CA04D24B916B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = CBDFFE7244790DAF896282E8B3355CDD /* PBXContainerItemProxy */;
+		};
+		44F83BD4E70A84F5CEE0EFABFE5D5EA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = 388D930A617A84D0D2CE1C47BDA54D7D /* PBXContainerItemProxy */;
+		};
+		4F4490EADD6DC63C1A4C65BF81A3F544 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HTTPClientInterface;
 			target = 6E14CAA99BFA725941AC80BEDD9DBB8E /* HTTPClientInterface */;
-			targetProxy = 9B0FBB7872C42ADF1E970ACF9D97FDDA /* PBXContainerItemProxy */;
+			targetProxy = 3CFBD3EE91AE8B34CA504FA534C95B6F /* PBXContainerItemProxy */;
 		};
-		B272BF74BDE60BF5BBA61E459B06D759 /* PBXTargetDependency */ = {
+		500C8F21E3969009D731AACF92F55B77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RouterServiceInterface;
 			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = 680EBB85DD851F4C29C9389AE3C089AA /* PBXContainerItemProxy */;
+			targetProxy = 6A5847F3A0C26D6996F101B3015B2140 /* PBXContainerItemProxy */;
 		};
-		C53075FE801E822A3C98AFF987EAB9D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FeatureFlagInterface;
-			target = 6A22B0C69B4BB605A1546818873EF91F /* FeatureFlagInterface */;
-			targetProxy = 333B59A86C9546757258DA8CA8B5631B /* PBXContainerItemProxy */;
-		};
-		C8521B280C68E390E0E6092D50717BD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RouterServiceInterface;
-			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
-			targetProxy = 81F7CFCFD64EBBF147A6377E9DE64865 /* PBXContainerItemProxy */;
-		};
-		DBFA3B9290642F44F16EA2539A274BD5 /* PBXTargetDependency */ = {
+		503CF0D18098207CB298A9807C4BE43B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HTTPClient;
 			target = 0EFE29E423A52076A90BF82E2DB1F39C /* HTTPClient */;
-			targetProxy = 8EBA51343F8AC7038376B5772128CCCA /* PBXContainerItemProxy */;
+			targetProxy = 2F54B57653B23A31742224715CA214B5 /* PBXContainerItemProxy */;
 		};
-		DDEE0B1838F3E014D64AA9219CC5F1CA /* PBXTargetDependency */ = {
+		5D9BA8D2A168BB1A3247EFDA4DAA7902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureOne;
+			target = BA94B039BCCC8D95260CB57918FACAB3 /* FeatureOne */;
+			targetProxy = 7D6E1BA200D33444F179FFB440C8F19E /* PBXContainerItemProxy */;
+		};
+		5E53D9499D4FC87DB76817E65CF2ACDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = C6C5A24E49C17F670CDCCDA7180D50B1 /* PBXContainerItemProxy */;
+		};
+		881A4C7BD1217934460E77F90056B7A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureTwo;
+			target = 70C9518BD652EBD4B1D70C329EF3680E /* FeatureTwo */;
+			targetProxy = BEA4D2B748FF2383ECB6EA9548610A85 /* PBXContainerItemProxy */;
+		};
+		96649B348570C4B90A71CF1D259FA525 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FeatureTwoInterface;
 			target = 871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */;
-			targetProxy = 7714776BE1319E2ED076B4F73C6E66AE /* PBXContainerItemProxy */;
+			targetProxy = E410CA828DFAAB01AEFAFAF49EF07461 /* PBXContainerItemProxy */;
 		};
-		DE76A7B786A5FBB9F0DE46A2E467F52A /* PBXTargetDependency */ = {
+		9DBA8D11CF8B799AAF3190312B76F730 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = HTTPClientInterface;
-			target = 6E14CAA99BFA725941AC80BEDD9DBB8E /* HTTPClientInterface */;
-			targetProxy = CA1C4CAD6421F10E78DC4A1936209490 /* PBXContainerItemProxy */;
+			name = FeatureTwoInterface;
+			target = 871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */;
+			targetProxy = EAD399BD3132895A2ECCCBD9D1756CBC /* PBXContainerItemProxy */;
 		};
-		E862CE5E68805A62F1FFF998572D579C /* PBXTargetDependency */ = {
+		AA2F189B237B60F2C20A35E8BC07BBC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = C0F411EDDCBF296AEAD537ACD2C949BA /* PBXContainerItemProxy */;
+		};
+		B9AE61A6008DA5A608A0AC87074311D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = 5A465F5E7B15933E999EFCC2C63691E9 /* PBXContainerItemProxy */;
+		};
+		D39605A3619A32E0D7A601698773054A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = 9E4CFB2D6FB0FE756DCB79FF4FE2B602 /* PBXContainerItemProxy */;
+		};
+		D39EC7986D41B11CB509227D3ED2556E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureFlag;
+			target = FC7983028A5D2335B5A4DE020986C62D /* FeatureFlag */;
+			targetProxy = 18AA613A0C765C4D367666964E346605 /* PBXContainerItemProxy */;
+		};
+		D6E8C08D7C52BC877DD4FDC69789DC75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FeatureFlagInterface;
 			target = 6A22B0C69B4BB605A1546818873EF91F /* FeatureFlagInterface */;
-			targetProxy = E90F559D417C14E99B6EDBF2690CA9EB /* PBXContainerItemProxy */;
+			targetProxy = 88766F0C9EA0DDB394423DA6F04D8995 /* PBXContainerItemProxy */;
+		};
+		E68E2843D182B0B0E4AFC02DE39A859A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FeatureTwoInterface;
+			target = 871230FEEB113BAE3B5A7D94E071D80D /* FeatureTwoInterface */;
+			targetProxy = DC9935653616385B5CB1249161083FBA /* PBXContainerItemProxy */;
+		};
+		EEB58416952E695EB8C9F3586DC08E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RouterServiceInterface;
+			target = F03B6B567D29167ABAEFE1FD7B10617F /* RouterServiceInterface */;
+			targetProxy = F3BDC96F0A93C4A53B8EC477F8CC1F1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		033C10BC2B0B4E80F7A88AA81E3CBD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A20D75BDEF9C09B024A352B4B321D1 /* FeatureTwoInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface.modulemap";
+				PRODUCT_MODULE_NAME = FeatureTwoInterface;
+				PRODUCT_NAME = FeatureTwoInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		10DE61CF9CDA7A58F89571D65A78F6E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D42E220456B0025B05211C4C8E91FFA /* Pods-RouterServiceExampleApp.debug.xcconfig */;
@@ -1602,44 +1633,9 @@
 			};
 			name = Debug;
 		};
-		20FBD411FDFD382627547560BDA491F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28E5663A183C124F61437FB4BB89B20B /* RouterServiceInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RouterServiceInterface/RouterServiceInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface.modulemap";
-				PRODUCT_MODULE_NAME = RouterServiceInterface;
-				PRODUCT_NAME = RouterServiceInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		33E556EC1A91AE7EFCF52F98133330F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5427F667374029ACA334B8B2BE02F69F /* FeatureTwo.xcconfig */;
+			baseConfigurationReference = 3796F73208295ED66D3A5A53D5A0E5A4 /* FeatureTwo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1674,7 +1670,7 @@
 		};
 		387D9490177EE4A7A92F043D9A4AC01C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73E9DEBB3C448AA3E1B3E018FE897293 /* FeatureFlag.xcconfig */;
+			baseConfigurationReference = 999B90E3A32F3D4C0799D9945669D87F /* FeatureFlag.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1708,9 +1704,9 @@
 			};
 			name = Release;
 		};
-		54C5BF6DCB430D5445EAF25F2BC95450 /* Release */ = {
+		4BC09E69D96D69AA08F0705FB725C35F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF16E7AA1213107E720EBDAD9E56E21B /* FeatureTwoInterface.xcconfig */;
+			baseConfigurationReference = 8A05014AE25E5BCDFF5EED7595CE35C0 /* RouterServiceInterface.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1721,8 +1717,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RouterServiceInterface/RouterServiceInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1730,13 +1726,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface.modulemap";
-				PRODUCT_MODULE_NAME = FeatureTwoInterface;
-				PRODUCT_NAME = FeatureTwoInterface;
+				MODULEMAP_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface.modulemap";
+				PRODUCT_MODULE_NAME = RouterServiceInterface;
+				PRODUCT_NAME = RouterServiceInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1744,9 +1740,44 @@
 			};
 			name = Release;
 		};
+		57623CC8A524B78A7ACA947336D4C5E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70ABDF85025C1D75C42ADA136850031 /* HTTPClientInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTTPClientInterface/HTTPClientInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface.modulemap";
+				PRODUCT_MODULE_NAME = HTTPClientInterface;
+				PRODUCT_NAME = HTTPClientInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6562D0A2F9BC8DD599530E33A38F2A54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 085000E1E984D1170A4F7F5972493E1F /* HTTPClient.xcconfig */;
+			baseConfigurationReference = 6FCA99382A8A6E853C3C1D9D5130F7F7 /* HTTPClient.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1780,9 +1811,44 @@
 			};
 			name = Release;
 		};
+		6B1B89228F0FDD64BF0BD4ECF2A5A297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A05014AE25E5BCDFF5EED7595CE35C0 /* RouterServiceInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RouterServiceInterface/RouterServiceInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface.modulemap";
+				PRODUCT_MODULE_NAME = RouterServiceInterface;
+				PRODUCT_NAME = RouterServiceInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		78099FDB9E5EC4EF7C9540F0A0584B25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF956E2A04CCD3E984961147C35AB8C2 /* RouterService.xcconfig */;
+			baseConfigurationReference = EBFDC7045F8B773A8FA04248EA4F0587 /* RouterService.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1816,44 +1882,9 @@
 			};
 			name = Release;
 		};
-		7D7EA6FF3816317FC9665B00DFB88F3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2264E8397119879CEC2301A7F1B8895 /* FeatureFlagInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface.modulemap";
-				PRODUCT_MODULE_NAME = FeatureFlagInterface;
-				PRODUCT_NAME = FeatureFlagInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		996C908F1EB1762FA451C63787F445F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF956E2A04CCD3E984961147C35AB8C2 /* RouterService.xcconfig */;
+			baseConfigurationReference = EBFDC7045F8B773A8FA04248EA4F0587 /* RouterService.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1886,9 +1917,9 @@
 			};
 			name = Debug;
 		};
-		A64724C4C83D19B25DA8F6AE8603C1DF /* Release */ = {
+		9EB9EFB117980FE2DF0ACAFB931BD5FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28E5663A183C124F61437FB4BB89B20B /* RouterServiceInterface.xcconfig */;
+			baseConfigurationReference = C70ABDF85025C1D75C42ADA136850031 /* HTTPClientInterface.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1899,8 +1930,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RouterServiceInterface/RouterServiceInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HTTPClientInterface/HTTPClientInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1908,13 +1939,85 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/RouterServiceInterface/RouterServiceInterface.modulemap";
-				PRODUCT_MODULE_NAME = RouterServiceInterface;
-				PRODUCT_NAME = RouterServiceInterface;
+				MODULEMAP_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface.modulemap";
+				PRODUCT_MODULE_NAME = HTTPClientInterface;
+				PRODUCT_NAME = HTTPClientInterface;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5E0459199BAA0F1A632B8B02BB0F152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72F1F2698916662963EBF24632BE08E /* FeatureFlagInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface.modulemap";
+				PRODUCT_MODULE_NAME = FeatureFlagInterface;
+				PRODUCT_NAME = FeatureFlagInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A767600DFEC0703050BDFED8D93064B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A20D75BDEF9C09B024A352B4B321D1 /* FeatureTwoInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface.modulemap";
+				PRODUCT_MODULE_NAME = FeatureTwoInterface;
+				PRODUCT_NAME = FeatureTwoInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1960,41 +2063,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		AC2D45B6A5BED778DE4DDEEDAB5E9FA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEDCCEDDDF52136F089C65F90009B185 /* HTTPClientInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HTTPClientInterface/HTTPClientInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface.modulemap";
-				PRODUCT_MODULE_NAME = HTTPClientInterface;
-				PRODUCT_NAME = HTTPClientInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2056,45 +2124,9 @@
 			};
 			name = Release;
 		};
-		B784C94ACB244EC060EED3CFA5E51F3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2264E8397119879CEC2301A7F1B8895 /* FeatureFlagInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface.modulemap";
-				PRODUCT_MODULE_NAME = FeatureFlagInterface;
-				PRODUCT_NAME = FeatureFlagInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		BC60906AE7795BC5C51A0319A8438F88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5427F667374029ACA334B8B2BE02F69F /* FeatureTwo.xcconfig */;
+			baseConfigurationReference = 3796F73208295ED66D3A5A53D5A0E5A4 /* FeatureTwo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2128,44 +2160,9 @@
 			};
 			name = Release;
 		};
-		CFCF5F47E5BE0636D57CF23D4433E1D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF16E7AA1213107E720EBDAD9E56E21B /* FeatureTwoInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FeatureTwoInterface/FeatureTwoInterface.modulemap";
-				PRODUCT_MODULE_NAME = FeatureTwoInterface;
-				PRODUCT_NAME = FeatureTwoInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D2CE10E289D5C111F9AB3E1373284988 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 085000E1E984D1170A4F7F5972493E1F /* HTTPClient.xcconfig */;
+			baseConfigurationReference = 6FCA99382A8A6E853C3C1D9D5130F7F7 /* HTTPClient.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2198,9 +2195,44 @@
 			};
 			name = Debug;
 		};
+		D553621D3D44DC6D17B4D66B41559AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72F1F2698916662963EBF24632BE08E /* FeatureFlagInterface.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FeatureFlagInterface/FeatureFlagInterface.modulemap";
+				PRODUCT_MODULE_NAME = FeatureFlagInterface;
+				PRODUCT_NAME = FeatureFlagInterface;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DD16E4F60EDD9A68EEC2A01544061EA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73E9DEBB3C448AA3E1B3E018FE897293 /* FeatureFlag.xcconfig */;
+			baseConfigurationReference = 999B90E3A32F3D4C0799D9945669D87F /* FeatureFlag.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2235,7 +2267,7 @@
 		};
 		E4149A5C66BEF7E5A54CA341A47339BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C277B8378760D477F03E8B9DE363169 /* FeatureOne.xcconfig */;
+			baseConfigurationReference = C03E8BE38E68A58AF67A5B3BE076ECBD /* FeatureOne.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2268,45 +2300,9 @@
 			};
 			name = Debug;
 		};
-		F78D20CC2B3C16411BB1CE04D7FFB4A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEDCCEDDDF52136F089C65F90009B185 /* HTTPClientInterface.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HTTPClientInterface/HTTPClientInterface-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/HTTPClientInterface/HTTPClientInterface.modulemap";
-				PRODUCT_MODULE_NAME = HTTPClientInterface;
-				PRODUCT_NAME = HTTPClientInterface;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F9A4273D229A2EEDA86DB01A3DCC6905 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C277B8378760D477F03E8B9DE363169 /* FeatureOne.xcconfig */;
+			baseConfigurationReference = C03E8BE38E68A58AF67A5B3BE076ECBD /* FeatureOne.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2343,15 +2339,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B51F2C0DB260576C182E77CAC25727A /* Build configuration list for PBXNativeTarget "FeatureFlagInterface" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D7EA6FF3816317FC9665B00DFB88F3E /* Debug */,
-				B784C94ACB244EC060EED3CFA5E51F3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1A0F0053AE7453BCF419A30A00DBBC48 /* Build configuration list for PBXNativeTarget "RouterService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2366,6 +2353,15 @@
 			buildConfigurations = (
 				196DFA3E4A09A28224918543529A1885 /* Debug */,
 				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF7649E171540B1E13A9038C7DDCFF1 /* Build configuration list for PBXNativeTarget "RouterServiceInterface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1B89228F0FDD64BF0BD4ECF2A5A297 /* Debug */,
+				4BC09E69D96D69AA08F0705FB725C35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2406,11 +2402,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEA6165982838B820C867AA30B9807B8 /* Build configuration list for PBXNativeTarget "RouterServiceInterface" */ = {
+		ADCD7575CB083CD26C0658C828873EA0 /* Build configuration list for PBXNativeTarget "FeatureFlagInterface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20FBD411FDFD382627547560BDA491F1 /* Debug */,
-				A64724C4C83D19B25DA8F6AE8603C1DF /* Release */,
+				D553621D3D44DC6D17B4D66B41559AD8 /* Debug */,
+				A5E0459199BAA0F1A632B8B02BB0F152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2424,20 +2420,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E43050C383403E316B42828F1B0DCF59 /* Build configuration list for PBXNativeTarget "FeatureTwoInterface" */ = {
+		D6F4D78BE3AF0185CC722518FD429060 /* Build configuration list for PBXNativeTarget "FeatureTwoInterface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFCF5F47E5BE0636D57CF23D4433E1D4 /* Debug */,
-				54C5BF6DCB430D5445EAF25F2BC95450 /* Release */,
+				033C10BC2B0B4E80F7A88AA81E3CBD58 /* Debug */,
+				A767600DFEC0703050BDFED8D93064B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4C9AA02881C5FA616DF3AADB3028390 /* Build configuration list for PBXNativeTarget "HTTPClientInterface" */ = {
+		DD7F259530543F342A37FA7F3A34BED1 /* Build configuration list for PBXNativeTarget "HTTPClientInterface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC2D45B6A5BED778DE4DDEEDAB5E9FA9 /* Debug */,
-				F78D20CC2B3C16411BB1CE04D7FFB4A1 /* Release */,
+				57623CC8A524B78A7ACA947336D4C5E4 /* Debug */,
+				9EB9EFB117980FE2DF0ACAFB931BD5FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

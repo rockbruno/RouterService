@@ -3,7 +3,7 @@ import HTTPClientInterface
 import FeatureFlagInterface
 import FeatureTwoInterface
 
-public struct FeatureOne: FlaggableFeature {
+public struct FeatureOne: Feature {
 
     @Dependency var httpClient: HTTPClientProtocol
     @Dependency var routerService: RouterServiceProtocol
@@ -15,8 +15,8 @@ public struct FeatureOne: FlaggableFeature {
         return featureFlag.isEnabled()
     }
     
-    public func buildFallback(fromRoute route: Route?) -> UIViewController {
-        return FallbackController()
+    public func fallback(forRoute route: Route?) -> Feature.Type? {
+        return FallbackFeature.self
     }
 
     public func build(fromRoute route: Route?) -> UIViewController {
@@ -24,6 +24,14 @@ public struct FeatureOne: FlaggableFeature {
             httpClient: httpClient,
             routerService: routerService
         )
+    }
+}
+
+public struct FallbackFeature: Feature {
+    public init() {}
+    
+    public func build(fromRoute route: Route?) -> UIViewController {
+        return FallbackController()
     }
 }
 

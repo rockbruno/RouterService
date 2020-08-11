@@ -243,23 +243,26 @@ The string format expected by the framework is a string in the `route_identifier
 }
 ```
 
-## FlaggableFeature
+## Flaggable Feature
 
-In cases you need to have a toggle control of your feature you can use `FlaggableFeature` protocol.
-`FlaggableFeature` should be conformed instead of `Feature` when toggle control is necessary.
-`isEnabled() -> Bool` provides information for **RouterService** when the feature is enabled or not. We really recommend you have the toggle controls (Feature Flag Provider, Remote Config Provider, User Defaults, etc) as your feature `@Dependency` for you can use very easily into the method.
-And `Feature's` `buildFallback(_:)` method it's also mandatory when conformed with `FlaggableFeature` and not nil, because RouterService must receive and present a valid context. For example:
+In cases you need to have a toggle control of your feature, it's also possible to handle it through the method  `isEnabled() -> Bool` method in **Feature** protocol.
+This method provides information for **RouterService** when the feature is enabled or not. We really recommend you have the toggle controls (Feature Flag Provider, Remote Config Provider, User Defaults, etc) as your feature `@Dependency` for you can use very easily into the method.
+And `Feature's` `fallback(_:)` method it's mandatory when feature is not enabled, because RouterService must receive and present a valid context. For example:
 ```swift
-struct ProfileFeature: FlaggableFeature {
+public struct FooFeature: Feature {
 
+    @Dependency var httpClient: HTTPClientProtocol
+    @Dependency var routerService: RouterServiceProtocol
     @Dependency var featureFlag: FeatureFlagProtocol
 
+    public init() {}
+    
     public func isEnabled() -> Bool {
         return featureFlag.isEnabled()
     }
-
-    public func buildFallback(fromRoute route: Route?) -> UIViewController {
-        return FallbackController()
+    
+    public func fallback(forRoute route: Route?) -> Feature.Type? {
+        return MyFallbackFeature.self
     }
 
     public func build(fromRoute route: Route?) -> UIViewController {
@@ -270,8 +273,6 @@ struct ProfileFeature: FlaggableFeature {
     }
 }
 ```
-
-**RouterService** validates if the feature should be presented is a **FlaggableFeature** type conformed, if it true we check if feature **isEnabled()**, if not we present fallback UIViewController, if it's true we just build the feature and present it.
 
 ## Installation
 
