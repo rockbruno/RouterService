@@ -4,7 +4,8 @@ public protocol Feature {
     func build(fromRoute route: Route?) -> UIViewController
     func resolve(withStore store: StoreInterface)
     
-    /// Provides if feature is enabled to be presented, should be used when feature is controlled by toggle (feature flag, user defaults, etc)
+    /// Returns whether or not a feature can be presented. 
+    /// Implement this method if the availability of your feature should be controlled. (feature flag, user defaults, iOS version, etc)
     /// By default, this method returns `true` (enabled). Overwrite it to manually handle the presentation logic.
     /// If your feature can be disabled, you must also implement `fallback(_:)` to provide the alternate feature to be presented.
     ///
