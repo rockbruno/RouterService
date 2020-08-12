@@ -14,8 +14,8 @@ public protocol Feature {
     /// When feature is disabled, it's mandatory implement Fallback Feature
     ///
     /// - Parameters:
-    ///   - route: Route to be used for fallback feature
-    /// - Returns: Destination to be present when feature is disabled
+    ///   - route: The `Route` that triggered this feature.
+    /// - Returns: The fallback feature that should be presented when this feature is disabled.
     func fallback(forRoute route: Route?) -> Feature.Type?
 
     init()
