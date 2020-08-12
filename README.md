@@ -243,7 +243,7 @@ The string format expected by the framework is a string in the `route_identifier
 }
 ```
 
-## Flaggable Feature
+## Providing fallbacks for Features
 
 In cases you need to have a toggle control of your feature, it's also possible to handle it through the method  `isEnabled() -> Bool` method in **Feature** protocol.
 This method provides information for **RouterService** when the feature is enabled or not. We really recommend you have the toggle controls (Feature Flag Provider, Remote Config Provider, User Defaults, etc) as your feature `@Dependency` for you can use very easily into the method.
