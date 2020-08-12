@@ -274,6 +274,8 @@ public struct FooFeature: Feature {
 }
 ```
 
+If a disabled feature attempts to be presented without a fallback, your app will crash. By default, all features are enabled and have no fallbacks.
+
 ## Installation
 
 When installing RouterService, the interface module `RouterServiceInterface` will also be installed.
