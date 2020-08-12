@@ -11,7 +11,8 @@ public protocol Feature {
     /// - Returns: Feature is enabled `true` or not `false`
     func isEnabled() -> Bool
     
-    /// When feature is disabled, it's mandatory implement Fallback Feature
+    /// Returns the feature that should be presented instead if this feature is disabled.
+    /// If a feature can be disabled, it's mandatory to provide a fallback `Feature`.
     ///
     /// - Parameters:
     ///   - route: The `Route` that triggered this feature.
