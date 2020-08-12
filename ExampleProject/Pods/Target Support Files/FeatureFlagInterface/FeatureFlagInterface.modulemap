@@ -1,0 +1,6 @@
+framework module FeatureFlagInterface {
+  umbrella header "FeatureFlagInterface-umbrella.h"
+
+  export *
+  module * { export * }
+}

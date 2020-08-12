@@ -124,4 +124,55 @@ final class RouterServiceTests: XCTestCase {
         XCTAssertNil(viewController?.routePassed)
         XCTAssertNotNil(viewController?.dependenciesPassed)
     }
+    
+    func test_routerService_whenFeatureIsDisabled_andHasNoFallback_shouldFailure() {
+        var didFail = false
+        let service = RouterService(failureHandler: {
+            didFail = true
+        })
+
+        let fooHandler = RouterServiceDoubles.FooHandler()
+        fooHandler.featureTypeToBeReturned = RouterServiceDoubles.FeatureSpyDisabledWithouFallback.self
+        service.register(routeHandler: fooHandler)
+
+        let vc = UIViewController(nibName: nil, bundle: nil)
+
+        let route = RouterServiceDoubles.MockRouteFromFooHandler()
+        service.navigate(toRoute: route, fromView: vc, presentationStyle: Push(), animated: false)
+
+        XCTAssertTrue(didFail)
+    }
+    
+    func test_routerService_whenFeatureIsDisabled_andHasFallback_shouldAppendFallbackOnNavigationStack() {
+        var didFail = false
+        let service = RouterService(failureHandler: {
+            didFail = true
+        })
+        
+        /// Dpendencies used by fallback feature `FeatureSpy`
+        let dep = RouterServiceDoubles.MockConcreteDependency()
+        let depFactory: DependencyFactory = { dep }
+        service.register(dependencyFactory: depFactory, forType: RouterServiceDoubles.MockConcreteDependency.self)
+        service.register(dependencyFactory: depFactory, forType: MockDependencyProtocol.self)
+
+        let fooHandler = RouterServiceDoubles.FooHandler()
+        /// By default `FeatureSpyDisabled` is returning `FeatureSpy.self` as FeatureFallback
+        fooHandler.featureTypeToBeReturned = RouterServiceDoubles.FeatureSpyDisabled.self
+        service.register(routeHandler: fooHandler)
+
+        let vc = UIViewController(nibName: nil, bundle: nil)
+        let navigation = UINavigationController(rootViewController: vc)
+
+        let route = RouterServiceDoubles.MockRouteFromFooHandler()
+        service.navigate(toRoute: route, fromView: vc, presentationStyle: Push(), animated: false)
+
+        let pushedVC = navigation.viewControllers.last
+        guard let featureVC = pushedVC as? RouterServiceDoubles.FeatureViewControllerSpy else {
+            XCTFail()
+            return
+        }
+
+        XCTAssertFalse(didFail)
+        XCTAssertTrue(featureVC.routePassed is RouterServiceDoubles.MockRouteFromFooHandler)
+    }
 }

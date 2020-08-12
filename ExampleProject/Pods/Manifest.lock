@@ -1,5 +1,11 @@
 PODS:
+  - FeatureFlag (0.2.0):
+    - FeatureFlagInterface
+    - RouterServiceInterface
+  - FeatureFlagInterface (0.2.0):
+    - RouterServiceInterface
   - FeatureOne (0.2.0):
+    - FeatureFlagInterface
     - FeatureTwoInterface
     - HTTPClientInterface
     - RouterServiceInterface
@@ -13,11 +19,13 @@ PODS:
     - RouterServiceInterface
   - HTTPClientInterface (0.2.0):
     - RouterServiceInterface
-  - RouterService (0.2.1):
-    - RouterServiceInterface (= 0.2.1)
-  - RouterServiceInterface (0.2.1)
+  - RouterService (1.0.0):
+    - RouterServiceInterface (= 1.0.0)
+  - RouterServiceInterface (1.0.0)
 
 DEPENDENCIES:
+  - FeatureFlag (from `./FeatureFlag`)
+  - FeatureFlagInterface (from `./FeatureFlagInterface`)
   - FeatureOne (from `./FeatureOne`)
   - FeatureTwo (from `./FeatureTwo`)
   - FeatureTwoInterface (from `./FeatureTwoInterface`)
@@ -27,6 +35,10 @@ DEPENDENCIES:
   - RouterServiceInterface (from `../`)
 
 EXTERNAL SOURCES:
+  FeatureFlag:
+    :path: "./FeatureFlag"
+  FeatureFlagInterface:
+    :path: "./FeatureFlagInterface"
   FeatureOne:
     :path: "./FeatureOne"
   FeatureTwo:
@@ -43,14 +55,16 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FeatureOne: 402fcd3df1db2f46a6815a2b21cbb946a21dd84d
+  FeatureFlag: 95c6b90702ed9a9e523d6c7f89233923ec0334b6
+  FeatureFlagInterface: f90612b74d84b192b3c37a21be7b859475666038
+  FeatureOne: 97f7803358c10ceea55a0df5aac79207018d7acf
   FeatureTwo: 36e51d1036d4076895593a61351212ad18ef3c4c
   FeatureTwoInterface: bf7a2bdd90bf87b1a4a61da61c097e68d2b91f4d
   HTTPClient: c05e884a09e2f7726cae4143dbcf6c1306ba9b12
   HTTPClientInterface: a07a8af2f406fa7f343ced88569da01c7d447f1d
-  RouterService: a1d7410570372b76a6766f4d45c80a148b5316d0
-  RouterServiceInterface: 999bed199a4bf2658eca0e36d2a8a6e5a5e989e7
+  RouterService: db329fc3aba4954f21f4aacec974f57076aa9382
+  RouterServiceInterface: 98548faabb270534e0ff33c433669ccfd1d2ab16
 
-PODFILE CHECKSUM: 13a5ea3e30e0070cb42c77047d00e74861b0699d
+PODFILE CHECKSUM: 2ef12ddafb70e8f3f77c6ab360526888e74ae2a8
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.7.5

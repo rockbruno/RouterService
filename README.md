@@ -243,6 +243,39 @@ The string format expected by the framework is a string in the `route_identifier
 }
 ```
 
+## Providing fallbacks for Features
+
+If you need to control the availability of your feature, either because of a feature flag or because it has a minimum iOS version requirement, it's possible to handle it through a `Feature's` `isEnabled()` method.
+This method provides information to `RouterService` about the availability of your feature. We really recommend you to have your toggle controls (Feature Flag Provider, Remote Config Provider, User Defaults, etc) as a `@Dependency` of your feature so you can easily use them to implement it and properly unit test it later.
+If a `Feature` can be disabled, you need to provide a fallback by implementing the `fallback(_:)` method to allow RouterService to receive and present a valid context. For example:
+```swift
+public struct FooFeature: Feature {
+
+    @Dependency var httpClient: HTTPClientProtocol
+    @Dependency var routerService: RouterServiceProtocol
+    @Dependency var featureFlag: FeatureFlagProtocol
+
+    public init() {}
+    
+    public func isEnabled() -> Bool {
+        return featureFlag.isEnabled()
+    }
+    
+    public func fallback(forRoute route: Route?) -> Feature.Type? {
+        return MyFallbackFeature.self
+    }
+
+    public func build(fromRoute route: Route?) -> UIViewController {
+        return MainViewController(
+            httpClient: httpClient,
+            routerService: routerService
+        )
+    }
+}
+```
+
+If a disabled feature attempts to be presented without a fallback, your app will crash. By default, all features are enabled and have no fallbacks.
+
 ## Installation
 
 When installing RouterService, the interface module `RouterServiceInterface` will also be installed.

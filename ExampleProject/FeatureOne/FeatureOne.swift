@@ -1,19 +1,37 @@
 import RouterServiceInterface
 import HTTPClientInterface
+import FeatureFlagInterface
 import FeatureTwoInterface
 
 public struct FeatureOne: Feature {
 
     @Dependency var httpClient: HTTPClientProtocol
     @Dependency var routerService: RouterServiceProtocol
+    @Dependency var featureFlag: FeatureFlagProtocol
 
     public init() {}
+    
+    public func isEnabled() -> Bool {
+        return featureFlag.isEnabled()
+    }
+    
+    public func fallback(forRoute route: Route?) -> Feature.Type? {
+        return FallbackFeature.self
+    }
 
     public func build(fromRoute route: Route?) -> UIViewController {
         return MainViewController(
             httpClient: httpClient,
             routerService: routerService
         )
+    }
+}
+
+public struct FallbackFeature: Feature {
+    public init() {}
+    
+    public func build(fromRoute route: Route?) -> UIViewController {
+        return FallbackController()
     }
 }
 
@@ -68,5 +86,29 @@ final class MainViewController: UIViewController {
             presentationStyle: Push(),
             animated: true
         )
+    }
+}
+
+final class FallbackController: UIViewController {
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+
+    override func loadView() {
+        let view = UIView()
+
+        view.backgroundColor = .white
+        let emptyStateLabel = UILabel()
+        emptyStateLabel.text = "Fallback View Controller"
+        view.addSubview(emptyStateLabel)
+        emptyStateLabel.translatesAutoresizingMaskIntoConstraints = false
+        emptyStateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        emptyStateLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        self.view = view
     }
 }

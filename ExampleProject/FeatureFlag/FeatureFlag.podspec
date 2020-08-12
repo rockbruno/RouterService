@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name = 'FeatureOne'
-  s.module_name = 'FeatureOne'
+  s.name = 'FeatureFlag'
+  s.module_name = 'FeatureFlag'
   s.version = '0.2.0'
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.summary = 'Route based dependency injection SDK for iOS.'
@@ -13,9 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.source_files = '*.swift'
 
-  s.dependency 'FeatureTwoInterface'
   s.dependency 'RouterServiceInterface'
-  s.dependency 'HTTPClientInterface'
   s.dependency 'FeatureFlagInterface'
 
 end

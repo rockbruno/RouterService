@@ -1,26 +1,29 @@
 {
-  "name": "RouterServiceInterface",
-  "module_name": "RouterServiceInterface",
-  "version": "1.0.0",
+  "name": "FeatureFlagInterface",
+  "module_name": "FeatureFlagInterface",
+  "version": "0.2.0",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
-  "summary": "Route based dependency injection SDK for iOS. (Interface)",
+  "summary": "Route based dependency injection SDK for iOS.",
   "homepage": "https://github.com/rockbruno/RouterService",
   "authors": {
     "Bruno Rocha": "brunorochaesilva@gmail.com"
   },
   "social_media_url": "https://twitter.com/rockbruno_",
-  "swift_versions": "5.1",
   "source": {
     "git": "https://github.com/rockbruno/RouterService.git",
     "branch": "master",
-    "tag": "1.0.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "Sources/RouterServiceInterface/**/*",
-  "swift_version": "5.1"
+  "source_files": "*.swift",
+  "dependencies": {
+    "RouterServiceInterface": [
+
+    ]
+  }
 }

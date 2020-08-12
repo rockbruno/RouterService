@@ -56,8 +56,22 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
             fromViewController: viewController
         )
         let destinationFeature = destinationFeatureType.initialize(withStore: store)
+        let destinationViewController: UIViewController
+        
+        if destinationFeature.isEnabled() {
+            destinationViewController = destinationFeature.build(fromRoute: route)
+        } else {
+            let fallbackFeatureType = destinationFeature.fallback(forRoute: route)
+            guard let fallbackDestinationFeature = fallbackFeatureType?.initialize(withStore: store) else {
+                failureHandler()
+                return
+            }
+            
+            destinationViewController = fallbackDestinationFeature.build(fromRoute: route)
+        }
+        
         presentationStyle.present(
-            viewController: destinationFeature.build(fromRoute: route),
+            viewController: destinationViewController,
             fromViewController: viewController,
             animated: animated
         )
