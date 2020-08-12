@@ -5,8 +5,8 @@ public protocol Feature {
     func resolve(withStore store: StoreInterface)
     
     /// Provides if feature is enabled to be presented, should be used when feature is controlled by toggle (feature flag, user defaults, etc)
-    /// Overwrite this method to handle the logic for presentation because
-    /// default value is always `true` (enabled)
+    /// By default, this method returns `true` (enabled). Overwrite it to manually handle the presentation logic.
+    /// If your feature can be disabled, you must also implement `fallback(_:)` to provide the alternate feature to be presented.
     ///
     /// - Returns: A boolean indicating if this feature can be presented by RouterService.
     func isEnabled() -> Bool
