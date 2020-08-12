@@ -8,7 +8,7 @@ public protocol Feature {
     /// Overwrite this method to handle the logic for presentation because
     /// default value is always `true` (enabled)
     ///
-    /// - Returns: Feature is enabled `true` or not `false`
+    /// - Returns: A boolean indicating if this feature can be presented by RouterService.
     func isEnabled() -> Bool
     
     /// Returns the feature that should be presented instead if this feature is disabled.
