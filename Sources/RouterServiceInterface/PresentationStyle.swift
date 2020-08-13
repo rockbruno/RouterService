@@ -5,7 +5,8 @@ public protocol PresentationStyle {
     func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion:(() -> Void)?
     )
 }
 
@@ -18,14 +19,18 @@ open class PushPresentationStyle: PresentationStyle {
     open func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion:(() -> Void)?
     ) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(completion)
         fromViewController
             .navigationController?
             .pushViewController(
                 viewController,
                 animated: animated
         )
+        CATransaction.commit()
     }
 }
 
@@ -38,12 +43,13 @@ open class ModalPresentationStyle: PresentationStyle {
     open func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion:(() -> Void)?
     ) {
         fromViewController.present(
             viewController,
             animated: true,
-            completion: nil
+            completion: completion
         )
     }
 }
