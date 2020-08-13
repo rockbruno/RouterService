@@ -282,8 +282,12 @@ When installing RouterService, the interface module `RouterServiceInterface` wil
 
 ### Swift Package Manager
 
-`.package(url: "https://github.com/rockbruno/RouterService", .upToNextMinor(from: "1.0.0"))`
+```swift
+.package(url: "https://github.com/rockbruno/RouterService", .upToNextMinor(from: "1.1.0"))
+```
 
 ### CocoaPods
 
-`pod 'RouterService'`
+```ruby
+pod 'RouterService'
+```
