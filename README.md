@@ -140,7 +140,7 @@ final class ProfileViewController: UIViewController {
 
     func goToLogin() {
         let loginRoute = SomeLoginRouteFromTheLoginFeatureInterface()
-        dependencies.routerService.navigate(
+        routerService.navigate(
             toRoute: loginRoute,
             fromView: self,
             presentationStyle: Push(),
