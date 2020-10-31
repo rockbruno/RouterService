@@ -1,6 +1,0 @@
-framework module FeatureTwoInterface {
-  umbrella header "FeatureTwoInterface-umbrella.h"
-
-  export *
-  module * { export * }
-}
