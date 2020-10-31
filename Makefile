@@ -10,4 +10,4 @@ test:
 
 .PHONY: check_example
 check_example:
-	cd ./ExampleProject && xcodebuild -scheme RouterServiceExampleApp -sdk iphonesimulator -workspace RouterServiceExampleApp.xcworkspace
+	cd ./ExampleProject && xcodegen generate && xcodebuild -scheme RouterServiceExampleApp -sdk iphonesimulator -project RouterServiceExampleApp.xcodeproj
