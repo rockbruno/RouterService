@@ -2,6 +2,7 @@ import RouterServiceInterface
 import HTTPClientInterface
 import FeatureFlagInterface
 import FeatureTwoInterface
+import UIKit
 
 public struct FeatureOne: Feature {
 

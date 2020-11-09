@@ -1,0 +1,111 @@
+name: RouterServiceExampleApp
+options:
+  bundleIdPrefix: br.ifood
+  deploymentTarget:
+    iOS: 13.2
+targets:
+  RouterServiceExampleApp:
+    type: application
+    platform: iOS
+    sources: [RouterServiceExampleApp]
+    scheme:
+      testTargets:
+        - name: RouterServiceTests
+          randomExecutionOrder: true
+          parallelizable: true
+      gatherCoverageData: true
+    dependencies:
+      - target: RouterServiceInterface
+      - target: RouterService
+      - target: HTTPClientInterface
+      - target: HTTPClient
+      - target: FeatureFlagInterface
+      - target: FeatureFlag
+      - target: FeatureTwoInterface
+      - target: FeatureTwo
+      - target: FeatureOne
+
+  RouterServiceInterface:
+    type: framework
+    platform: iOS
+    sources:
+      - path: ../Sources/RouterServiceInterface
+    info:
+      path: Resources/Info.plist
+  RouterService:
+    type: framework
+    platform: iOS
+    sources:
+      - path: ../Sources/RouterService
+    info:
+      path: Resources/Info.plist
+    scheme:
+      testTargets:
+        - name: RouterServiceTests
+          randomExecutionOrder: true
+          parallelizable: true
+      gatherCoverageData: true
+    dependencies:
+      - target: RouterServiceInterface
+  RouterServiceTests:
+    platform: iOS
+    type: bundle.unit-test
+    transitivelyLinkDependencies: true
+    sources:
+      - path: ../Tests/RouterServiceTests
+    dependencies:
+      - target: RouterService
+
+  HTTPClientInterface:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+  HTTPClient:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+      - target: HTTPClientInterface
+
+  FeatureFlagInterface:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+  FeatureFlag:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+      - target: FeatureFlagInterface
+
+  FeatureTwoInterface:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+  FeatureTwo:
+    templates:
+      - Framework
+    dependencies:
+      - target: RouterServiceInterface
+      - target: FeatureTwoInterface
+
+  FeatureOne:
+    templates:
+      - Framework
+    dependencies:
+      - target: FeatureTwoInterface
+      - target: RouterServiceInterface
+      - target: HTTPClientInterface
+      - target: FeatureFlagInterface
+
+targetTemplates:
+  Framework:
+    platform: iOS
+    type: framework
+    sources: 
+      - path: ${target_name}
+    info:
+      path: Resources/Info.plist

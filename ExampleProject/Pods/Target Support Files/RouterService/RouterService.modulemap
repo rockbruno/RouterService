@@ -1,6 +1,0 @@
-framework module RouterService {
-  umbrella header "RouterService-umbrella.h"
-
-  export *
-  module * { export * }
-}

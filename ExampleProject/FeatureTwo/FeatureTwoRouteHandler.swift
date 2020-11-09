@@ -1,6 +1,7 @@
 import Foundation
 import FeatureTwoInterface
 import RouterServiceInterface
+import UIKit
 
 public class FeatureTwoRouteHandler: RouteHandler {
     public var routes: [Route.Type] {
