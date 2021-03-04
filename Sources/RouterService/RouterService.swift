@@ -46,7 +46,7 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
         fromView viewController: UIViewController,
         presentationStyle: PresentationStyle,
         animated: Bool,
-        completion: (() -> Void)?
+        completion: (() -> Void)? = nil
     ) {
         guard let handler = handler(forRoute: route) else {
             failureHandler()
