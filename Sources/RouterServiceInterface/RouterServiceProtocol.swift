@@ -6,7 +6,8 @@ public protocol RouterServiceProtocol: RouterServiceAnyRouteDecodingProtocol {
         toRoute route: Route,
         fromView viewController: UIViewController,
         presentationStyle: PresentationStyle,
-        animated: Bool
+        animated: Bool,
+        completion: (() -> Void)?
     )
 }
 
