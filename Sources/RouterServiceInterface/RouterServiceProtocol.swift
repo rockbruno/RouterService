@@ -6,8 +6,26 @@ public protocol RouterServiceProtocol: RouterServiceAnyRouteDecodingProtocol {
         toRoute route: Route,
         fromView viewController: UIViewController,
         presentationStyle: PresentationStyle,
-        animated: Bool
+        animated: Bool,
+        completion: (() -> Void)?
     )
+}
+
+public extension RouterServiceProtocol {
+    func navigate(
+        toRoute route: Route,
+        fromView viewController: UIViewController,
+        presentationStyle: PresentationStyle,
+        animated: Bool
+    ) {
+        navigate(
+            toRoute: route,
+            fromView: viewController,
+            presentationStyle: presentationStyle,
+            animated: animated,
+            completion: nil
+        )
+    }
 }
 
 public typealias DependencyFactory = () -> AnyObject

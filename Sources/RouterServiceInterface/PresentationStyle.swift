@@ -5,8 +5,24 @@ public protocol PresentationStyle {
     func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion: (() -> Void)?
     )
+}
+
+public extension PresentationStyle {
+    func present(
+        viewController: UIViewController,
+        fromViewController: UIViewController,
+        animated: Bool
+    ) {
+        present(
+            viewController: viewController,
+            fromViewController: fromViewController,
+            animated: animated,
+            completion: nil
+        )
+    }
 }
 
 public typealias Push = PushPresentationStyle
@@ -18,13 +34,15 @@ open class PushPresentationStyle: PresentationStyle {
     open func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion: (() -> Void)? = nil
     ) {
         fromViewController
             .navigationController?
             .pushViewController(
                 viewController,
-                animated: animated
+                animated: animated,
+                completion: completion
         )
     }
 }
@@ -38,12 +56,28 @@ open class ModalPresentationStyle: PresentationStyle {
     open func present(
         viewController: UIViewController,
         fromViewController: UIViewController,
-        animated: Bool
+        animated: Bool,
+        completion:  (() -> Void)? = nil
     ) {
         fromViewController.present(
             viewController,
             animated: true,
-            completion: nil
+            completion: completion
         )
+    }
+}
+
+private func commitTransaction(_ transaction: () -> Void, completion: (() -> Void)?) {
+    CATransaction.begin()
+    CATransaction.setCompletionBlock(completion)
+    transaction()
+    CATransaction.commit()
+}
+
+private extension UINavigationController {
+    func pushViewController(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        commitTransaction({
+            pushViewController(viewController, animated: animated)
+        }, completion: completion)
     }
 }

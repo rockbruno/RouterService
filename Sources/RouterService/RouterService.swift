@@ -45,7 +45,8 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
         toRoute route: Route,
         fromView viewController: UIViewController,
         presentationStyle: PresentationStyle,
-        animated: Bool
+        animated: Bool,
+        completion: (() -> Void)? = nil
     ) {
         guard let handler = handler(forRoute: route) else {
             failureHandler()
@@ -73,7 +74,8 @@ public final class RouterService: RouterServiceProtocol, RouterServiceRegistrati
         presentationStyle.present(
             viewController: destinationViewController,
             fromViewController: viewController,
-            animated: animated
+            animated: animated,
+            completion: completion
         )
     }
 
