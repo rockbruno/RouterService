@@ -16,12 +16,12 @@ jobs:
     - name: Build
       run: make build
       env:
-        DEVELOPER_DIR: /Applications/Xcode_11.4.app/Contents/Developer
+        DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
     - name: Run tests
       run: make test
       env:
-        DEVELOPER_DIR: /Applications/Xcode_11.4.app/Contents/Developer
+        DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
     - name: Check the example project
       run: make check_example
       env:
-        DEVELOPER_DIR: /Applications/Xcode_11.4.app/Contents/Developer
+        DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
