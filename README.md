@@ -291,3 +291,32 @@ When installing RouterService, the interface module `RouterServiceInterface` wil
 ```ruby
 pod 'RouterService'
 ```
+
+## Example Project
+
+The [ExampleProject](ExampleProject) uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) to generate its Xcode project. 
+
+You can either install the XcodeGen binary with Homebrew, or leverage the Swift Package Manager, which will clone, build and then run XcodeGen. The individual steps to generate the `RouterServiceExampleApp.xcodeproj` are outlined below.
+
+<details open>
+<summary>Homebrew</summary>
+
+```bash
+# 1. Install XcodeGen using Homebrew
+brew install xcodegen
+
+# 2. Run xcodegen from within the ExampleProject directory
+cd ExampleProject && xcodegen generate
+```
+
+</details>
+
+<details open>
+<summary>Swift Package Manager</summary>
+
+```bash
+# 1. Run xcodegen using SPM from within the ExampleProject directory
+cd ExampleProject && swift run xcodegen
+```
+
+</details>

@@ -1,6 +1,0 @@
-framework module HTTPClientInterface {
-  umbrella header "HTTPClientInterface-umbrella.h"
-
-  export *
-  module * { export * }
-}

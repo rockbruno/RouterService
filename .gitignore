@@ -29,3 +29,5 @@ DerivedData/
 .swiftpm/
 RouterService.xcodeproj/
 build/
+
+ExampleProject/RouterServiceExampleApp.xcodeproj

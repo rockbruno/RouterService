@@ -21,6 +21,10 @@ jobs:
       run: make test
       env:
         DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
+    - name: Install XcodeGen
+      run: brew install xcodegen
+      env:
+        HOMEBREW_NO_AUTO_UPDATE: 1
     - name: Check the example project
       run: make check_example
       env:
