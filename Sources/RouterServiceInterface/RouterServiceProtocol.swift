@@ -11,6 +11,23 @@ public protocol RouterServiceProtocol: RouterServiceAnyRouteDecodingProtocol {
     )
 }
 
+public extension RouterServiceProtocol {
+    func navigate(
+        toRoute route: Route,
+        fromView viewController: UIViewController,
+        presentationStyle: PresentationStyle,
+        animated: Bool
+    ) {
+        navigate(
+            toRoute: route,
+            fromView: viewController,
+            presentationStyle: presentationStyle,
+            animated: animated,
+            completion: nil
+        )
+    }
+}
+
 public typealias DependencyFactory = () -> AnyObject
 
 public protocol RouterServiceRegistrationProtocol {

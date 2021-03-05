@@ -11,8 +11,17 @@ public protocol PresentationStyle {
 }
 
 public extension PresentationStyle {
-    func present(viewController: UIViewController, fromViewController: UIViewController, animated: Bool) {
-        present(viewController: viewController, fromViewController: fromViewController, animated: animated, completion: nil)
+    func present(
+        viewController: UIViewController,
+        fromViewController: UIViewController,
+        animated: Bool
+    ) {
+        present(
+            viewController: viewController,
+            fromViewController: fromViewController,
+            animated: animated,
+            completion: nil
+        )
     }
 }
 

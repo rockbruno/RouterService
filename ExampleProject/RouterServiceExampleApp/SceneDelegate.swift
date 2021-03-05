@@ -6,6 +6,9 @@ import RouterServiceInterface
 import HTTPClient
 import HTTPClientInterface
 
+import FeatureFlag
+import FeatureFlagInterface
+
 import FeatureOne
 import FeatureTwo
 
@@ -23,6 +26,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         routerService.register(dependencyFactory: {
             return HTTPClient()
         }, forType: HTTPClientProtocol.self)
+
+        routerService.register(dependencyFactory: {
+            return FeatureFlag()
+        }, forType: FeatureFlagProtocol.self)
 
         routerService.register(routeHandler: FeatureTwoRouteHandler())
 
