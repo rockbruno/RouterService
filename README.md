@@ -132,7 +132,7 @@ final class ProfileViewController: UIViewController {
     let client: HTTPClientProtocol
     let routerService: RouterServiceProtocol
 
-    init(client: HTTPClientProtocol, routerService, RouterServiceProtocol) {
+    init(client: HTTPClientProtocol, routerService: RouterServiceProtocol) {
         self.client = client
         self.routerService = routerService
         super.init(nibName: nil, bundle: nil)
